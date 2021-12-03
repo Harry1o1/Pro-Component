@@ -20,10 +20,12 @@ function Profile({ data, error }) {
 export async function getStaticProps() {
     const { data } = await client.query({
         query:gql`
-            {
-              hello
+        query all_ingredients {
+            allIngredients {
+                name
+                notes
             }
-        `
+        }`
     })
     
 

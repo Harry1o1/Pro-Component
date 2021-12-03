@@ -3,7 +3,7 @@ import { ApolloClient, InMemoryCache } from '@apollo/client'
 
 
 const client = new ApolloClient({
-    uri:'https://pro-component-express1o1.herokuapp.com/',
+    uri:'https://pro-component-django1o1.herokuapp.com/graphql',
     cache: new InMemoryCache(),
 });
 
