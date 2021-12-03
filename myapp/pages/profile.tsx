@@ -5,11 +5,10 @@ import client from './api/apollo-client.tsx'
 
 
 
-function Profile({ data, error }) {
+function Profile({ data }) {
   return (
     <>
       {console.log(data)}
-      {error && <p>{error}</p>}
       <pre>
         <code>{JSON.stringify(data, null, 4)}</code>
       </pre>
@@ -33,7 +32,6 @@ export async function getStaticProps() {
   return {
     props: {
       data,
-      error,
     },
   };
 }
