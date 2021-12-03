@@ -5,7 +5,7 @@ import Head from 'next/head'
 
 
 
-export default function Register({data} : { data : any}) {
+export default function Register() {
     const [user,setUser] = useState({
         name:'',email:'',work:'',phone:'',password:'',cpassword:''
     });
