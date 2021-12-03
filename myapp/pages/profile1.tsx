@@ -5,7 +5,7 @@ import client from './api/apollo-client'
 
 
 
-function Profile({data} : { a: any}) {
+function Profile({data} : { data: any}) {
   return (
     <>
       <pre>

@@ -5,7 +5,7 @@ import client1 from './api/apollo-client1'
 
 
 
-function Profile2({data} : { a: any}) {
+function Profile2({data} : { data: any}) {
   return (
     <>
           {console.log(data)}
