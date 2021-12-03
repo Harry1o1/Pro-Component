@@ -7,11 +7,34 @@ const cors = require('cors');
 const app = express();
 // Hello 
 app.use(cors());
-
-
 const port = process.env.PORT || 3000;
 const connectDb = require('./db/connect');
 const DB = process.env.DATABASE;
+
+let { graphqlHTTP } = require('express-graphql');
+let { buildSchema } = require('graphql');
+
+// Construct a schema, using GraphQL schema language
+let schema = buildSchema(`
+  type Query {
+    hello: String
+  }
+`);
+
+// The root provides a resolver function for each API endpoint
+let root = {
+  hello: () => {
+    return 'Hello world!';
+  },
+};
+
+app.use('/graphql', graphqlHTTP({
+  schema: schema,
+  rootValue: root,
+  graphiql: true,
+}));
+
+
 
 
 // userSchema

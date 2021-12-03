@@ -1,16 +1,39 @@
-import useSWR from 'swr'
 
-function Profile() {
-    
-    
-  const { data, error } = useSWR('/api/user', fetcher)
-  if (error) return <div>failed to load</div>
-  if (!data) return <div>loading...</div>
-  return <div>hello {data.name}!</div>
-  
-  
+
+
+
+
+
+function Profile({ data, error }) {
+  return (
+    <>
+      {console.log(data)}
+      {error && <p>{error}</p>}
+      <pre>
+        <code>{JSON.stringify(data, null, 4)}</code>
+      </pre>
+    </>
+  );
 }
 
+export async function getStaticProps() {
+    const { data } = await client.query({
+        query:gql`
+        {
+            // The thing
+        }
+        `
+    })
+    
 
+
+  return {
+    props: {
+      data,
+      error,
+    },
+  };
+}
 
 export default Profile;
+
