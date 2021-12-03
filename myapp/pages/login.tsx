@@ -89,31 +89,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Feching data
 // export async function getStaticProps(context) {
 //   const res = await fetch(`https://express-backend1o1.herokuapp.com/`);

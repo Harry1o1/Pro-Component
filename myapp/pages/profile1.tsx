@@ -1,40 +1,39 @@
-// import { gql } from '@apollo/client'
-// import client from './api/apollo-client.'
+import { gql } from '@apollo/client'
+import client from './api/apollo-client.'
 
 
 
 
 
-function Profile() {
+function Profile({data} : { a: any}) {
   return (
     <>
-        <h1 className="">Hello world!</h1>
+      <pre>
+        <code>{JSON.stringify(data, null, 4)}</code>
+      </pre>
     </>
   );
 }
 
-// export async function getStaticProps() {
-//     const { data } = await client.query({
-//         query:gql`
-//         query all_ingredients {
-//             allIngredients {
-//                 name
-//                 notes
-//             }
-//         }`
-//     })
+export async function getStaticProps() {
+    const { data } = await client.query({
+        query:gql`
+        query all_ingredients {
+            allIngredients {
+                name
+                notes
+            }
+        }`
+    })
     
 
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
+  return {
+    props: {
+      data,
+    },
+  };
+}
 
 export default Profile;
 
-    //   <pre>
-        // <code>{JSON.stringify(data, null, 4)}</code>
-    //   </pre>
