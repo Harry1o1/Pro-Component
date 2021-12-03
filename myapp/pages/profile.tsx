@@ -1,4 +1,5 @@
-
+import { gql } from '@apollo/client'
+import client from './api/apollo-client.tsx'
 
 
 
@@ -19,9 +20,9 @@ function Profile({ data, error }) {
 export async function getStaticProps() {
     const { data } = await client.query({
         query:gql`
-        {
-            // The thing
-        }
+            {
+              hello
+            }
         `
     })
     

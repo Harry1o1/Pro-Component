@@ -156,7 +156,7 @@ const start = async () => {
     try {
         await connectDb(DB);
         app.listen(port, (req, res) => {
-            console.log('You are listening to port :', port);
+            console.log('server is running at http://localhost:5000/graphql');
         })
     } catch (error) {
         console.log(error);
