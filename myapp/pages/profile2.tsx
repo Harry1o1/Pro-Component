@@ -1,0 +1,37 @@
+import { gql } from '@apollo/client'
+import client from './api/apollo-client1.tsx'
+
+
+
+
+
+function Profile({ data }) {
+  return (
+    <>
+      {console.log(data)}
+      <pre>
+        <code>{JSON.stringify(data, null, 4)}</code>
+      </pre>
+    </>
+  );
+}
+
+export async function getStaticProps() {
+    const { data } = await client1.query({
+        query:gql`
+        query {
+            hello
+        }`
+    })
+    
+
+
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+export default Profile;
+
