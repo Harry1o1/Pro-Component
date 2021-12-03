@@ -119,6 +119,7 @@ function Register1() {
 
 
 
+export default Register1;
 
 
 
