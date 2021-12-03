@@ -1,5 +1,5 @@
 import { gql } from '@apollo/client'
-import client from './api/apollo-client.'
+import client from './api/apollo-client'
 
 
 
