@@ -2,7 +2,7 @@ const UserSchema = require('../models/user');
 const bcrypt = require('bcryptjs');
 
 
-const createDa = async (req, res) => {
+const createData = async (req, res) => {
     try {
         const { name, email, work, phone, password, cpassword } = req.body;
         const emailExits = await UserSchema.findOne({ email: email });
@@ -34,7 +34,7 @@ const createDa = async (req, res) => {
         console.log(error);
     }
 }
-const getOneItemYeh = async (req, res) => {
+const getOneItem = async (req, res) => {
     try {
         const { itemID: userId } = req.params;
         const user = await UserSchema.findOne({ _id: userId });
@@ -48,7 +48,7 @@ const getOneItemYeh = async (req, res) => {
         res.status(500).json({ message: error })
     }
 }
-const updateDa = async (req, res) => {
+const updateData = async (req, res) => {
     try {
         const { itemID: userID } = req.params;
         const user = await UserSchema.findByIdAndUpdate({ _id: userID }, req.body, {
@@ -66,7 +66,7 @@ const updateDa = async (req, res) => {
 }
 
 
-const deleteDa = async (req, res) => {
+const deleteData = async (req, res) => {
     try {
         const { itemID: userID } = req.params;
         const crud = await UserSchema.findByIdAndDelete({ _id: userID });
@@ -85,8 +85,8 @@ const deleteDa = async (req, res) => {
 
 
 module.exports = {
-    createDa,
-    getOneItemYeh,
-    updateDa,
-    deleteDa
+    createData,
+    getOneItem,
+    updateData,
+    deleteData
 }

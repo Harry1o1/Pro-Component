@@ -10,15 +10,17 @@ const port = process.env.PORT || 3000; //PORT FOR HOSTING
 const connectDb = require('./db/connect'); //MONGOOSE 1
 const DB = process.env.DATABASE; //ENV DATABASE URL
 const UserSchema = require('./models/user'); //USER MODEL
-const router1 = require('./routes/crud'); // ("/")
-const router2 = require('./routes/user'); // ("/register")
-
 app.use(express.json()); //JSON EXPRESS MIDDLEWARE
 
+const home = require('./routes/home'); // ("/")
+const register = require('./routes/register'); // ("/register")
+// const login = require('./routes/login'); // ("/login")
+// const about = require('./routes/about'); // ("/about")
+// const contact = require('./routes/contact'); // ("/contact")
 
 
 
-// Graphql ///////////////////////////////////////////////////////////////////////////
+// Graphql //////////////////////////////////////////////////////////////////////////////
 let { graphqlHTTP } = require('express-graphql');
 let { buildSchema } = require('graphql');
 // Construct a schema, using GraphQL schema language
@@ -40,7 +42,7 @@ app.use('/graphql', graphqlHTTP({
   rootValue: root,
   graphiql: true,
 }));
-// Graphql ///////////////////////////////////////////////////////////////////////////
+// Graphql //////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -48,44 +50,29 @@ app.use('/graphql', graphqlHTTP({
 
 
 
-//Middleware ///////////////////////////////////////////////////////////////////////////
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
-    res.header('Access-Control-Allow-Origin', '*')
+//Middleware /////////////////////////////////////////////////////////////////////////////
+// app.use((req, res, next) => {
+//     res.header('Access-Control-Allow-Origin', '*');
+//     res.header('Access-Control-Allow-Origin', '*')
 
-    if (req.method === 'OPTIONS') {
-        res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET')
-        return res.status(200).json({})
-    }
+//     if (req.method === 'OPTIONS') {
+//         res.header('Access-Control-Allow-Methods', 'PUT, POST, PATCH, DELETE, GET')
+//         return res.status(200).json({})
+//     }
 
-    next();
-})
-const middleware = (req, res, next) => {
-    console.log('middleware');
-    next();
-};
-//Middleware ///////////////////////////////////////////////////////////////////////////
-
-
+//     next();
+// })
+// const middleware = (req, res, next) => {
+//     console.log('middleware');
+//     next();
+// };
+//Middleware ////////////////////////////////////////////////////////////////////////////
 
 
 
-//Routes  ///////////////////////////////////////////////////////////////////////////
-app.get('/about', middleware, (req, res) => {
-    res.send('Hello from about');
-    console.log('Hello from about');
 
-});
 
-let Thapa = 'Thapa';
-
-app.get('/contact', middleware, (req, res) => {
-    res.cookie('jwtoken', Thapa)
-    res.send('Hello from contact');
-    console.log('Hello from contact');
-
-});
-
+//Routes  ///////////////////////////////////////////////////////////////////////////////
 app.get('/register', async (req, res) => {
     const user = await UserSchema.find({});
     console.log(user);
@@ -97,11 +84,7 @@ app.get('/register', async (req, res) => {
     }
 });
 
-app.get('/login', (req, res) => {
-    res.status(200).send('Hello from login');
-});
 app.post('/login', async (req, res) => {
-
     try {
         const { email, password } = req.body;
         const user = await UserSchema.find({});
@@ -139,9 +122,16 @@ app.post('/login', async (req, res) => {
         res.status(400).send('Error');
     };
 });
-//Routes  ///////////////////////////////////////////////////////////////////////////
-app.use('/', router1);
-app.use('/', router2);
+app.get('/login', async (req,res) => {
+    res.status(200).send('ujjjh')
+})
+//Routes  ///////////////////////////////////////////////////////////////////////////////
+app.use('/', home);
+app.use('/register', register);
+// app.use('/login', login);
+// app.use('/about', about);
+// app.use('/contact', contact);
+
 
 
 
