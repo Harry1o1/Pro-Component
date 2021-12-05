@@ -5,15 +5,21 @@ const express = require('express');
 const bcrypt = require('bcryptjs');
 const cors = require('cors');
 const app = express();
-// Hello 
 app.use(cors());
 const port = process.env.PORT || 3000;
 const connectDb = require('./db/connect');
 const DB = process.env.DATABASE;
+const UserSchema = require('./models/user');
+const router = require('./routes/crud');
+app.use(express.json());
+app.use('/', router);
 
+
+
+
+// Graphql ///////////////////////////////////////////////////////////////////////////
 let { graphqlHTTP } = require('express-graphql');
 let { buildSchema } = require('graphql');
-
 // Construct a schema, using GraphQL schema language
 let schema = buildSchema(`
   type Query {
@@ -33,17 +39,15 @@ app.use('/graphql', graphqlHTTP({
   rootValue: root,
   graphiql: true,
 }));
+// Graphql ///////////////////////////////////////////////////////////////////////////
 
 
 
 
-// userSchema
-const UserSchema = require('./models/user');
 
-//req router
-const router = require('./routes/crud');
 
-//Middleware
+
+//Middleware ///////////////////////////////////////////////////////////////////////////
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Origin', '*')
@@ -55,13 +59,31 @@ app.use((req, res, next) => {
 
     next();
 })
+const middleware = (req, res, next) => {
+    console.log('middleware');
+    next();
+};
+//Middleware ///////////////////////////////////////////////////////////////////////////
 
-app.use(express.json());
 
 
 
 
+//Routes  ///////////////////////////////////////////////////////////////////////////
+app.get('/about', middleware, (req, res) => {
+    res.send('Hello from about');
+    console.log('Hello from about');
 
+});
+
+let Thapa = 'Thapa';
+
+app.get('/contact', middleware, (req, res) => {
+    res.cookie('jwtoken', Thapa)
+    res.send('Hello from contact');
+    console.log('Hello from contact');
+
+});
 
 app.get('/register', async (req, res) => {
     const user = await UserSchema.find({});
@@ -73,8 +95,6 @@ app.get('/register', async (req, res) => {
         res.send('error')
     }
 });
-
-
 
 app.get('/login', (req, res) => {
     res.status(200).send('Hello from login');
@@ -118,35 +138,9 @@ app.post('/login', async (req, res) => {
         res.status(400).send('Error');
     };
 });
+//Routes  ///////////////////////////////////////////////////////////////////////////
 
 
-
-// Middleware
-const middleware = (req, res, next) => {
-    console.log('middleware');
-    next();
-};
-
-//Route
-app.get('/about', middleware, (req, res) => {
-    res.send('Hello from about');
-    console.log('Hello from about');
-
-});
-
-let Thapa = 'Thapa';
-
-app.get('/contact', middleware, (req, res) => {
-    res.cookie('jwtoken', Thapa)
-    res.send('Hello from contact');
-    console.log('Hello from contact');
-
-});
-
-
-
-// Express Router
-app.use('/', router);
 
 
 
