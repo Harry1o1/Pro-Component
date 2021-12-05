@@ -64,7 +64,7 @@ ROOT_URLCONF = 'herokudjango.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,6 +130,9 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 
@@ -150,3 +153,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 GRAPHENE = {
     "SCHEMA": "herokudjango.schema.schema"
 }
+
+
+
+

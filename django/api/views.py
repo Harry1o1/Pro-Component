@@ -15,3 +15,11 @@ class StudentList(ListAPIView):
     queryset = Students.objects.all()
     serializer_class = StudentSerializer
     
+    
+    
+    
+def add(request):
+    """docstring for fname"""
+    # TODO: write code...
+    return render(request,"index.html")
+    
