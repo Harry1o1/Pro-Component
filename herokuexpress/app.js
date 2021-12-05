@@ -1,18 +1,19 @@
-const jwt = require('jsonwebtoken');
-const dotenv = require('dotenv');
-dotenv.config({ path: './config.env' });
-const express = require('express');
-const bcrypt = require('bcryptjs');
-const cors = require('cors');
-const app = express();
-app.use(cors());
-const port = process.env.PORT || 3000;
-const connectDb = require('./db/connect');
-const DB = process.env.DATABASE;
-const UserSchema = require('./models/user');
-const router = require('./routes/crud');
-app.use(express.json());
-app.use('/', router);
+const jwt = require('jsonwebtoken'); //JSONTOKEN
+const dotenv = require('dotenv'); //DOT ENV
+dotenv.config({ path: './config.env' }); //CONFIGURE PATH
+const express = require('express'); //EXPRESS
+const bcrypt = require('bcryptjs'); //NOT NEEDED
+const cors = require('cors'); //CORS
+const app = express(); //DECLARATION OF APP
+app.use(cors()); //USING CORS
+const port = process.env.PORT || 3000; //PORT FOR HOSTING
+const connectDb = require('./db/connect'); //MONGOOSE 1
+const DB = process.env.DATABASE; //ENV DATABASE URL
+const UserSchema = require('./models/user'); //USER MODEL
+const router1 = require('./routes/crud'); // ("/")
+const router2 = require('./routes/user'); // ("/register")
+
+app.use(express.json()); //JSON EXPRESS MIDDLEWARE
 
 
 
@@ -139,6 +140,12 @@ app.post('/login', async (req, res) => {
     };
 });
 //Routes  ///////////////////////////////////////////////////////////////////////////
+app.use('/', router1);
+app.use('/', router2);
+
+
+
+
 
 
 
