@@ -12,12 +12,12 @@ const createData = async (req, res) => {
         } else {
             console.log('Field verified');
         }
-        if (emailExits) {
-            res.status(500).send('User already Exists');
-            console.log('User already Exists');
-        } else {
-            console.log('User verified');
-        }
+        // if (emailExits) {
+        //     res.status(500).send('User already Exists');
+        //     console.log('User already Exists');
+        // } else {
+        //     console.log('User verified');
+        // }
         if (password != cpassword) {
             res.send('Wrong cpassword');
             console.log('Wrong cpassword');
