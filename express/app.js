@@ -12,9 +12,11 @@ const DB = process.env.DATABASE; //ENV DATABASE URL
 const UserSchema = require('./models/user'); //USER MODEL
 app.use(express.json()); //JSON EXPRESS MIDDLEWARE
 
+
+//                              All Routes
 const home = require('./routes/home'); // ("/")
 const register = require('./routes/register'); // ("/register")
-const profile = require('./routes/profile'); // ("/profile")
+// const profile = require('./routes/profile'); // ("/profile")
 // const login = require('./routes/login'); // ("/login")
 // const about = require('./routes/about'); // ("/about")
 // const contact = require('./routes/contact'); // ("/contact")
@@ -115,6 +117,8 @@ app.post('/login', async (req, res) => {
                     console.log(userLogin);
                     console.log('You logged in');
                     res.status(200).send('You logged in');
+                    let Thapa = 'Emon'
+                    res.cookie('jwttoken', Thapa)
                 // }
             }
         }
@@ -124,13 +128,20 @@ app.post('/login', async (req, res) => {
     };
 });
 app.get('/login', async (req,res) => {
-    res.status(200).send('ujjjh')
+    res.status(200).send('Login')
+
 })
 app.get('/contact', async (req,res) => {
     res.status(200).send('contact')
+    
 })
 app.get('/about', async (req,res) => {
     res.status(200).send('about')
+    
+})
+app.get('/profile', async (req,res) => {
+    res.status(200).send('profile')
+    
 })
 
 
@@ -145,7 +156,7 @@ app.use('/register', register);
 // app.use('/login', login);
 // app.use('/about', about);
 // app.use('/contact', contact);
-app.use('/profile', profile);
+// app.use('/profile', profile);
 
 
 
