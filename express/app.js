@@ -14,6 +14,7 @@ app.use(express.json()); //JSON EXPRESS MIDDLEWARE
 
 const home = require('./routes/home'); // ("/")
 const register = require('./routes/register'); // ("/register")
+const profile = require('./routes/profile'); // ("/profile")
 // const login = require('./routes/login'); // ("/login")
 // const about = require('./routes/about'); // ("/about")
 // const contact = require('./routes/contact'); // ("/contact")
@@ -125,15 +126,26 @@ app.post('/login', async (req, res) => {
 app.get('/login', async (req,res) => {
     res.status(200).send('ujjjh')
 })
+app.get('/contact', async (req,res) => {
+    res.status(200).send('contact')
+})
+app.get('/about', async (req,res) => {
+    res.status(200).send('about')
+})
+
+
+
+
+
+
+
 //Routes  ///////////////////////////////////////////////////////////////////////////////
 app.use('/', home);
 app.use('/register', register);
 // app.use('/login', login);
 // app.use('/about', about);
 // app.use('/contact', contact);
-
-
-
+app.use('/profile', profile);
 
 
 
