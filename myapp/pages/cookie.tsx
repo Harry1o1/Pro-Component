@@ -48,3 +48,7 @@ export async function getStaticProps() {
 
 
 export default Cookie;
+
+
+
+// Yeh Nextjs
