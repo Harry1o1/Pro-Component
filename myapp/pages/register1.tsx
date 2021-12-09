@@ -1,5 +1,6 @@
 import React, {useState} from 'react'; 
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 
 
@@ -58,6 +59,7 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
             if (typeof window !== "undefined") {
                 window.alert('Registration successful');
             }
+            router.push('/login');
         } catch (error: any) {
             error = error.toString();
         }

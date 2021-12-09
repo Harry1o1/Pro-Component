@@ -167,7 +167,7 @@
 function Login() {
   return (
     <>
-        <h1 className="">Hello world!</h1>
+        <h1 className="">Hello from Login</h1>
     </>
   );
 }

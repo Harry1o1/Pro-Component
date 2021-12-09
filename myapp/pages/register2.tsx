@@ -59,7 +59,7 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
             if (typeof window !== "undefined") {
                 window.alert('Registration successful');
             }
-            router.push('/');
+            router.push('/login');
         } catch (error: any) {
             error = error.toString();
         }
