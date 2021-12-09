@@ -47,7 +47,7 @@ import Head from 'next/head'
 
 export default function Register1({data} : {data : any},{error}:{error : any}) {
     const [user,setUser] = useState({
-        name:'',email:'',work:'',phone:'',password:'',cpassword:''
+        name:'',email:'', Comment:'',bff:'',stars:'',age:''
     });
     
     // handleInputs
@@ -76,13 +76,12 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        "id": 2,
-                        "name": "Orko",
-                        "email": "ajju40959@11gmail.com",
-                        "Comment": "This is very brilliant app",
-                        "bff": "Sumon",
-                        "stars": 5,
-                        "age": 15
+                        "name": `${user.name}`,
+                        "email": `${user.email}`,
+                        "Comment": `${user.Comment}`,
+                        "bff": `${user.bff}`,
+                        "stars": `${user.stars}`,
+                        "age": `${user.age}`
                     })
                 }
             );
@@ -109,7 +108,7 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
             },
         }
     }
-
+                                                                                                                                                                                                                                        
     return (
         <>
             <Head>
@@ -118,10 +117,10 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
             <h1>Signup</h1>
             <input type="text" name="name" id="name"  placeholder="Name" className="form-control1" autoComplete="off"  value={user.name} onChange={handleInputs}/>
             <input type="email" name="email" id="email"  placeholder="Email" className="form-control2" autoComplete="off"  value={user.email} onChange={handleInputs}/>
-            <input type="text" name="work" id="work"  placeholder="Work" className="form-control3" autoComplete="off"  value={user.work} onChange={handleInputs}/>
-            <input type="number" name="phone" id="phone"  placeholder="Phone" className="form-control4" autoComplete="off"  value={user.phone} onChange={handleInputs}/>
-            <input type="password" name="password" id="password"  placeholder="Password" className="form-control5" autoComplete="off"  value={user.password} onChange={handleInputs}/>
-            <input type="password" name="cpassword" id="cpassword"  placeholder="Cpassword" className="form-control6" autoComplete="off"  value={user.cpassword} onChange={handleInputs}/>
+            <input type="text" name="Comment" id="Comment"  placeholder="Comment" className="form-control3" autoComplete="off"  value={user.Comment} onChange={handleInputs}/>
+            <input type="text" name="bff" id="bff"  placeholder="Bff" className="form-control3" autoComplete="off"  value={user.bff} onChange={handleInputs}/>
+            <input type="number" name="stars" id="stars"  placeholder="Stars" className="form-control4" autoComplete="off"  value={user.stars} onChange={handleInputs}/>
+            <input type="number" name="age" id="age"  placeholder="Age" className="form-control4" autoComplete="off"  value={user.age} onChange={handleInputs}/>
             
             <div className="btn" onClick={handlePost}>
                 Confrom
