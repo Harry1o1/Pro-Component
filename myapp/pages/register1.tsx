@@ -7,6 +7,7 @@ import { useRouter } from 'next/router'
 
 
 export default function Register1({data} : {data : any},{error}:{error : any}) {
+    const router = useRouter();
     const [user,setUser] = useState({
         name:'',email:'',work:'',phone:'',password:'',cpassword:''
     });
