@@ -142,7 +142,6 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
 // }
 
 
-export default Register2;
 
 
 
