@@ -23,7 +23,7 @@ export async function getStaticProps() {
         let error = "";
         try {
             const res = await fetch(
-                    "https://pro-component-express1o1.herokuapp.com/about", {
+                    "https://pro-component-express1o1.herokuapp.com", {
                     method: "GET",
                     headers: {
                         // update with your user-agent
