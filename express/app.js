@@ -136,6 +136,8 @@ app.get('/contact', async (req,res) => {
     
 })
 app.get('/about', async (req,res) => {
+    let name = 'Thapa';
+    res.cookie('jwtoken', 'Thapa')
     res.status(200).send('about')
     
 })
