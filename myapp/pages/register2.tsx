@@ -1,3 +1,43 @@
+// import Head from 'next/head'
+// import { useState, useEffect } from "react";
+// import axios from "axios";
+
+
+
+    // export default function Login() {
+    //     const [students, setStudents] = useState([])
+    //         useEffect(()=>{
+    //           async function getAllStudent(){
+    //           try {
+    //             const res = await axios.get("https://express-backend1o1.herokuapp.com/register")
+    //             console.log(res.data)
+    //             setStudents(res.data)
+    //           } catch (error) {
+    //             console.log(error)
+    //           }
+    //         }
+    //         getAllStudent()
+    //     }, [])
+        
+    //     return (
+    //       <>
+    //             <Head>
+    //                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Harry1o1/pro-components/frontend/styles/Sass/Css/login4.css" type="text/css" media="all" />
+    //             </Head>
+    //             <input type="text/submit/hidden/button/image" name="" id=""  placeholder="Email" className="form-control "/>
+    //             <input type="text/submit/hidden/button/image" name="" id="" placeholder="Password" className="form-control"/>
+    //             {console.log('°==°')}
+                
+    //             <h1 className="login-h1">Hai what's happen!!!</h1>
+                
+    //       </>
+    //     )
+    // }; 
+    
+    
+    
+    
+
 import React, {useState} from 'react'; 
 import Head from 'next/head'
 
@@ -26,7 +66,7 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
         let error = "";
         try {
             const res = await fetch(
-                    "https://pro-component-express1o1.herokuapp.com/register", {
+                    "https://pro-component-django1o1.herokuapp.com/api/c", {
                     method: "POST",
                     headers: {
                         // update with your user-agent
@@ -36,12 +76,13 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
                         'Content-Type': 'application/json'
                     },
                     body: JSON.stringify({
-                        "name": `${user.name}`,
-                        "email": `${user.email}`,
-                        "work": `${user.work}`,
-                        "phone": `${user.phone}`,
-                        "password": `${user.password}`,
-                        "cpassword":`${user.cpassword}`
+                        "id": 2,
+                        "name": "Orko",
+                        "email": "ajju40959@11gmail.com",
+                        "Comment": "This is very brilliant app",
+                        "bff": "Sumon",
+                        "stars": 5,
+                        "age": 15
                     })
                 }
             );
@@ -92,13 +133,7 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
     )
 }; 
 
-
-
-
-
-
-
-// function Register1() {
+// function Register() {
 //   return (
 //     <>
 //         <h1 className="">Hello world!</h1>
@@ -107,10 +142,7 @@ export default function Register1({data} : {data : any},{error}:{error : any}) {
 // }
 
 
-
-
-export default Register1;
-
+export default Register2;
 
 
 
@@ -118,3 +150,11 @@ export default Register1;
 
 
 
+
+
+                    //   "name": `${user.name}`,
+                        // "email": `${user.email}`,
+                        // "work": `${user.work}`,
+                        // "phone": `${user.phone}`,
+                        // "password": `${user.password}`,
+                        // "cpassword":`${user.cpassword}`
