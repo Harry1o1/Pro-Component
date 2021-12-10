@@ -7,7 +7,7 @@ function Express({data} : {data : any},{error}:{error : any}) {
         {data.map( (curElem:any) => {
             return(
                 <div className ="alert alert-primary" key={curElem.id}>
-                    <Link href={`/blog/${curElem.id}`}>
+                    <Link href={`/blog/${curElem._id}`}>
                         <h3>{curElem.name}</h3>
                     </Link>
                     <h4>{curElem.email}</h4>
@@ -15,7 +15,7 @@ function Express({data} : {data : any},{error}:{error : any}) {
                     <h5>{curElem.phone}</h5>
                     <h5>{curElem.password}</h5>
                     <h5>{curElem.cpassword}</h5>
-                    <h6>{curElem.id}</h6>                    
+                    <h6>{curElem._id}</h6>                    
                 </div>            
             );
         })}
