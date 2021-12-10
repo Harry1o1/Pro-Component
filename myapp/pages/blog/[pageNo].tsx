@@ -17,7 +17,7 @@ export const getStaticPaths = async () => {
     
     return {
         props: {
-            paths: paths,
+            paths,
             fallback: false,
         },
    }    
