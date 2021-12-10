@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import type { NextPage } from 'next'
 
 
 
@@ -6,7 +7,7 @@ import { useRouter } from 'next/router'
 
 
 
-export default function pageNo() {
+const pageNo: NextPage = () => {
     const router = useRouter();
     const pageNumber = router.query.pageNo;
     return (
