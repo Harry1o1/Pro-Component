@@ -1,18 +1,20 @@
-
+import Link from 'next/link'
 
 
 function Express({data} : {data : any},{error}:{error : any}) {
   return (
    <>
-        {[data].map( (curElem:any) => {
+        {data.map( (curElem:any) => {
             return(
                 <div className ="alert alert-primary" key={curElem.id}>
-                    <h3>{curElem.name}</h3>
+                    <Link href={`/blog/${curElem.id}`}>
+                        <h3>{curElem.name}</h3>
+                    </Link>
                     <h4>{curElem.email}</h4>
-                    <h5>{curElem.Comment}</h5>
-                    <h5>{curElem.bff}</h5>
-                    <h5>{curElem.stars}</h5>
-                    <h5>{curElem.age}</h5>
+                    <h5>{curElem.work}</h5>
+                    <h5>{curElem.phone}</h5>
+                    <h5>{curElem.password}</h5>
+                    <h5>{curElem.cpassword}</h5>
                     <h6>{curElem.id}</h6>                    
                 </div>            
             );

@@ -63,3 +63,5 @@ export async function getStaticProps() {
 
 export default Django;
 
+                    // </Link>
+                    // <Link href={`/blog/${curElem.id}`}>
