@@ -2,7 +2,40 @@ import { useRouter } from 'next/router'
 import type { NextPage } from 'next'
 
 
+export const getStaticPaths = async () => {
+    const res = await fetch("https://pro-component-express1o1.herokuapp.com/register")
+    const data = await res.json();
+    
+    const paths = data.map( (curElem) =>  {
+        return{
+            params: { 
+                pageNo : curElem.id.toString(),
+                
+            },
+        };
+    })
+    
+    return {
+        props: {
+            paths,
+            fallback: false,
+        },
+   }    
+};
 
+
+export async function getStaticProps(context) {
+        
+        const id = context.params.pageNo;
+        const res = await fetch(`https://pro-component-express1o1.herokuapp.com/register/${id}`)
+        data = await res.json();
+            
+        return {
+            props: {
+                data,
+            },
+        }
+    }
 
 
 
@@ -18,4 +51,4 @@ const PageNo: NextPage = () => {
 };
 
 
-export default PageNo;
+export default PageNo;                                                                                                                                                                  
