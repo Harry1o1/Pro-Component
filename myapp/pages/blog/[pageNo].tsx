@@ -9,7 +9,7 @@ export const getStaticPaths = async () => {
     const paths = data.map( (curElem:any) =>  {
         return{
             params: { 
-                pageNo : curElem.id.toString(),
+                pageNo : curElem.id,
                 
             },
         };
