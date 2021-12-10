@@ -28,7 +28,7 @@ export async function getStaticProps(context:any) {
         
         const id = context.params.pageNo;
         const res = await fetch(`https://pro-component-express1o1.herokuapp.com/register/${id}`)
-        data = await res.json();
+        const data = await res.json();
             
         return {
             props: {
