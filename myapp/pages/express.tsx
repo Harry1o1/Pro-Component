@@ -32,7 +32,7 @@ export async function getStaticProps() {
         let error = "";
         try {
             const res = await fetch(
-                    "https://pro-component-express1o1.herokuapp.com", {
+                    "https://pro-component-express1o1.herokuapp.com/register", {
                     method: "GET",
                     headers: {
                         // update with your user-agent
