@@ -80,7 +80,7 @@ app.get('/register', async (req, res) => {
     const user = await UserSchema.find({});
     console.log(user);
     try {
-        res.status(200).json({ user });
+        res.status(200).json(user);
     } catch (e) {
         console.log(e);
         res.send('error')

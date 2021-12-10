@@ -6,7 +6,7 @@ const getAllData = async (req, res) => {
         try {
                 const crud = await CrudSchema.find({});
                 res.cookie('jwtoken', 'Thapa')
-                res.status(200).json({ crud })
+                res.status(200).json( crud )
         } catch (error) {
                 res.status(500).json({ message: error })
         }
