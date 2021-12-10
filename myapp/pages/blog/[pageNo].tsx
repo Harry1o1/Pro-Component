@@ -18,3 +18,4 @@ const PageNo: NextPage = () => {
 };
 
 
+export default PageNo;
