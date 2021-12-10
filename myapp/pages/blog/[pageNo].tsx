@@ -7,7 +7,7 @@ import type { NextPage } from 'next'
 
 
 
-const pageNo: NextPage = () => {
+const PageNo: NextPage = () => {
     const router = useRouter();
     const pageNumber = router.query.pageNo;
     return (
