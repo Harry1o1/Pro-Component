@@ -24,7 +24,7 @@ export const getStaticPaths = async () => {
 };
 
 
-export async function getStaticProps(context) {
+export async function getStaticProps(context:any) {
         
         const id = context.params.pageNo;
         const res = await fetch(`https://pro-component-express1o1.herokuapp.com/register/${id}`)
