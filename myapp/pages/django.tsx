@@ -7,10 +7,21 @@
 
 function Django({data} : {data : any},{error}:{error : any}) {
   return (
-    <>
-      <pre>
-        <code>{JSON.stringify(data, null, 4)}</code>
-      </pre>
+   <>
+        {data.map( (curElem) => {
+            return(
+                <div className ="alert alert-primary" key={curElem.id}>
+                    <h3>{curElem.name}</h3>
+                    <h4>{curElem.email}</h4>
+                    <h5>{curElem.Comment}</h5>
+                    <h5>{curElem.bff}</h5>
+                    <h5>{curElem.stars}</h5>
+                    <h5>{curElem.age}</h5>
+                    <h6>{curElem.id}</h6>
+                </div>            
+            );
+        })}
+        <h1 className="">Hi!</h1>
     </>
   );
 }
@@ -26,7 +37,7 @@ export async function getStaticProps() {
         let error = "";
         try {
             const res = await fetch(
-                    "https://pro-component-django1o1.herokuapp.com", {
+                    "https://pro-component-django1o1.herokuapp.com/api", {
                     method: "GET",
                     headers: {
                         // update with your user-agent

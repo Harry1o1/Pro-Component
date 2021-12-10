@@ -3,9 +3,20 @@
 function Express({data} : {data : any},{error}:{error : any}) {
   return (
     <>
-      <pre>
-        <code>{JSON.stringify(data, null, 4)}</code>
-      </pre>
+        {data.map( (curElem) => {
+            return(
+                <div className ="alert alert-primary" key={curElem.id}>
+                    <h3>{curElem.name}</h3>
+                    <h4>{curElem.email}</h4>
+                    <h5>{curElem.work}</h5>
+                    <h5>{curElem.phone}</h5>
+                    <h5>{curElem.password}</h5>
+                    <h5>{curElem.cpassword}</h5>
+                    <h6>{curElem.id}</h6>
+                </div>            
+            );
+        })}
+        <h1 className="">Hi</h1>
     </>
   );
 }
