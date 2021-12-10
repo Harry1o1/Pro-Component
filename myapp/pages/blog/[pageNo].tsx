@@ -6,7 +6,7 @@ export const getStaticPaths = async () => {
     const res = await fetch("https://pro-component-express1o1.herokuapp.com/register")
     const data = await res.json();
     
-    const paths = data.map( (curElem) =>  {
+    const paths = data.map( (curElem:any) =>  {
         return{
             params: { 
                 pageNo : curElem.id.toString(),
