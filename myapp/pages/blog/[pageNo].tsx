@@ -9,7 +9,7 @@ export const getStaticPaths = async () => {
     const paths = data.map( (curElem:any) =>  {
         return{
             params: { 
-                pageNo : curElem.id
+                pageNo : curElem.id.toString(),
                 
             },
         };
@@ -17,7 +17,7 @@ export const getStaticPaths = async () => {
     
     return {
         props: {
-            paths,
+            paths: paths,
             fallback: false,
         },
    }    
