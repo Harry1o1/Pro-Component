@@ -3,7 +3,7 @@
 function Express({data} : {data : any},{error}:{error : any}) {
   return (
     <>
-        {data.map( (curElem) => {
+        {data.map( (curElem:any) => {
             return(
                 <div className ="alert alert-primary" key={curElem.id}>
                     <h3>{curElem.name}</h3>
