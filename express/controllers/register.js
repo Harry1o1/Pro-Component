@@ -10,27 +10,29 @@ const createData = async (req, res) => {
             res.status(500).send('Plz fill all data');
             console.log('Plz fill all data');
         } else {
+            // The problem is to returing many respone //////////////////////////////////
             console.log('Field verified');
-        }
-        // if (emailExits) {
-        //     res.status(500).send('User already Exists');
-        //     console.log('User already Exists');
-        // } else {
-        //     console.log('User verified');
-        // }
-        if (password != cpassword) {
-            res.send('Wrong cpassword');
-            console.log('Wrong cpassword');
-        } else {
-            const geniunuser = new UserSchema({ name, email, work, phone, password, cpassword });
-            const Newregister = await geniunuser.save();
-            res.status(201).json({ geniunuser });
-            console.log('New User register successfully');
-            console.log(req.body);
-            console.log(geniunuser);
+            if (password != cpassword) {
+                // Here is the culpit
+                res.send('Wrong cpassword');
+                console.log('Wrong cpassword');
+            }else {
+                console.log('password validation');
+            }
+            if (emailExits) {
+                res.json({ massage: 'User Alrady exists'});
+                console.log('User Already exits');
+            } else {
+                const geniunuser = new UserSchema({ name, email, work, phone, password, cpassword });
+                const Newregister = await geniunuser.save();
+                res.json({ geniunuser });
+                console.log('New User register successfully');
+                console.log(geniunuser);
+            }
+            
         }
     } catch (error) {
-        res.status(500).json({ message: 'error' })
+        // return res.status(500).json({ message: 'error' })
         console.log(error);
     }
 }
