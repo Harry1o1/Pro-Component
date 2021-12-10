@@ -97,29 +97,29 @@ app.post('/login', async (req, res) => {
         }
         else {
             // Already had an account
-            const userLogin = await UserSchema.findOne({ email: email });
+            const userLogin = await UserSchema.findOne({ email:email });
             const userpassword = await UserSchema.findOne({ password: password });
-            if (!userLogin) {
-                console.log("This email is not registered");
-                res.status(400).send('This email is not registered');
+            if ( userLogin ) {
+                // Some days later
+                // const isMatch = await bcrypt.compare(password, userLogin.password);
+                // if (!isMatch) {
+                // }
+                // else {
+                const token = await userLogin.generateAuthToken();
+                console.log(userLogin);
+                console.log('You logged in');
+                res.status(200).send('You logged in');
+                let Thapa = 'Emon'
+                res.cookie('jwttoken', Thapa)
+                // }
             }
             else if(!userpassword){
                 console.log("Password");
                 res.status(400).send('Password');
             }
             else {
-                // Some days later
-                // const isMatch = await bcrypt.compare(password, userLogin.password);
-                // if (!isMatch) {
-                // }
-                // else {
-                    const token = await userLogin.generateAuthToken();
-                    console.log(userLogin);
-                    console.log('You logged in');
-                    res.status(200).send('You logged in');
-                    let Thapa = 'Emon'
-                    res.cookie('jwttoken', Thapa)
-                // }
+                console.log("This email is not registeredyyyyyyyyy");
+                res.status(400).send('This email is not registeredyyyyyyyyyy');
             }
         }
     } catch (e) {
