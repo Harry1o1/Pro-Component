@@ -100,17 +100,17 @@ app.post('/login', async (req, res) => {
             const userLogin = await UserSchema.findOne({ email:email });
             const userpassword = await UserSchema.findOne({ password: password });
             if ( userLogin ) {
+                // Using some respone but not needed
                 // Some days later
                 // const isMatch = await bcrypt.compare(password, userLogin.password);
                 // if (!isMatch) {
                 // }
                 // else {
                 const token = await userLogin.generateAuthToken();
-                console.log(userLogin);
                 console.log('You logged in');
-                res.status(200).send('You logged in');
-                let Thapa = 'Emon'
-                res.cookie('jwttoken', Thapa)
+                res.json({ massage : 'User login Successful'});
+                // let Thapa = 'Emon'
+                // res.cookie('jwttoken', Thapa)
                 // }
             }
             else if(!userpassword){
@@ -118,8 +118,8 @@ app.post('/login', async (req, res) => {
                 res.status(400).send('Password');
             }
             else {
-                console.log("This email is not registeredyyyyyyyyy");
-                res.status(400).send('This email is not registeredyyyyyyyyyy');
+                console.log("This email is not registered");
+                res.status(400).json({ error : 'Invalid Creadintials' });
             }
         }
     } catch (e) {
