@@ -11,7 +11,9 @@ function Django({data} : {data : any},{error}:{error : any}) {
         {data.map( (curElem:any) => {
             return(
                 <div className ="alert alert-primary" key={curElem.id}>
-                    <h3>{curElem.name}</h3>
+                    <Link href={`/blog2/${curElem.id}`}>
+                        <h3>{curElem.name}</h3>
+                    </Link>
                     <h4>{curElem.email}</h4>
                     <h5>{curElem.Comment}</h5>
                     <h5>{curElem.bff}</h5>
