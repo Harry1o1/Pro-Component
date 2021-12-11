@@ -11,7 +11,7 @@ export async function getStaticPaths() {
           console.log(posts);
           let string:any = "" + string;
           const paths = posts.map((post:any) => ({
-            params: { id: posts._id.string },
+            params: { id: posts._id + string },
           }))
           // We'll pre-render only these paths at build time.
           // { fallback: false } means other routes should 404.
