@@ -45,7 +45,7 @@ const getOneItem = async (req, res) => {
             return res.status(404).json({ message: 'Item does not Exist !!!' })
         }
 
-        res.status(200).json({ user })
+        res.status(200).json( user )
     } catch (error) {
         res.status(500).json({ message: error })
     }
@@ -77,7 +77,7 @@ const deleteData = async (req, res) => {
             return res.status(404).json({ messgae: 'No Items with that ID' })
         }
 
-        res.status(200).json({ user })
+        res.status(200).json( user )
     } catch (error) {
         res.status(500).json({ message: error })
     }
