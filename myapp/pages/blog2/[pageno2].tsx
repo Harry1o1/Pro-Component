@@ -14,7 +14,7 @@ function PageNo2() {
     const router = useRouter();
     const pageNumber = router.query.pageno2;
     
-    const { data:any, error:any } = useSWR(`https://pro-component-django1o1.herokuapp.com/api/r/${pageNumber}`, fetcher)
+    const { data, error } = useSWR(`https://pro-component-django1o1.herokuapp.com/api/r/${pageNumber}`, fetcher)
     if (error) return <div>failed to load</div>
     if (!data) return <div>loading...</div>
     return <div>hello {data.name}!</div>
