@@ -30,13 +30,12 @@ export async function getStaticProps( params:any ) {
 
 
 // const PageNo: NextPage = ({post}: {post:any}) => {
- function PageNo({post} : {post : any},{error}:{error : any}) {
+ function PageNo({post} : {post : any}) {
 
-    const router = useRouter();
-    const pageNumber = router.query.pageNo;
+    // const router = useRouter();
+    // const pageNumber = router.query.pageNo;
     return (
         <>
-            <h1>Hello from { pageNumber } page</h1>
             {post.map( (curElem:any) => {
             return(
                 <div className ="alert alert-primary" key={curElem.id}>
@@ -70,6 +69,7 @@ export default PageNo;
 
 
 
+            // <h1>Hello from { pageNumber } page</h1>
 
 
 
