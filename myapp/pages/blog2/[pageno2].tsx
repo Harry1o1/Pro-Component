@@ -29,7 +29,7 @@ export const getStaticPaths = async () => {
         // console.log(data);
         return {
             params: {
-                pageno: curElem.id.toString(),
+                pageno: curElem.id,
             },
         };        
     })
