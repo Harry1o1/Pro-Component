@@ -7,7 +7,7 @@ function Express({data} : {data : any},{error}:{error : any}) {
         {data.map( (curElem:any) => {
             return(
                 <div className ="alert alert-primary" key={curElem.id}>
-                    <Link href={`/blog/${curElem._id}`}>
+                    <Link href={`/blog1/${curElem._id}`}>
                         <h3>{curElem.name}</h3>
                     </Link>
                     <h4>{curElem.email}</h4>
