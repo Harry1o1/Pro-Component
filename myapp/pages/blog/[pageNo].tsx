@@ -8,8 +8,9 @@ export async function getStaticPaths() {
           const res = await fetch('https://pro-component-express1o1.herokuapp.com/register')
           const posts = await res.json()
           // Get the paths we want to pre-render based on posts
+          console.log(posts);
           const paths = posts.map((post:any) => ({
-            params: { id: post._id.toString(), },
+            params: { id: posts._id.toString() },
           }))
           // We'll pre-render only these paths at build time.
           // { fallback: false } means other routes should 404.
