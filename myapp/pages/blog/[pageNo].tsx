@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import type { NextPage } from 'next'
+// import type { NextPage } from 'next'
 
 
 // This function gets called at build time
@@ -29,7 +29,9 @@ export async function getStaticProps( params:any ) {
 
 
 
-const PageNo: NextPage = ({post}: {post:any}) => {
+// const PageNo: NextPage = ({post}: {post:any}) => {
+ function PageNo({post} : {post : any},{error}:{error : any}) {
+
     const router = useRouter();
     const pageNumber = router.query.pageNo;
     return (
