@@ -9,7 +9,6 @@ export async function getStaticPaths() {
           const posts = await res.json()
           // Get the paths we want to pre-render based on posts
           console.log(posts);
-          let string:any = "" + string;
           const paths = posts.map((post:any) => ({
             params: { id: posts._id + string },
           }))
