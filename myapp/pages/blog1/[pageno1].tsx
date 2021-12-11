@@ -7,7 +7,7 @@ const fetcher = (url:any) => fetch(url).then((res) => res.json())
 function PageNo1() {
 
     const router = useRouter();
-    const pageNumber = router.query.pageno2;
+    const pageNumber = router.query.pageno1;
     
     const { data, error } = useSWR(`https://pro-component-express1o1.herokuapp.com/register/${pageNumber}`, fetcher)
     if (error) return <div>failed to load</div>
