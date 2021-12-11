@@ -14,7 +14,7 @@ import { useRouter } from 'next/router'
 };
 
 
-export default Pageno1;                                                                                                                                                                  
+export default PageNo1;                                                                                                                                                                  
 
 // Changed
 
