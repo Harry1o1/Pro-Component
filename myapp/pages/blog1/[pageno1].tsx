@@ -13,6 +13,7 @@ function PageNo1() {
     if (error) return <div>failed to load</div>
     if (!data) return <div>loading...</div>
     return <div>hello {data.name}!</div>
+    {console.log(data)}
 
 };
 
