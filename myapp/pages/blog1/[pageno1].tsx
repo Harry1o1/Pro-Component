@@ -1,22 +1,68 @@
 import { useRouter } from 'next/router'
+import useSWR from 'swr'
+const fetcher = (url:any) => fetch(url).then((res) => res.json())
 
 
 
- function PageNo1({data} : {data : any}) {
+function PageNo1() {
 
     const router = useRouter();
-    const pageNumber = router.query.pageno1;
-    return (
-        <>
-            <h1>Hello from { pageNumber } page</h1>
-        </>
-    )
+    const pageNumber = router.query.pageno2;
+    
+    const { data, error } = useSWR(`https://pro-component-express1o1.herokuapp.com/register/${pageNumber}`, fetcher)
+    if (error) return <div>failed to load</div>
+    if (!data) return <div>loading...</div>
+    return <div>hello {data.name}!</div>
+
 };
 
 
-export default PageNo1;                                                                                                                                                                  
+export default PageNo1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Changed
+// import { useRouter } from 'next/router'
+
+
+
+//  function PageNo1({data} : {data : any}) {
+
+//     const router = useRouter();
+//     const pageNumber = router.query.pageno1;
+//     return (
+//         <>
+//             <h1>Hello from { pageNumber } page</h1>
+//         </>
+//     )
+// };
+
+
+// export default PageNo1;                                                                                                                                                                  
 
 
 
