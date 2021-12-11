@@ -2,7 +2,7 @@ import { useRouter } from 'next/router'
 
 
 
- function PageNo({data} : {data : any}) {
+ function PageNo1({data} : {data : any}) {
 
     const router = useRouter();
     const pageNumber = router.query.pageNo;
@@ -14,7 +14,7 @@ import { useRouter } from 'next/router'
 };
 
 
-export default PageNo;                                                                                                                                                                  
+export default Pageno1;                                                                                                                                                                  
 
 // Changed
 
