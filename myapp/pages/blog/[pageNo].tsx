@@ -9,7 +9,7 @@ export async function getStaticPaths() {
           const posts = await res.json()
           // Get the paths we want to pre-render based on posts
           const paths = posts.map((post:any) => ({
-            params: { id: post._id },
+            params: { id: post._id.toString(), },
           }))
           // We'll pre-render only these paths at build time.
           // { fallback: false } means other routes should 404.
