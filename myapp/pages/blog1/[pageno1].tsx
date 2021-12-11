@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
  function PageNo1({data} : {data : any}) {
 
     const router = useRouter();
-    const pageNumber = router.query.pageNo;
+    const pageNumber = router.query.pageno1;
     return (
         <>
             <h1>Hello from { pageNumber } page</h1>
