@@ -9,4 +9,4 @@ class Students(models.Model):
     Comment = models.CharField(max_length=100)
     bff = models.CharField(max_length=100)
     # time = models.DateTimeField(auto_now_add=True)
-    # video=models.FileField(upload_to="api/%y")
+    video=models.FileField(upload_to="video/%y")
