@@ -47,12 +47,6 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
     const handleInputs = (e: any) => {
         name = e.target.name;
         value = e.target.value;
-        // if ([e.target.name] == 'video') {
-        //     setDjgpa({...djgpa, 
-        //         video: e.target.files[0],
-                
-        //     })
-        // }
         
         
         // Setuser
