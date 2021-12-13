@@ -42,7 +42,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
         console.log('Input changed!');
     };
     // Hi    
-    const handleFilesChosen = (e) => {
+    const handleFilesChosen = (e:any) => {
             this.setState({
                 files: e.target.files
             });
