@@ -43,7 +43,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
     };
     // Hi    
     const handleFilesChosen = (e:any) => {
-            this.setState({
+            setState({
                 files: e.target.files
             });
     }
@@ -52,9 +52,8 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
         
         let data = [];
         let error = "";
-        let this:any;
         let formData = new FormData();
-        for (let file of this.state.files) {
+        for (let file of files) {
             formData.append('files', file);
         }    
         try {
@@ -117,7 +116,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             <input type="text" name="bff" id="bff"  placeholder="Bff" className="form-control3" autoComplete="off"  value={user.bff} onChange={handleInputs}/>
             <input type="number" name="stars" id="stars"  placeholder="Stars" className="form-control4" autoComplete="off"  value={user.stars} onChange={handleInputs}/>
             <input type="number" name="age" id="age"  placeholder="Age" className="form-control4" autoComplete="off"  value={user.age} onChange={handleInputs}/>
-            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={user.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { this.handleFilesChosen }/>
+            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={user.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleFilesChosen }/>
             
             <div className="btn" onClick={handlePost}>
                 Confrom
