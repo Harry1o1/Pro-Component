@@ -37,7 +37,6 @@ Promise.all([getUserAccount(), getUserPermissions()])
 
 
 
-export default UpLoad;
 
 function Upload() {
   const { data, error } = useSWR('https://pro-component-django1o1.herokuapp.com/video/', fetcher)
