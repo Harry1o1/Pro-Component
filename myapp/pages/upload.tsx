@@ -65,7 +65,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
     // Postdata
     const handlePost = async (e:any) => {
         e.preventDefault();
-        let data = [];
+        // let data = [];
         let error = "";
         let formData = new FormData();
         try {
@@ -84,7 +84,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
                 .then((res) => {
                     console.log(res.data);
                     console.log(res);
-                    data = await res.json();
+                    const data:any = await res.json();
                     if (res.status === 404) {
                         console.log('noooooo');
                     }
