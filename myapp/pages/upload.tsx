@@ -29,9 +29,12 @@ Promise.all([getUserAccount(), getUserPermissions()])
 
 export default function Upload({data} : {data : any},{error}:{error : any}) {
     const [user,setUser] = useState({
-        name:'',email:'', Comment:'',bff:'',stars:'',age:'',video:''
+        name:'',email:'', Comment:'',bff:'',stars:'',age:''
     });
-    
+    const [djgpa,setDjgpa] = useState({
+        video:''
+    });
+
     // handleInputs
     let name, value;
     const handleInputs = (e: any) => {
@@ -42,20 +45,49 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
         console.log('Input changed!');
     };
     // Hi    
-    const handleFilesChosen = (e:any) => {
-            setState({
-                files: e.target.files
-            });
-    }
+    let filename,filevalue;
+    const handleFile = (e: any) => {
+        filename = e.target.name;
+        filevalue = e.target.files;
+        // SetDjgpa
+        setDjgpa({...djgpa, [filename]:filevalue});
+        console.log('File Choosen!');
+        console.log(djgpa.video);
+    };
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     // Postdata
     const handlePost = async () => {
         
         let data = [];
         let error = "";
+        
         let formData = new FormData();
-        for (let file of files) {
+        for (let file of djgpa.video) {
             formData.append('files', file);
-        }    
+        }
         try {
             const res = await fetch(
                     "https://pro-component-django1o1.herokuapp.com/video/c", {
@@ -116,7 +148,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             <input type="text" name="bff" id="bff"  placeholder="Bff" className="form-control3" autoComplete="off"  value={user.bff} onChange={handleInputs}/>
             <input type="number" name="stars" id="stars"  placeholder="Stars" className="form-control4" autoComplete="off"  value={user.stars} onChange={handleInputs}/>
             <input type="number" name="age" id="age"  placeholder="Age" className="form-control4" autoComplete="off"  value={user.age} onChange={handleInputs}/>
-            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={user.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleFilesChosen }/>
+            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={djgpa.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleFile }/>
             
             <div className="btn" onClick={handlePost}>
                 Confrom
