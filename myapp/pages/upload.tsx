@@ -83,48 +83,25 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
                 .post(url,formData,config)
                 .then((res) => {
                     console.log(res.data);
+                    console.log(res);
+                    data = await res.json();
+                    if (res.status === 404) {
+                        console.log('noooooo');
+                    }
+                    if (res.status === 500 || !data || res.status === 400) {
+                        console.log('noooooo');
+                    }
+                    else {
+                        console.log('oppp');
+                    }
+                    if (typeof window !== "undefined") {
+                        window.alert('Registration successful');
+                    }            
                 })
                 .catch((err:any) => {
                     console.log(err);
                 })
-            // const res = await fetch(
-                //     "https://pro-component-django1o1.herokuapp.com/video/c", {
-                //     method: "POST",
-                //     headers: {
-                //         // update with your user-agent
-                //         // "Access-Control-Allow-Headers",
-                //         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-                //         Accept: "application/json; charset=UTF-8",
-                //         'Content-Type': 'multipart/form-data'
-                //     },
-                //     body: JSON.stringify({
-                //         "name": `${user.name}`,
-                //         "email": `${user.email}`,
-                //         "Comment": `${user.Comment}`,
-                //         "bff": `${user.bff}`,
-                //         "stars": `${user.stars}`,
-                //         "age": `${user.age}`,
-                //         "video":formData
-                //     })
-                // }
-            // );
             
-            
-            
-            console.log(res);
-            data = await res.json();
-            if (res.status === 404) {
-                console.log('noooooo');
-            }            
-            if (res.status === 500 || !data || res.status === 400) {
-                console.log('noooooo');
-            }
-            else {
-                console.log('oppp');
-            }
-            if (typeof window !== "undefined") {
-                window.alert('Registration successful');
-            }
         } catch (error: any) {
             error = error.toString();
         }
