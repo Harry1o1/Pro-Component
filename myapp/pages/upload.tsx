@@ -47,12 +47,12 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
     // Hi    
     let filename,filevalue;
     const handleFile = (e: any) => {
-        filename = e.target.name;
+        // filename = e.target.name;
         filevalue = e.target.files;
+        // [filename]:
         // SetDjgpa
-        setDjgpa({...djgpa, [filename]:filevalue});
+        setDjgpa({...djgpa, filevalue});
         console.log('File Choosen!');
-        console.log(djgpa.video);
     };
     
     // Postdata
@@ -62,9 +62,8 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
         let error = "";
         
         let formData = new FormData();
-        for (let file of djgpa.video) {
-            formData.append('files', file);
-        }
+        let fileop=djgpa.video;
+        formData.append('files', fileop);
         try {
             const res = await fetch(
                     "https://pro-component-django1o1.herokuapp.com/video/c", {
