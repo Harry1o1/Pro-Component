@@ -84,7 +84,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
                 .then((res) => {
                     console.log(res.data);
                     console.log(res);
-                    const data:any = await res.json();
+                    const data:any = res.json();
                     if (res.status === 404) {
                         console.log('noooooo');
                     }
