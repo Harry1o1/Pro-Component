@@ -55,29 +55,6 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
         console.log(djgpa.video);
     };
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     // Postdata
     const handlePost = async () => {
         
@@ -110,7 +87,6 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
                     })
                 }
             );
-            console.log(user.video);
             data = await res.json();
             if (res.status === 404) {
                 console.log('noooooo');
