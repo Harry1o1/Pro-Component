@@ -1,6 +1,8 @@
 import axios from 'axios'
 import useSWR from 'swr'
 import React, {useState} from 'react'; 
+import Head from 'next/head'
+
 
 
     
