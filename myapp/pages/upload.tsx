@@ -39,7 +39,7 @@ Promise.all([getUserAccount(), getUserPermissions()])
 
 
 function Upload() {
-  const { data, error } = useSWR('https://pro-component-django1o1.herokuapp.com/video/', fetcher)
+  const { data, error } = useSWR('https://pro-component-django1o1.herokuapp.com/video/c', fetcher)
   return (
     <>
         {console.log(data)}
