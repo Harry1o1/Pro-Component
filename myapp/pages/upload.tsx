@@ -52,6 +52,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
         
         let data = [];
         let error = "";
+        let this:any;
         let formData = new FormData();
         for (let file of this.state.files) {
             formData.append('files', file);
