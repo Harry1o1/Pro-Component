@@ -79,7 +79,6 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             if (typeof window !== "undefined") {
                 window.alert('Registration successful');
             }
-            router.push('/login');
         } catch (error: any) {
             error = error.toString();
         }
