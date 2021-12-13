@@ -68,11 +68,12 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
                     })
                 }
             );
+            console.log(user.video);
             data = await res.json();
             if (res.status === 404) {
                 console.log('noooooo');
             }            
-            if (res.status === 500 || !data) {
+            if (res.status === 500 || !data || res.status === 400) {
                 console.log('noooooo');
             }
             else {
