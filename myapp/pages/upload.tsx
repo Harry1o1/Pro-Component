@@ -34,18 +34,27 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
     const [djgpa,setDjgpa] = useState({
         video:''
     });
-
+    
+    
+    // handleVideo
+    const handleVideo = (e:any) => {
+        setDjgpa({...djgpa, 
+            video: e.target.files[0],
+        })        
+    }
     // handleInputs
     let name, value;
     const handleInputs = (e: any) => {
         name = e.target.name;
         value = e.target.value;
-        if ([e.target.name] == 'video') {
-            setDjgpa({...djgpa, 
-                video: e.target.files[0],
+        // if ([e.target.name] == 'video') {
+        //     setDjgpa({...djgpa, 
+        //         video: e.target.files[0],
                 
-            })
-        }
+        //     })
+        // }
+        
+        
         // Setuser
         setUser({...user, [name]:value});
         
@@ -140,7 +149,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             <input type="text" name="bff" id="bff"  placeholder="Bff" className="form-control3" autoComplete="off"  value={user.bff} onChange={handleInputs}/>
             <input type="number" name="stars" id="stars"  placeholder="Stars" className="form-control4" autoComplete="off"  value={user.stars} onChange={handleInputs}/>
             <input type="number" name="age" id="age"  placeholder="Age" className="form-control4" autoComplete="off"  value={user.age} onChange={handleInputs}/>
-            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={djgpa.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleInputs }/>
+            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={djgpa.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleVideo }/>
             
             <div className="btn" onClick={handlePost}>
                 Confrom
