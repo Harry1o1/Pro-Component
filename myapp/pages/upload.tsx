@@ -19,7 +19,7 @@ const fetcher = (url:any) => axios.post(url, {
     });
     
     
-const djgpa = function getUserAccount() {
+function getUserAccount() {
   return axios.get('https://pro-component-django1o1.herokuapp.com/api');
 }
 
