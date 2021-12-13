@@ -41,11 +41,21 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
         setUser({...user, [name]:value});
         console.log('Input changed!');
     };
+    // Hi    
+    handleFilesChosen = event => {
+            this.setState({
+                files: event.target.files
+            });
+        }
     // Postdata
     const handlePost = async () => {
         
         let data = [];
         let error = "";
+        let formData = new FormData();
+        for (let file of this.state.files) {
+            formData.append('files', file);
+        }    
         try {
             const res = await fetch(
                     "https://pro-component-django1o1.herokuapp.com/video/c", {
@@ -55,7 +65,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
                         // "Access-Control-Allow-Headers",
                         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
                         Accept: "application/json; charset=UTF-8",
-                        'Content-Type': 'application/json'
+                        'Content-Type': 'multipart/form-data'
                     },
                     body: JSON.stringify({
                         "name": `${user.name}`,
@@ -64,7 +74,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
                         "bff": `${user.bff}`,
                         "stars": `${user.stars}`,
                         "age": `${user.age}`,
-                        "video":`${user.video}`
+                        "video":formData
                     })
                 }
             );
@@ -92,7 +102,8 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             },
         }
     }
-                                                                                                                                                                                                                                        
+        
+                                                                                                                                                                                                                                                                   
     return (
         <>
             <Head>
@@ -105,7 +116,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             <input type="text" name="bff" id="bff"  placeholder="Bff" className="form-control3" autoComplete="off"  value={user.bff} onChange={handleInputs}/>
             <input type="number" name="stars" id="stars"  placeholder="Stars" className="form-control4" autoComplete="off"  value={user.stars} onChange={handleInputs}/>
             <input type="number" name="age" id="age"  placeholder="Age" className="form-control4" autoComplete="off"  value={user.age} onChange={handleInputs}/>
-            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={user.video} onChange={handleInputs}/>
+            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={user.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { this.handleFilesChosen }/>
             
             <div className="btn" onClick={handlePost}>
                 Confrom
