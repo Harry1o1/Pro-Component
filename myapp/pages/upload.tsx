@@ -40,52 +40,69 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
     const handleInputs = (e: any) => {
         name = e.target.name;
         value = e.target.value;
+        if ([e.target.name] == 'video') {
+            setDjgpa({...djgpa, 
+                video: e.target.files[0],
+                
+            })
+        }
         // Setuser
         setUser({...user, [name]:value});
+        
+        
         console.log('Input changed!');
-    };
-    // Hi    
-    let filename,filevalue;
-    const handleFile = (e: any) => {
-        // filename = e.target.name;
-        filevalue = e.target.files;
-        // [filename]:
-        // SetDjgpa
-        setDjgpa({...djgpa, filevalue});
-        console.log('File Choosen!');
     };
     
     // Postdata
-    const handlePost = async () => {
-        
+    const handlePost = async (e:any) => {
+        e.preventDefault();
         let data = [];
         let error = "";
-        
         let formData = new FormData();
-        let fileop=djgpa.video;
-        formData.append('files', fileop);
         try {
-            const res = await fetch(
-                    "https://pro-component-django1o1.herokuapp.com/video/c", {
-                    method: "POST",
-                    headers: {
-                        // update with your user-agent
-                        // "Access-Control-Allow-Headers",
-                        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
-                        Accept: "application/json; charset=UTF-8",
-                        'Content-Type': 'multipart/form-data'
-                    },
-                    body: JSON.stringify({
-                        "name": `${user.name}`,
-                        "email": `${user.email}`,
-                        "Comment": `${user.Comment}`,
-                        "bff": `${user.bff}`,
-                        "stars": `${user.stars}`,
-                        "age": `${user.age}`,
-                        "video":formData
-                    })
-                }
-            );
+            const url = 'https://pro-component-django1o1.herokuapp.com/video/c';
+            const config = { headers: {'Content-Type': 'multipart/form-data'}};
+            formData.append('name', user.name)
+            formData.append('email', user.email)
+            formData.append('Comment', user.Comment)
+            formData.append('bff', user.bff)
+            formData.append('age', user.age)
+            formData.append('stars', user.stars)
+            formData.append('video', djgpa.video[0])
+            
+            axios
+                .post(url,formData,config)
+                .then((res) => {
+                    console.log(res.data);
+                })
+                .catch((err:any) => {
+                    console.log(err);
+                })
+            // const res = await fetch(
+                //     "https://pro-component-django1o1.herokuapp.com/video/c", {
+                //     method: "POST",
+                //     headers: {
+                //         // update with your user-agent
+                //         // "Access-Control-Allow-Headers",
+                //         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+                //         Accept: "application/json; charset=UTF-8",
+                //         'Content-Type': 'multipart/form-data'
+                //     },
+                //     body: JSON.stringify({
+                //         "name": `${user.name}`,
+                //         "email": `${user.email}`,
+                //         "Comment": `${user.Comment}`,
+                //         "bff": `${user.bff}`,
+                //         "stars": `${user.stars}`,
+                //         "age": `${user.age}`,
+                //         "video":formData
+                //     })
+                // }
+            // );
+            
+            
+            
+            console.log(res);
             data = await res.json();
             if (res.status === 404) {
                 console.log('noooooo');
@@ -123,7 +140,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             <input type="text" name="bff" id="bff"  placeholder="Bff" className="form-control3" autoComplete="off"  value={user.bff} onChange={handleInputs}/>
             <input type="number" name="stars" id="stars"  placeholder="Stars" className="form-control4" autoComplete="off"  value={user.stars} onChange={handleInputs}/>
             <input type="number" name="age" id="age"  placeholder="Age" className="form-control4" autoComplete="off"  value={user.age} onChange={handleInputs}/>
-            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={djgpa.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleFile }/>
+            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={djgpa.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleInputs }/>
             
             <div className="btn" onClick={handlePost}>
                 Confrom
