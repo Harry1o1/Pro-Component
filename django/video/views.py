@@ -11,3 +11,6 @@ class StudentList(ListAPIView):
     serializer_class = StudentSerializer
     # filterset_fields = ['name','id']
 
+class StudentCreate(CreateAPIView):
+    queryset = Students.objects.all()
+    serializer_class = StudentSerializer
