@@ -35,14 +35,25 @@ Promise.all([getUserAccount(), getUserPermissions()])
     console.log(perm);
   });    
 
-function UpLoad() {
-  const { data, error } = useSWR('https://pro-component-django1o1.herokuapp.com/video/', fetcher)
-  
-  // ...
-}
 
 
 export default UpLoad;
+
+function Upload() {
+  const { data, error } = useSWR('https://pro-component-django1o1.herokuapp.com/video/', fetcher)
+  return (
+    <>
+        {console.log(data)}
+        <h1 className="">Hello from Login</h1>
+    </>
+  );
+}
+
+
+
+
+export default Upload;
+
 
 
 
