@@ -42,11 +42,11 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
         console.log('Input changed!');
     };
     // Hi    
-    handleFilesChosen = event => {
+    const handleFilesChosen = (e) => {
             this.setState({
-                files: event.target.files
+                files: e.target.files
             });
-        }
+    }
     // Postdata
     const handlePost = async () => {
         
