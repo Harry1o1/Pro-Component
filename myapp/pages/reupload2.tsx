@@ -48,11 +48,10 @@ export default function Create() {
         updateFormData({
 				...postData,
 				[e.target.name]: e.target.value.trim(),
-			});
-	};
+		});
 	const handleChange2 = (e:any) => {
         setPostImage({
-				image: e.target.files,
+				[e.target.name]: e.target.files,
 			});
 			console.log(e.target.files);
 		}
@@ -173,7 +172,7 @@ export default function Create() {
 							accept="image/*"
 							className={classes.input}
 							id="post-image"
-							onChange={handleChange1}
+							onChange={handleChange2}
 							name="image"
 							type="file"
 						/>
