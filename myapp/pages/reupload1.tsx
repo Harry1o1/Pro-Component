@@ -23,12 +23,10 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
     const handleVideo = (e:any) => {
         name1 = e.target.name;
         value2 = e.target.value;
-        if ([e.target.name] == 'video') {
-            setDjgpa({...djgpa, 
-                [name1]: value2,
-            })                
-        }
-
+        setDjgpa({...djgpa, 
+            [name1]: value2,
+         
+        })                
     }
     // handleInputs
     let name, value;
