@@ -60,7 +60,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             formData.append('video', djgpa.video[0])
             
             const res = await fetch(
-                    "https://pro-component-django1o1.herokuapp.com/api/c", {
+                    "https://pro-component-django1o1.herokuapp.com/video/c", {
                     method: "POST",
                     headers: {
                         // update with your user-agent
