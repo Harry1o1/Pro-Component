@@ -6,25 +6,6 @@ import Head from 'next/head'
 
 
     
-    
-function getUserAccount() {
-  return axios.get('https://pro-component-django1o1.herokuapp.com/api');
-}
-
-function getUserPermissions() {
-  return axios.get('https://pro-component-express1o1.herokuapp.com/register');
-}
-
-Promise.all([getUserAccount(), getUserPermissions()])
-  .then(function (results) {
-    const acct = results[0];
-    const perm = results[1];
-    console.log(acct);
-    console.log(perm);
-  });    
-
-
-
 
 
 export default function Upload({data} : {data : any},{error}:{error : any}) {
@@ -39,7 +20,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
     // handleVideo
     const handleVideo = (e:any) => {
         setDjgpa({...djgpa, 
-            video: e.target.files[0],
+            [video]: e.target.files[0],
         })        
     }
     // handleInputs
@@ -73,40 +54,45 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             formData.append('stars', user.stars)
             formData.append('video', djgpa.video[0])
             
-            axios
-                .post(url,formData,config)
-                .then((res) => {
-                    console.log(res.data);
-                    console.log(res);
-                    const data:any = res.data;
-                    if (res.status === 404) {
-                        console.log('noooooo');
-                    }
-                    if (res.status === 500 || !data || res.status === 400) {
-                        console.log('noooooo');
-                    }
-                    else {
-                        console.log('oppp');
-                    }
-                    if (typeof window !== "undefined") {
-                        window.alert('Registration successful');
-                    }            
-                })
-                .catch((err:any) => {
-                    console.log(err);
-                })
-            
+            const res = await fetch(
+                    "https://pro-component-django1o1.herokuapp.com/api/c", {
+                    method: "POST",
+                    headers: {
+                        // update with your user-agent
+                        // "Access-Control-Allow-Headers",
+                        "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+                        Accept: "application/json; charset=UTF-8",
+                        'Content-Type': 'multipart/form-data'
+                    },
+                    body: formData
+                }
+            );
+            data = await res.json();
+            if (res.status === 404) {
+                console.log('noooooo');
+            }            
+            if (res.status === 500 || !data) {
+                console.log('noooooo');
+            }
+            else {
+                console.log('oppp');
+            }
+            if (typeof window !== "undefined") {
+                window.alert('Registration successful');
+                window.location.reload();
+            }
         } catch (error: any) {
-            error = error.toString();
-        }
-        return {
-            props: {
-                data,
-                error,
-            },
-        }
-    }
-        
+                error = error.toString();
+            }
+            return {
+                props: {
+                    data,
+                    error,
+                },
+            }
+        }            
+            
+            
                                                                                                                                                                                                                                                                    
     return (
         <>
@@ -134,30 +120,41 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
 
 
 
-// export default Upload;
-// Are you commiding me
-// function Upload() {
-//     const fetcher = (url:any) => axios.post(url, {
-//             "name": "Soap",
-//             "email": "robinjusticeleague19@gmail.com",
-//             "Comment": "Ye6oe5ie86ei",
-//             "bff": "70dyoryoeo6",
-//             "stars": -5555,
-//             "age": 5765465465,
-//             "video": "https://pro-component-django1o1.herokuapp.com/media/video/21/16393541636966445341992126787194.jpg"
-//         })
-//         .then(function(response) {
-//             console.log(response);
-//         })
-//         .catch(function(error) {
-//             console.log(error);
-//     });
+
+
+
+
     
-//   const { data, error } = useSWR('https://pro-component-django1o1.herokuapp.com/video/c', fetcher)
-//   return (
-//     <>
-//         {console.log(data)}
-//         <h1 className="">Hello from Login</h1>
-//     </>
-//   );
-// }
+    //         axios
+    //             .post(url,formData,config)
+    //             .then((res) => {
+    //                 console.log(res.data);
+    //                 console.log(res);
+    //                 const data:any = res.data;
+    //                 if (res.status === 404) {
+    //                     console.log('noooooo');
+    //                 }
+    //                 if (res.status === 500 || !data || res.status === 400) {
+    //                     console.log('noooooo');
+    //                 }
+    //                 else {
+    //                     console.log('oppp');
+    //                 }
+    //                 if (typeof window !== "undefined") {
+    //                     window.alert('Registration successful');
+    //                 }            
+    //             })
+    //             .catch((err:any) => {
+    //                 console.log(err);
+    //             })
+            
+    //     } catch (error: any) {
+    //         error = error.toString();
+    //     }
+    //     return {
+    //         props: {
+    //             data,
+    //             error,
+    //         },
+    //     }
+    // }
