@@ -44,24 +44,18 @@ export default function Create() {
 	const [postData, updateFormData] = useState(initialFormData);
 	const [postimage, setPostImage] = useState(null);
 
-	const handleChange = (e:any) => {
-		if ([e.target.name] == 'image') {
-			setPostImage({
-				image: e.target.files,
-			});
-			console.log(e.target.files);
-		}
-		if ([e.target.name] == 'title') {
-			updateFormData({
+	const handleChange1 = (e:any) => {
+        updateFormData({
 				...postData,
 				[e.target.name]: e.target.value.trim(),
 				['slug']: slugify(e.target.value.trim()),
 			});
-		} else {
-			updateFormData({
-				...postData,
-				[e.target.name]: e.target.value.trim(),
+	};
+	const handleChange2 = (e:any) => {
+        setPostImage({
+				image: e.target.files,
 			});
+			console.log(e.target.files);
 		}
 	};
 
@@ -132,7 +126,7 @@ export default function Create() {
 								label="Post Title"
 								name="title"
 								autoComplete="title"
-								onChange={handleChange}
+								onChange={handleChange1}
 							/>
 						</Grid>
 						<Grid item xs={12}>
@@ -144,7 +138,7 @@ export default function Create() {
 								label="Post Excerpt"
 								name="excerpt"
 								autoComplete="excerpt"
-								onChange={handleChange}
+								onChange={handleChange1}
 								multiline
 								rows={4}
 							/>
@@ -159,7 +153,7 @@ export default function Create() {
 								name="slug"
 								autoComplete="slug"
 								value={postData.slug}
-								onChange={handleChange}
+								onChange={handleChange1}
 							/>
 						</Grid>
 						<Grid item xs={12}>
@@ -171,7 +165,7 @@ export default function Create() {
 								label="content"
 								name="content"
 								autoComplete="content"
-								onChange={handleChange}
+								onChange={handleChange1}
 								multiline
 								rows={4}
 							/>
@@ -180,7 +174,7 @@ export default function Create() {
 							accept="image/*"
 							className={classes.input}
 							id="post-image"
-							onChange={handleChange}
+							onChange={handleChange1}
 							name="image"
 							type="file"
 						/>
