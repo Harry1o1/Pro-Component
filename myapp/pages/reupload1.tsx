@@ -76,15 +76,15 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             if (res.status === 404) {
                 console.log('noooooo');
             }            
-            if (res.status === 500 || !data) {
+            if (res.status === 500 || !data || 400) {
                 console.log('noooooo');
             }
             else {
                 console.log('oppp');
-            }
-            if (typeof window !== "undefined") {
+                if (typeof window !== "undefined") {
                 window.alert('Registration successful');
-                window.location.reload();
+                // window.location.reload();
+                }            
             }
         } catch (error: any) {
                 error = error.toString();
