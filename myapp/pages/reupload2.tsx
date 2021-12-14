@@ -9,7 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import IconButton from '@material-ui/core/IconButton';
-import PhotoCamera from '@material-ui/icons/PhotoCamera';
+// import PhotoCamera from '@material-ui/icons/PhotoCamera';
 
 const useStyles = makeStyles((theme) => ({
 	paper: {
@@ -76,7 +76,7 @@ export default function Create() {
 		formData.append('image', postimage.image[0]);
 // 		axiosInstance.post(`admin/create/`, formData);
         const res = await fetch(
-                    "https://pro-component-django1o1.herokuapp.com/api/c", {
+                    "https://pro-component-django1o1.herokuapp.com/video/c", {
                     method: "POST",
                     headers: {
                         // update with your user-agent
