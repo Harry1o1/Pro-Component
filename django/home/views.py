@@ -5,4 +5,4 @@ from django.shortcuts import render
 def index(request):
     """docstring for fname"""
     # TODO: write code...
-    return render(request,"update.html")     
+    return render(request,"demo1.html")     
