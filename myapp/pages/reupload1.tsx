@@ -27,6 +27,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             [name1]: value2,
          
         })                
+        console.log('uploaded');
     }
     // handleInputs
     let name, value;
@@ -58,6 +59,9 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             formData.append('age', user.age)
             formData.append('stars', user.stars)
             formData.append('video', djgpa.video[0])
+            
+            console.log(djgpa.video);
+            
             
             const res = await fetch(
                     "https://pro-component-django1o1.herokuapp.com/video/c", {
