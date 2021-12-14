@@ -48,7 +48,6 @@ export default function Create() {
         updateFormData({
 				...postData,
 				[e.target.name]: e.target.value.trim(),
-				['slug']: slugify(e.target.value.trim()),
 			});
 	};
 	const handleChange2 = (e:any) => {
