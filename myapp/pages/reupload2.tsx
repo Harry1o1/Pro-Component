@@ -44,7 +44,7 @@ export default function Create() {
 	const [postData, updateFormData] = useState(initialFormData);
 	const [postimage, setPostImage] = useState(null);
 
-	const handleChange = (e) => {
+	const handleChange = (e:any) => {
 		if ([e.target.name] == 'image') {
 			setPostImage({
 				image: e.target.files,
@@ -65,7 +65,7 @@ export default function Create() {
 		}
 	};
 
-	const handleSubmit = (e) => {
+	const handleSubmit = (e:any) => {
 		e.preventDefault();
 		let formData = new FormData();
 		formData.append('title', postData.title);
