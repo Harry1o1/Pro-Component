@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     'rest_framework_simplejwt.token_blacklist',    
     'video',
     'home',
-    # 'django_static_ionicons',
 
 ]
 
@@ -195,6 +194,8 @@ SIMPLE_JWT = {
 
 
 
+
+X_FRAME_OPTIONS = 'ALLOW-FROM http://localhost:5000 || https://pro-component-express1o1.herokuapp.com'
 
 
 GRAPHENE = {
