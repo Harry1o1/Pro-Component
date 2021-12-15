@@ -9,10 +9,10 @@ function Fileupload1({vufool} : {vufool : any}) {
     
     const handleVideo = (e:any) => {
         console.log(e.target.files[0]);
-        if (e.target && e.target.files[0]) {
-            video.append('file', e.target.files[0])
+        // if (e.target && e.target.files[0]) {
+        //     video.append('file', e.target.files[0])
             
-        }
+        // }
         // const vufool = e.target.files[0];
         // return {
         //     props: {
