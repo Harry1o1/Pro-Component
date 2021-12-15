@@ -10,7 +10,7 @@ import Head from 'next/head'
 
 export default function Upload() {
     
-    let formData = new FormData();
+    // let formData = new FormData();
     
     const handleVideo = (e:any) => {
         
@@ -19,27 +19,27 @@ export default function Upload() {
     }
     
     // Postdata
-    const handlePost = async (e:any) => {
-        e.preventDefault();
-        try {
+    // const handlePost = async (e:any) => {
+    //     e.preventDefault();
+    //     try {
             
-            // const url = 'https://pro-component-django1o1.herokuapp.com/video/c';
-            // const config = { headers: {'Content-Type': 'multipart/form-data'}};
-            axios.post(
-                'https://v2.cenvertapi.com/upload',
-                { formData }
-            )
-            .then( (res) => {
-                console.log(res);
-            })
-            .catch( (err) => {
-                console.log(err);
-            })    
+    //         // const url = 'https://pro-component-django1o1.herokuapp.com/video/c';
+    //         // const config = { headers: {'Content-Type': 'multipart/form-data'}};
+    //         axios.post(
+    //             'https://v2.cenvertapi.com/upload',
+    //             { formData }
+    //         )
+    //         .then( (res) => {
+    //             console.log(res);
+    //         })
+    //         .catch( (err) => {
+    //             console.log(err);
+    //         })    
             
-        }  catch (error: any) {
-                error = error.toString();
-            }
-    }            
+    //     }  catch (error: any) {
+    //             error = error.toString();
+    //         }
+    // }            
                                                                                                                                                                                                                                                                    
     return (
         <>
@@ -49,7 +49,9 @@ export default function Upload() {
             <h1>Signup</h1>
             <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off" multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleVideo }/>
             
-            <div className="btn" onClick={handlePost}>
+            <div className="btn" 
+            // onClick={handlePost}
+            >
                 Confrom
             </div>
         </>
