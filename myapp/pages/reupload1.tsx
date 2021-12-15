@@ -115,7 +115,7 @@ export default function Upload({data} : {data : any},{error}:{error : any}) {
             <input type="text" name="bff" id="bff"  placeholder="Bff" className="form-control3" autoComplete="off"  value={user.bff} onChange={handleInputs}/>
             <input type="number" name="stars" id="stars"  placeholder="Stars" className="form-control4" autoComplete="off"  value={user.stars} onChange={handleInputs}/>
             <input type="number" name="age" id="age"  placeholder="Age" className="form-control4" autoComplete="off"  value={user.age} onChange={handleInputs}/>
-            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off"  value={djgpa.video} multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleVideo }/>
+            <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off" multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleVideo }/>
             
             <div className="btn" onClick={handlePost}>
                 Confrom

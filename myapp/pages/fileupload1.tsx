@@ -3,18 +3,8 @@ import axios from 'axios'
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 function Fileupload1() {
+    
     let formData = new FormData();
     
     const handleVideo = (e:any) => {
