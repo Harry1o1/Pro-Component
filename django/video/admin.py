@@ -1,7 +1,10 @@
 from django.contrib import admin
-from .models import Students
+from .models import Students, Video
 
 # Register your models here.
 @admin.register(Students)
-class StudentsAdmin(admin.ModelAdmin): 
-    list_display = ['id', 'name', 'email', 'Comment', 'bff', 'stars', 'age', 'video']
+@admin.register(Video)
+    
+    
+class VideoAdmin(admin.ModelAdmin): 
+    list_display = ['id', 'name','video']

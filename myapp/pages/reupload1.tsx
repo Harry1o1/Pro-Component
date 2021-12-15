@@ -19,11 +19,27 @@ export default function Upload() {
     }
     
     // Postdata
-    // const handlePost = async (e:any) => {
-    //     e.preventDefault();
-    //     try {
+    const handlePost = async (e:any) => {
+        e.preventDefault();
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
             
-    //         // const url = 'https://pro-component-django1o1.herokuapp.com/video/c';
     //         // const config = { headers: {'Content-Type': 'multipart/form-data'}};
     //         axios.post(
     //             'https://v2.cenvertapi.com/upload',
@@ -36,10 +52,7 @@ export default function Upload() {
     //             console.log(err);
     //         })    
             
-    //     }  catch (error: any) {
-    //             error = error.toString();
-    //         }
-    // }            
+    }            
                                                                                                                                                                                                                                                                    
     return (
         <>
@@ -50,7 +63,7 @@ export default function Upload() {
             <input type="file" name="video" id="video"  placeholder="Video" className="form-control4" autoComplete="off" multiple = { true } accept = ".xls,.xlsx,.csv,.txt" onChange = { handleVideo }/>
             
             <div className="btn" 
-            // onClick={handlePost}
+            onClick={ handlePost }
             >
                 Confrom
             </div>

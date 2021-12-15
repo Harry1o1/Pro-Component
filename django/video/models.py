@@ -10,3 +10,14 @@ class Students(models.Model):
     bff = models.CharField(max_length=100)
     # time = models.DateTimeField(auto_now_add=True)
     video=models.FileField(upload_to="video/%y")
+    
+    
+    
+    
+class Video(models.Model): 
+    name = models.CharField(max_length=100,blank=True,null=True)
+    video=models.FileField(upload_to="video/%y", blank=True,null=True)
+    
+    
+    
+# We will make a demo model    
