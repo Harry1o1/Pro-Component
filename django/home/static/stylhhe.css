@@ -19,8 +19,8 @@ body {
     -webkit-border-radius: 25;
     -moz-border-radius: 25;
     border-radius: 25px;
-    height: 30vh;
-    width: 80%;
+    height: 35vh;
+    width: 85%;
     position: relative;
     left: 10%;
 }
@@ -29,8 +29,8 @@ body {
     -webkit-border-radius: 25;
     -moz-border-radius: 25;
     border-radius: 25px;
-    height: 30vh;
-    width: 80%;
+    height: 35vh;
+    width: 85%;
     position: relative;
     left: 10%;
 }
@@ -40,8 +40,8 @@ body {
     -webkit-border-radius: 25;
     -moz-border-radius: 25;
     border-radius: 25px;
-    height: 30vh;
-    width: 80%;
+    height: 35vh;
+    width: 85%;
     position: relative;
     left: 10%;
 }
@@ -49,4 +49,9 @@ body {
 
 .boxes {
     margin-bottom: 2rem;
+}
+
+iframe {
+    height: 35vh;
+    width: 100%;
 }
