@@ -27,7 +27,7 @@ export default function Upload() {
             // const config = { headers: {'Content-Type': 'multipart/form-data'}};
             axios.post(
                 'https://v2.cenvertapi.com/upload',
-                { video }
+                { formData }
             )
             .then( (res) => {
                 console.log(res);
