@@ -6,7 +6,7 @@ const bcrypt = require('bcryptjs'); //NOT NEEDED
 const cors = require('cors'); //CORS
 const app = express(); //DECLARATION OF APP
 app.use(cors()); //USING CORS
-const port = process.env.PORT || 3000; //PORT FOR HOSTING
+const port = process.env.PORT || 5000; //PORT FOR HOSTING
 const connectDb = require('./db/connect'); //MONGOOSE 1
 const DB = process.env.DATABASE; //ENV DATABASE URL
 const UserSchema = require('./models/user'); //USER MODEL
