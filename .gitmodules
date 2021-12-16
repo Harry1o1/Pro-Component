@@ -8,7 +8,7 @@
 
 [submodule "todo"]
 	path = todo
-	url = /storage/emulated/0/Android/data/io.spck.editor.node/files/todo
+	url = https://github.com/Harry1o1/todo
 
 
 
