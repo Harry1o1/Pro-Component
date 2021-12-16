@@ -1,3 +1,23 @@
 [submodule "django"]
 	path = django
 	url = https://github.com/Harry1o1/django
+	
+	
+	
+	
+
+[submodule "todo"]
+	path = todo
+	url = /storage/emulated/0/Android/data/io.spck.editor.node/files/todo
+
+
+
+
+
+
+
+
+
+
+
+
