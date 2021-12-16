@@ -10,7 +10,3 @@
 
 
 
-
-[submodule "todo"]
-	path = todo
-	url = https://github.com/Harry1o1/todo
