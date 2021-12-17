@@ -6,9 +6,24 @@ import Link from 'next/link'
 
 
 
-function Django(data, error) {
+function Django({data, error}) {
   return (
    <>
+        {data.map( (curElem) => {
+            return(
+                <div className ="alert alert-primary" key={curElem.id}>
+                    <Link href={`/blog2/${curElem.id}`}>
+                        <h3>{curElem.name}</h3>
+                    </Link>
+                    <h4>{curElem.email}</h4>
+                    <h5>{curElem.Comment}</h5>
+                    <h5>{curElem.bff}</h5>
+                    <h5>{curElem.stars}</h5>
+                    <h5>{curElem.age}</h5>
+                    <h6>{curElem.id}</h6>
+                </div>            
+            );
+        })}
         <h1 className="">Hi!</h1>
     </>
   );
@@ -25,7 +40,7 @@ export async function getStaticProps() {
         let error = "";
         try {
             const res = await fetch(
-                    "https://pro-component-django1o1.herokuapp.com/video", {
+                    "https://pro-component-django1o1.herokuapp.com/api", {
                     method: "GET",
                     headers: {
                         // update with your user-agent
@@ -55,20 +70,3 @@ export default Django;
                     // <Link href={`/blog/${curElem.id}`}>
 
 
-
-
-        // {data.map( (curElem) => {
-        //     return(
-        //         <div className ="alert alert-primary" key={curElem.id}>
-        //             <Link href={`/blog2/${curElem.id}`}>
-        //                 <h3>{curElem.name}</h3>
-        //             </Link>
-        //             <h4>{curElem.email}</h4>
-        //             <h5>{curElem.Comment}</h5>
-        //             <h5>{curElem.bff}</h5>
-        //             <h5>{curElem.stars}</h5>
-        //             <h5>{curElem.age}</h5>
-        //             <h6>{curElem.id}</h6>
-        //         </div>            
-        //     );
-        // })}
