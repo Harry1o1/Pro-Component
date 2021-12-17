@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import axios from "axios"
+
 
 function Addpost() {
   const [title, setTitle] = useState('dfv')
@@ -10,7 +12,7 @@ function Addpost() {
     let form_data = new FormData();
     form_data.append('video', picture, picture.name);
     form_data.append('name', title);
-    form_data.append('body', body);
+    
     let url = 'https://pro-component-django1o1.herokuapp.com/video/vc';
     axios.post(url, form_data, {
       headers: {
