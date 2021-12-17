@@ -9,7 +9,7 @@ import Link from 'next/link'
 function Django(data, error) {
   return (
    <>
-        {data.map( (curElem:any) => {
+        {data.map( (curElem) => {
             return(
                 <div className ="alert alert-primary" key={curElem.id}>
                     <Link href={`/blog2/${curElem.id}`}>
