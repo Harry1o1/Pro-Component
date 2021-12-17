@@ -1,5 +1,5 @@
-import React,{useState} from 'react'
-import { Grid,Typography,TextField } from '@mui/material';
+import {useState} from 'react'
+
 
 function Addpost() {
     const [title,setTitle] = useState('dfv')
