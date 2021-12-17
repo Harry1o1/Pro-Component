@@ -3,7 +3,7 @@ import axios from 'axios'
 
 
 
-function Fileupload1(vufool) {
+function Fileupload1() {
     
     // let formData = new FormData();
     
