@@ -60,7 +60,8 @@ const oplog = async () => {
           </div>
         </form>
       </div>
-      <img src={ picture } alt="Op" />
+            <img src={ picture.name }/>
+
    </>
   )
 }
