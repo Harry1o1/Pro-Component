@@ -51,7 +51,7 @@ const oplog = async () => {
       <div>
         <h1>Add new posts </h1>
         <form
-        onSubmit={ imageUpload }
+        onSubmit={ handlevideo }
         >
           <h2 onChange={(e) => setTitle(e.target.value)} label="Post Title" />
           <div >
