@@ -29,13 +29,14 @@ function Addpost() {
                 body: form_data
             })
             .then(res => {
+                const data = res.json()
+                console.log(data);                
                 if (res.data) {
                     console.log('op');
                 }
                 if (typeof window !== "undefined") {
                     window.alert('Registration successful');
                 }
-                console.log(res.data);
             }).catch(err => console.log(err))
     };
 
