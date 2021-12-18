@@ -30,6 +30,7 @@ function Addpost() {
             })
             .then(res => {
                 console.log(res.json());
+                console.log(res.url);
                 if (res.data) {
                     console.log('op');
                 }
