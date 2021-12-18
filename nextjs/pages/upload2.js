@@ -15,12 +15,9 @@ const handlevideo = (e) => {
     data.append('file', picture, picture.name);
     data.append('upload_prrset', 'mystore')
     data.append('cloud_name', 'SpaceX')
-    let url = 'https://api.cloudinary.com/v1_1/SpaceX/video/upload';
-    axios.post(url, data, {
-      headers: {
-        'content-type': 'multipart/form-data'
-      }
-    }).then(res => {
+    let url = 'https://api.cloudinary.com/v1_1/SpaceX/image/upload';
+    axios.post(url, data, )
+    .then(res => {
       console.log(res.data);
     }).catch(err => console.log(err))
 };
