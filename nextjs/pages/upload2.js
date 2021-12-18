@@ -13,7 +13,7 @@ const handlevideo = (e) => {
     e.preventDefault();
     let data = new FormData();
     data.append('file', picture, picture.name);
-    data.append('upload_prrset', 'mystore')
+    data.append('upload_preset', 'ml_default')
     data.append('cloud_name', 'SpaceX')
     let url = 'https://api.cloudinary.com/v1_1/SpaceX/image/upload';
     axios.post(url, data, )
