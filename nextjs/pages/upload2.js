@@ -36,7 +36,9 @@ const imageUpload = async ()=>{
          const res2  = await res.json()
          return res2.url
     }
-
+const oplog = async () => {
+    console.log(picture,picture.name);
+}
 
 
     
@@ -47,12 +49,14 @@ const imageUpload = async ()=>{
    <>
       <div>
         <h1>Add new posts </h1>
-        <form onSubmit={ imageUpload }>
+        <form
+        // onSubmit={ imageUpload }
+        >
           <h2 onChange={(e) => setTitle(e.target.value)} label="Post Title" />
           <div >
             <h1 color="primary">Upload an Image </h1>
             <input type="file" accept="image/png, image/jpeg" onChange={(e) => { setPicture(e.target.files[0]) }} />
-            <input type="submit" />
+            <input type="submit" onClick={ oplog }/>
           </div>
         </form>
       </div>
