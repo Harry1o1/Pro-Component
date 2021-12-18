@@ -55,11 +55,12 @@ const oplog = async () => {
             <h1 color="primary">Upload an Image </h1>
             <input type="file" accept="image/png, image/jpeg" onChange={(e) => { setPicture(e.target.files[0]) }} />
             <input type="submit"
-            // onClick={ oplog }
+            onClick={ oplog }
             />
           </div>
         </form>
       </div>
+
    </>
   )
 }
