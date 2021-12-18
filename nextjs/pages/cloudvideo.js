@@ -9,22 +9,33 @@ function Addpost() {
 
 
 
-const handlevideo = () => {
-    e.preventDefault();
-    let form_data = new FormData();
-    form_data.append('file', picture, picture.name);
-    data.append('upload_prrset', 'ssubb0wc')
-    data.append('cloud_name', 'SpaceX')
-    let url = 'https://api.cloudinary.com/v1_1/SpaceX/video/upload';
-    axios.post(url, form_data, {
-      headers: {
-        'content-type': 'multipart/form-data'
-      }
-    }).then(res => {
-      console.log(res.data);
-    }).catch(err => console.log(err))
-};
-
+// const handlevideo = () => {
+//     e.preventDefault();
+//     let form_data = new FormData();
+//     form_data.append('file', picture, picture.name);
+//     data.append('upload_prrset', 'ssubb0wc')
+//     data.append('cloud_name', 'SpaceX')
+//     let url = 'https://api.cloudinary.com/v1_1/SpaceX/video/upload';
+//     axios.post(url, form_data, {
+//       headers: {
+//         'content-type': 'multipart/form-data'
+//       }
+//     }).then(res => {
+//       console.log(res.data);
+//     }).catch(err => console.log(err))
+// };
+const imageUpload = async ()=>{
+         const data =  new FormData()
+         data.append('file',picture)
+         data.append('upload_preset',"mystore")
+         data.append('cloud_name',"cnq")
+         const res = await fetch("https://api.cloudinary.com/v1_1/cnq/image/upload",{
+           method:"POST",
+           body:data
+         })
+         const res2  = await res.json()
+         return res2.url
+    }
 
 
 
@@ -36,7 +47,7 @@ const handlevideo = () => {
    <>
       <div>
         <h1>Add new posts </h1>
-        <form onSubmit={ handlevideo }>
+        <form onSubmit={ imageUpload }>
           <h2 onChange={(e) => setTitle(e.target.value)} label="Post Title" />
           <div >
             <h1 color="primary">Upload an Image </h1>
