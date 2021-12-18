@@ -8,22 +8,62 @@ function Addpost() {
 
 
 
-const imageUpload = async () => {
-    let data = new FormData();
-    data.append('file', picture, picture.name)
+
+const handlevideo = () => {
+    e.preventDefault();
+    let form_data = new FormData();
+    form_data.append('file', picture, picture.name);
     data.append('upload_prrset', 'ssubb0wc')
     data.append('cloud_name', 'SpaceX')
-    const res = await fetch('https://api.cloudinary.com/v1_1/SpaceX/video/upload',{
-        method:'POST',
-        body:data
-    })
-    const res1 = res.json()
-    console.log(res1);
+    let url = 'https://api.cloudinary.com/v1_1/SpaceX/video/upload';
+    axios.post(url, form_data, {
+      headers: {
+        'content-type': 'multipart/form-data'
+      }
+    }).then(res => {
+      console.log(res.data);
+    }).catch(err => console.log(err))
+};
+
+
+
+
+    
+
+
+
+  return (
+   <>
+      <div>
+        <h1>Add new posts </h1>
+        <form onSubmit={ handlevideo }>
+          <h2 onChange={(e) => setTitle(e.target.value)} label="Post Title" />
+          <div >
+            <h1 color="primary">Upload an Image </h1>
+            <input type="file" accept="video/mp4,video/x-m4v,video/*" onChange={(e) => { setPicture(e.target.files[0]) }} />
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+   </>
+  )
 }
 
+export default Addpost
 
 
-
+// const imageUpload = async () => {
+//     let data = new FormData();
+//     data.append('file', picture, picture.name)
+//     data.append('upload_prrset', 'ssubb0wc')
+//     data.append('cloud_name', 'SpaceX')
+//     const res = await fetch('https://api.cloudinary.com/v1_1/SpaceX/video/upload',{
+//         method:'POST',
+//         body:data
+//     })
+//     const res1 = res.json()
+//     console.log(res1);
+// }
 // const handlesubmit = async (e) => {
 //     e.preventDefault();
 //     let form_data = new FormData();
@@ -39,29 +79,3 @@ const imageUpload = async () => {
 //       console.log(res.data);
 //     }).catch(err => console.log(err))
 // };
-
-
-
-
-  return (
-   <>
-      <div>
-        <h1>Add new posts </h1>
-        <form 
-        // onSubmit={handlesubmit} 
-        onSubmit={ imageUpload } 
-        >
-          <h2 onChange={(e) => setTitle(e.target.value)} label="Post Title" />
-          <div >
-            <h1 color="primary">Upload an Image </h1>
-            <input type="file" accept="video/mp4,video/x-m4v,video/*" onChange={(e) => { setPicture(e.target.files[0]) }} />
-            <input type="submit" />
-          </div>
-        </form>
-      </div>
-   </>
-  )
-}
-
-export default Addpost
-
