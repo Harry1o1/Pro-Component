@@ -17,19 +17,19 @@ function Addpost() {
     const video = picture
 
 
-    const handlesubmit = (e) => {
+    const handlesubmit = async (e) => {
         e.preventDefault();
         let form_data = new FormData();
         form_data.append('file', picture);
         form_data.append('upload_preset', 'emonstore');
         
 
-        const res = fetch('https://api.cloudinary.com/v1_1/emon1o1/image/upload', {
+        const res = await fetch('https://api.cloudinary.com/v1_1/emon1o1/image/upload', {
                 method: 'POST',
                 body: form_data
         })
-        const dara = res.json()
-        const uriwep = data.url
+        const dara = await res.json()
+        const uriwep = await data.url
         console.log(dara)
         console.log(uriwep)
         
