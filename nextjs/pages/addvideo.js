@@ -21,8 +21,10 @@ function Addpost() {
         e.preventDefault();
         let form_data = new FormData();
         form_data.append('file', picture);
+        form_data.append('upload_preset', 'emonstore');
+        
 
-        const res = fetch('https://api.cloudinary.com/v1_1/demo/image/upload', {
+        const res = fetch('https://api.cloudinary.com/v1_1/emon1o1/image/upload', {
                 method: 'POST',
                 body: form_data
             })
