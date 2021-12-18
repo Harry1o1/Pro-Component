@@ -48,7 +48,10 @@ const video = picture
           </div>
         </form>
       </div>
-        <video src={video?URL.createObjectURL(video):""} />
+      
+      <video width="400" controls>
+          <source src={URL.createObjectURL( video )}/>
+      </video>
       {console.log(video)}
       
     </>
@@ -57,3 +60,4 @@ const video = picture
 
 export default Addpost
 
+        // <video src={video?URL.createObjectURL(video):""} />
