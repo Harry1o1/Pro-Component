@@ -15,7 +15,6 @@ const handleVideo = (e) => {
     
 }
 const video = picture 
-console.log(video)
 
 
   const handlesubmit = (e) => {
@@ -40,18 +39,17 @@ console.log(video)
   return (
    <>
       <div>
-        <h1>Add new posts </h1>
+        <h1>Upload a video</h1>
         <form onSubmit={handlesubmit} >
           <h2 onChange={(e) => setTitle(e.target.value)} label="Post Title" />
           <div >
-            <h1 color="primary">Upload an Image </h1>
             <input type="file" accept="video/mp4,video/x-m4v,video/*" onChange={ handleVideo } />
             <input type="submit" />
           </div>
         </form>
       </div>
         <video src={video?URL.createObjectURL(video):""} />
-      
+      {console.log(video)}
       
     </>
   )
