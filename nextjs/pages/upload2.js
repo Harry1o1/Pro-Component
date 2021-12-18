@@ -25,6 +25,7 @@ function Addpost() {
 //     }).catch(err => console.log(err))
 // };
 const imageUpload = async ()=>{
+    e.preventDefault();
          const data =  new FormData()
          data.append('file',picture)
          data.append('upload_preset',"mystore")
@@ -50,13 +51,15 @@ const oplog = async () => {
       <div>
         <h1>Add new posts </h1>
         <form
-        // onSubmit={ imageUpload }
+        onSubmit={ imageUpload }
         >
           <h2 onChange={(e) => setTitle(e.target.value)} label="Post Title" />
           <div >
             <h1 color="primary">Upload an Image </h1>
             <input type="file" accept="image/png, image/jpeg" onChange={(e) => { setPicture(e.target.files[0]) }} />
-            <input type="submit" onClick={ oplog }/>
+            <input type="submit"
+            // onClick={ oplog }
+            />
           </div>
         </form>
       </div>
