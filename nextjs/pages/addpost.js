@@ -45,7 +45,8 @@ function Addpost() {
       </div>
 
 
-           <img src={ picture }/>
+        <img src={picture?URL.createObjectURL(picture):""} />
+
 
     </div>
   )
