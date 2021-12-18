@@ -16,7 +16,7 @@ const handlevideo = (e) => {
     data.append('upload_prrset', 'ssubb0wc')
     data.append('cloud_name', 'SpaceX')
     let url = 'https://api.cloudinary.com/v1_1/SpaceX/video/upload';
-    axios.post(url, form_data, {
+    axios.post(url, data, {
       headers: {
         'content-type': 'multipart/form-data'
       }
