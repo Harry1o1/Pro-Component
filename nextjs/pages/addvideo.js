@@ -22,7 +22,7 @@ function Addpost() {
         let form_data = new FormData();
         form_data.append('file', picture);
 
-        const res = fetch('https://api.cloudinary.com/v1_1/emon1o1/image/upload', {
+        const res = fetch('https://api.cloudinary.com/v1_1/demo/image/upload', {
                 method: 'POST',
                 body: form_data
             })
