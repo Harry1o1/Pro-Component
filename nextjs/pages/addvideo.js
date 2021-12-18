@@ -14,7 +14,8 @@ const handleVideo = (e) => {
     setPicture(e.target.files[0]) 
     
 }
-const video = picture.name 
+const video = picture 
+console.log(video)
 
 
   const handlesubmit = (e) => {
@@ -49,7 +50,8 @@ const video = picture.name
           </div>
         </form>
       </div>
-      <img src={ video }/>
+      
+      <img src="video_20211218_170153.mp4"/>
     </>
   )
 }
