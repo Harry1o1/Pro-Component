@@ -11,7 +11,7 @@ function Addpost() {
 
 const handlevideo = (e) => {
     e.preventDefault();
-    let form_data = new FormData();
+    let data = new FormData();
     form_data.append('file', picture, picture.name);
     data.append('upload_prrset', 'ssubb0wc')
     data.append('cloud_name', 'SpaceX')
