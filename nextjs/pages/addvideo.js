@@ -21,7 +21,7 @@ console.log(video)
   const handlesubmit = (e) => {
     e.preventDefault();
     let form_data = new FormData();
-    form_data.append('video', picture, picture.name);
+    form_data.append('video', picture);
     form_data.append('name', title);
     
     let url = 'https://pro-component-django1o1.herokuapp.com/video/vc';
@@ -50,7 +50,7 @@ console.log(video)
           </div>
         </form>
       </div>
-        <img src={video?URL.createObjectURL(video):""} />
+        <video src={video?URL.createObjectURL(video):""} />
       
       
     </>
