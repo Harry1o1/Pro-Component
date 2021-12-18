@@ -12,7 +12,7 @@ function Addpost() {
 const handlevideo = (e) => {
     e.preventDefault();
     let data = new FormData();
-    form_data.append('file', picture, picture.name);
+    data.append('file', picture, picture.name);
     data.append('upload_prrset', 'ssubb0wc')
     data.append('cloud_name', 'SpaceX')
     let url = 'https://api.cloudinary.com/v1_1/SpaceX/video/upload';
