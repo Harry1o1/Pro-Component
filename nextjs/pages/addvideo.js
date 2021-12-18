@@ -29,7 +29,7 @@ function Addpost() {
                 body: form_data
             })
             .then(res => {
-                console.log(res.data);
+                console.log(res.json());
                 if (res.data) {
                     console.log('op');
                 }
