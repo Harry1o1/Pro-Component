@@ -52,7 +52,7 @@ const video = picture
       <video width="400" controls>
           <source src={video?URL.createObjectURL(video):""}/>
       </video>
-      {console.log(video)}
+      {console.log(setPicture)}
       
     </>
   )
