@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import axios from "axios"
-
+// models.URLField(max_length = 200) 
 
 function Addpost() {
     const [title, setTitle] = useState('dfv')
@@ -27,17 +27,22 @@ function Addpost() {
         const res = fetch('https://api.cloudinary.com/v1_1/emon1o1/image/upload', {
                 method: 'POST',
                 body: form_data
-            })
-            .then(res => {
-                console.log(res.json());
-                console.log(res.url);
-                if (res.data) {
-                    console.log('op');
-                }
-                if (typeof window !== "undefined") {
-                    window.alert('Registration successful');
-                }
-            }).catch(err => console.log(err))
+        })
+        const dara = res.json()
+        const uriwep = data.url
+        console.log(dara)
+        console.log(uriwep)
+        
+            // .then(res => {
+            //     console.log(res.json());
+            //     console.log(res.url);
+            //     if (res.data) {
+            //         console.log('op');
+            //     }
+            //     if (typeof window !== "undefined") {
+            //         window.alert('Registration successful');
+            //     }
+            // }).catch(err => console.log(err))
     };
 
 
