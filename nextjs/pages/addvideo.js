@@ -40,6 +40,7 @@ function Addpost() {
           </div>
         </form>
       </div>
+      <img src={ picture } alt="Op" />
     </>
   )
 }
