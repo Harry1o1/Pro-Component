@@ -50,8 +50,9 @@ console.log(video)
           </div>
         </form>
       </div>
+        <img src={video?URL.createObjectURL(video):""} />
       
-      <img src="video_20211218_170153.mp4"/>
+      
     </>
   )
 }
