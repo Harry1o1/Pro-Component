@@ -29,7 +29,7 @@ function Addpost() {
                 body: form_data
         })
         const dara = await res.json()
-        const uriwep = await data.url
+        const uriwep = await dara.url
         console.log(dara)
         console.log(uriwep)
         
