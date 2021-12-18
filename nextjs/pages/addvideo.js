@@ -7,6 +7,16 @@ function Addpost() {
   const [picture, setPicture] = useState(null);
 
 
+
+
+
+const handleVideo = (e) => {
+    setPicture(e.target.files[0]) 
+    
+}
+const video = picture.name 
+
+
   const handlesubmit = (e) => {
     e.preventDefault();
     let form_data = new FormData();
@@ -17,7 +27,6 @@ function Addpost() {
     axios.post(url, form_data, {
       headers: {
         'content-type': 'multipart/form-data'
-
       }
     }).then(res => {
       console.log(res.data);
@@ -35,12 +44,12 @@ function Addpost() {
           <h2 onChange={(e) => setTitle(e.target.value)} label="Post Title" />
           <div >
             <h1 color="primary">Upload an Image </h1>
-            <input type="file" accept="video/mp4,video/x-m4v,video/*" onChange={(e) => { setPicture(e.target.files[0]) }} />
+            <input type="file" accept="video/mp4,video/x-m4v,video/*" onChange={ handleVideo } />
             <input type="submit" />
           </div>
         </form>
       </div>
-      <img src={ picture.name }/>
+      <img src={ video }/>
     </>
   )
 }
