@@ -51,7 +51,7 @@ const imageUpload = async ()=>{
           <h2 onChange={(e) => setTitle(e.target.value)} label="Post Title" />
           <div >
             <h1 color="primary">Upload an Image </h1>
-            <input type="file" accept="video/mp4,video/x-m4v,video/*" onChange={(e) => { setPicture(e.target.files[0]) }} />
+            <input type="file" accept="image/png, image/jpeg" onChange={(e) => { setPicture(e.target.files[0]) }} />
             <input type="submit" />
           </div>
         </form>
