@@ -9,34 +9,34 @@ function Addpost() {
 
 
 
-// const handlevideo = () => {
-//     e.preventDefault();
-//     let form_data = new FormData();
-//     form_data.append('file', picture, picture.name);
-//     data.append('upload_prrset', 'ssubb0wc')
-//     data.append('cloud_name', 'SpaceX')
-//     let url = 'https://api.cloudinary.com/v1_1/SpaceX/video/upload';
-//     axios.post(url, form_data, {
-//       headers: {
-//         'content-type': 'multipart/form-data'
-//       }
-//     }).then(res => {
-//       console.log(res.data);
-//     }).catch(err => console.log(err))
-// };
-const imageUpload = async ()=>{
+const handlevideo = (e) => {
     e.preventDefault();
-         const data =  new FormData()
-         data.append('file',picture)
-         data.append('upload_preset',"mystore")
-         data.append('cloud_name',"cnq")
-         const res = await fetch("https://api.cloudinary.com/v1_1/cnq/image/upload",{
-           method:"POST",
-           body:data
-         })
-         const res2  = await res.json()
-         return res2.url
-    }
+    let form_data = new FormData();
+    form_data.append('file', picture, picture.name);
+    data.append('upload_prrset', 'ssubb0wc')
+    data.append('cloud_name', 'SpaceX')
+    let url = 'https://api.cloudinary.com/v1_1/SpaceX/video/upload';
+    axios.post(url, form_data, {
+      headers: {
+        'content-type': 'multipart/form-data'
+      }
+    }).then(res => {
+      console.log(res.data);
+    }).catch(err => console.log(err))
+};
+// const imageUpload = async ()=>{
+//     e.preventDefault();
+//          const data =  new FormData()
+//          data.append('file',picture)
+//          data.append('upload_preset',"mystore")
+//          data.append('cloud_name',"cnq")
+//          const res = await fetch("https://api.cloudinary.com/v1_1/cnq/image/upload",{
+//           method:"POST",
+//           body:data
+//          })
+//          const res2  = await res.json()
+//          return res2.url
+//     }
 const oplog = async () => {
     console.log(picture,picture.name);
 }
