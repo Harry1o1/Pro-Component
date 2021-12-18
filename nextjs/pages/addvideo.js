@@ -50,7 +50,7 @@ const video = picture
       </div>
       
       <video width="400" controls>
-          <source src={URL.createObjectURL( video )}/>
+          <source src={video?URL.createObjectURL(video):""}/>
       </video>
       {console.log(video)}
       
