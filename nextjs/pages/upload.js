@@ -134,30 +134,34 @@ export default function Upload(data, error) {
 
 
 
-// export default Upload;
-// Are you commiding me
-// function Upload() {
-//     const fetcher = (url:any) => axios.post(url, {
-//             "name": "Soap",
-//             "email": "robinjusticeleague19@gmail.com",
-//             "Comment": "Ye6oe5ie86ei",
-//             "bff": "70dyoryoeo6",
-//             "stars": -5555,
-//             "age": 5765465465,
-//             "video": "https://pro-component-django1o1.herokuapp.com/media/video/21/16393541636966445341992126787194.jpg"
-//         })
-//         .then(function(response) {
-//             console.log(response);
-//         })
-//         .catch(function(error) {
-//             console.log(error);
-//     });
-    
-//   const { data, error } = useSWR('https://pro-component-django1o1.herokuapp.com/video/c', fetcher)
-//   return (
-//     <>
-//         {console.log(data)}
-//         <h1 className="">Hello from Login</h1>
-//     </>
-//   );
-// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

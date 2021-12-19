@@ -26,9 +26,6 @@ function Express({data, error}) {
 
 
 
-
-
-
 export async function getStaticProps() {
         
         let data = [];

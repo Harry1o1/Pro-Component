@@ -17,7 +17,6 @@ function Addpost() {
     axios.post(url, form_data, {
       headers: {
         'content-type': 'multipart/form-data'
-
       }
     }).then(res => {
       console.log(res.data);
@@ -37,18 +36,11 @@ function Addpost() {
             <h1 color="primary">Upload an Image </h1>
             <input type="file" accept="image/png, image/jpeg" onChange={(e) => { setPicture(e.target.files[0]) }} />
             <input type="submit" />
-
           </div>
-
         </form>
-
       </div>
-
-
         <img src={picture?URL.createObjectURL(picture):""} />
-
-
-    </div>
+   </div>
   )
 }
 

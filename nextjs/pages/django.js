@@ -2,10 +2,6 @@ import Link from 'next/link'
 
 
 
-
-
-
-
 function Django({data, error}) {
   return (
    <>
@@ -28,9 +24,6 @@ function Django({data, error}) {
     </>
   );
 }
-
-
-
 
 
 

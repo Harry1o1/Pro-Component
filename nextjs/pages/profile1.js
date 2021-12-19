@@ -3,8 +3,6 @@ import client from './api/apollo-client'
 
 
 
-
-
 function Profile(data) {
   return (
     <>
@@ -26,8 +24,6 @@ export async function getStaticProps() {
         }`
     })
     
-
-
   return {
     props: {
       data,
