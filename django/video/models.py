@@ -19,5 +19,8 @@ class Video(models.Model):
     video=models.FileField(upload_to="video/%y", blank=True,null=True)
     
     
+class Bleze(models.Model): 
+    tittle = models.CharField(max_length=100,blank=True,null=True)
+    url = models.CharField(max_length=300,blank=True,null=True)
     
 # We will make a demo model    

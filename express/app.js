@@ -10,6 +10,8 @@ const port = process.env.PORT || 5000; //PORT FOR HOSTING
 const connectDb = require('./db/connect'); //MONGOOSE 1
 const DB = process.env.DATABASE; //ENV DATABASE URL
 const UserSchema = require('./models/user'); //USER MODEL
+const VideoSchema = require('./models/video'); //VIDEO MODEL
+const ImageSchema = require('./models/image'); //IMAGE MODEL
 app.use(express.json()); //JSON EXPRESS MIDDLEWARE
 
 
@@ -148,6 +150,73 @@ app.get('/profile', async (req,res) => {
 
 
 
+
+
+
+
+// ///////////////////////////////////////////  Video  ///////////////////////////////////////////
+app.get('/video', async (req,res) => {
+    res.status(200).send('upload video')
+})
+
+app.post('/video', async (req,res) => {
+    try {
+        
+        const { tittle, description, vurl } = req.body;
+        // res.json(req.body)
+        console.log(req.body);
+        console.log(tittle);
+        console.log(vurl);
+        // const user = await ImageSchema.find({});
+        
+        // All data filled
+        if (!tittle || !vurl) {
+            res.status(404).send('Plz fill all data')
+        }
+        else {
+            // Already had an account
+            const geniunvideo = new VideoSchema({ tittle, description, vurl });
+            const Newrvideo = await geniunvideo.save();
+            res.status(201).json({ geniunvideo });
+            console.log('New video upload successful');
+            console.log(geniunvideo);
+        }
+    } catch (e) {
+        console.log(e);
+        res.status(400).send('Error');
+    };    
+    
+})
+// ///////////////////////////////////////////  Image  ///////////////////////////////////////////
+app.get('/image', async (req,res) => {
+    res.status(200).send('upload image')
+})
+
+app.post('/image', async (req,res) => {
+    try {
+        const { post, iurl } = req.body;
+        // res.json(req.body)
+        // console.log(req.body);
+        console.log(post);
+        console.log(iurl);
+        // const user = await ImageSchema.find({});
+        // All data filled
+        if (!post || !iurl) {
+            res.status(404).send('Plz fill all data')
+        }
+        else {
+            // Already had an account
+            const geniunimage = new ImageSchema({ post, iurl });
+            const Newrvideo = await geniunimage.save();
+            res.status(201).json({ geniunimage });
+            console.log('New image upload successful');
+            console.log(geniunimage);
+        }
+    } catch (e) {
+        console.log(e);
+        res.status(400).send('Error');
+    };    
+})
 
 
 

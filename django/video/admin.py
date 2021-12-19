@@ -8,3 +8,6 @@ from .models import Students, Video
     
 class VideoAdmin(admin.ModelAdmin): 
     list_display = ['id', 'name','video']
+    
+    
+    
