@@ -18,11 +18,9 @@ function Addpost() {
         })
         const dara2 = await res.json()
         const uriwep1 = dara2.url
-        const uriwep2 = await res.url
         
         console.log(dara2)
         console.log(uriwep1)
-        console.log(uriwep2)
         
         
     }
