@@ -26,7 +26,11 @@ function Addpost() {
         
     }
 
-
+    const video = picture
+    
+    
+    
+    
     const handlesubmit = async (e) => {
         e.preventDefault();
         
