@@ -22,13 +22,14 @@ function Addpost() {
         console.log(dara2)
         console.log(uriwep)
         
-        return dara2.url
+        return uriwep
         
     }
 
     const video = picture
     
-    
+    console.log(uriwep)
+
     
     
     const handlesubmit = async (e) => {
