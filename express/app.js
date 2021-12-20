@@ -189,7 +189,8 @@ app.post('/video', async (req,res) => {
 })
 // ///////////////////////////////////////////  Image  ///////////////////////////////////////////
 app.get('/image', async (req,res) => {
-    res.status(200).send('upload image')
+        const images = await ImageSchema.find({});
+    res.status(200).json(images)
 })
 
 app.post('/image', async (req,res) => {
