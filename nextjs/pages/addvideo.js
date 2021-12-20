@@ -7,7 +7,7 @@ function Addpost() {
     const [picture, setPicture] = useState(null);
 
 
-    const handleVideo = (e) => {
+    const handleVideo = async (e) => {
         setPicture(e.target.files[0])
         let form_data = new FormData();
         form_data.append('file', picture);
