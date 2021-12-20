@@ -13,7 +13,7 @@ function Addpost() {
         form_data.append('file', picture);
         form_data.append('upload_preset', 'emonstore');
         
-        const res = await fetch('https://api.cloudinary.com/v1_1/emon1o1/image/upload', {
+        const res = fetch('https://api.cloudinary.com/v1_1/emon1o1/image/upload', {
                 method: 'POST',
                 body: form_data
         })
@@ -29,22 +29,6 @@ function Addpost() {
 
     const handlesubmit = async (e) => {
         e.preventDefault();
-        // let form_data = new FormData();
-        // form_data.append('file', picture);
-        // form_data.append('upload_preset', 'emonstore');
-        
-        // const res = await fetch('https://api.cloudinary.com/v1_1/emon1o1/image/upload', {
-        //         method: 'POST',
-        //         body: form_data
-        // })
-        // const dara = await res.json()
-        // const uriwep = await dara.url
-        // console.log(dara)
-        // console.log(uriwep)
-        
-        
-        
-        
         
         let form_data1 = new FormData();
         form_data1.append('post', post);
