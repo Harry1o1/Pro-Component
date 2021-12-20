@@ -35,14 +35,22 @@ function Addpost() {
         e.preventDefault();
         
         
-        let form_data1 = new FormData();
-        form_data1.append('post', post);
-        form_data1.append('iurl', await handleVideo());
+        // let form_data1 = new FormData();
+        // form_data1.append('post', post);
+        // form_data1.append('iurl', await handleVideo());
         
         
         const res3 = await fetch('https://pro-component-express1o1.herokuapp.com/image', {
             method: 'POST',
-            body: form_data1
+            headers: {
+                "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36",
+                Accept: "application/json; charset=UTF-8",
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "post": `${ post }`,
+                "iurl": `${ handleVideo()}`,
+            })            
         })
         const dara = await res3.json()        
         console.log(dara);
