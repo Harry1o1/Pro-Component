@@ -17,11 +17,13 @@ function Addpost() {
                 body: form_data
         })
         const dara2 = await res.json()
-        const uriwep = dara2.url
+        const uriwep1 = dara2.url
+        const uriwep2 = await res.url
+        
         console.log(dara2)
-        console.log(uriwep)
-        const name = 'Thapa'
-        return name
+        console.log(uriwep1)
+        console.log(uriwep2)
+        
         
     }
 
@@ -35,6 +37,23 @@ function Addpost() {
         
         
         
+        let form_data = new FormData();
+        form_data.append('file', picture);
+        form_data.append('upload_preset', 'emonstore');
+        
+        const res = await fetch('https://api.cloudinary.com/v1_1/emon1o1/image/upload', {
+                method: 'POST',
+                body: form_data
+        })
+        const dara2 = await res.json()
+        const uriwep1 = dara2.url
+        const uriwep2 = await res.url
+        
+        console.log(dara2)
+        console.log(uriwep1)
+        console.log(uriwep2)
+        
+        
         
         const res3 = await fetch('https://pro-component-express1o1.herokuapp.com/image', {
             method: 'POST',
@@ -45,7 +64,7 @@ function Addpost() {
             },
             body: JSON.stringify({
                 "post": `${ post }`,
-                "iurl": `${ handleVideo()}`,
+                "iurl": `${ uriwep1 }`,
             })            
         })
         const dara = await res3.json()        
