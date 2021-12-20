@@ -18,11 +18,11 @@ function Addpost() {
                 body: form_data
         })
         const dara2 = await res.json()
-        // const uriwep = dara.url
+        const uriwep = dara2.url
         console.log(dara2)
-        // console.log(uriwep)
+        console.log(uriwep)
         
-        return dara.url
+        return dara2.url
         
     }
 
@@ -45,7 +45,6 @@ function Addpost() {
         })
         const dara = await res3.json()        
         console.log(dara);
-        
         
         
         
