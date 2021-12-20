@@ -67,7 +67,7 @@ function Addpost() {
               </div>
             </form>
           </div>
-          <img src = { video ? URL.createObjectURL(video) : "" }/>
+          <img width='400' src = { video ? URL.createObjectURL(video) : "" }/>
        </>
     )
 }
