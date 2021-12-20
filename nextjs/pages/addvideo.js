@@ -36,9 +36,6 @@ function Addpost({ uriwep }) {
         e.preventDefault();
         
         
-        // let form_data1 = new FormData();
-        // form_data1.append('post', post);
-        // form_data1.append('iurl', await handleVideo());
         
         
         const res3 = await fetch('https://pro-component-express1o1.herokuapp.com/image', {
@@ -66,6 +63,7 @@ function Addpost({ uriwep }) {
 
     return (
        <>
+        { console.log( uriweb )}
           <div>
             <h1>Upload a video</h1>
             <form onSubmit={ handlesubmit } >
