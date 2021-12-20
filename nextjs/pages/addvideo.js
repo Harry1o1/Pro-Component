@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import axios from "axios"
 // models.URLField(max_length = 200) 
 
-function Addpost() {
+function Addpost({ uriwep }) {
     const [post, setPost] = useState('dfv')
     const [picture, setPicture] = useState(null);
 
