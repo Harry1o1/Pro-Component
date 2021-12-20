@@ -17,7 +17,7 @@ function Addpost() {
                 method: 'POST',
                 body: form_data
         })
-        const dara = await res.json()
+        const dara = res.json()
         const uriwep = dara.url
         console.log(dara)
         console.log(uriwep)
@@ -35,11 +35,11 @@ function Addpost() {
         form_data1.append('iurl', await handleVideo());
         
         
-        const res = await fetch('https://pro-component-express1o1.herokuapp.com/image', {
+        const res = fetch('https://pro-component-express1o1.herokuapp.com/image', {
             method: 'POST',
             body: form_data1
         })
-        const dara = await res.json()        
+        const dara = res.json()        
         console.log(dara);
         
         
