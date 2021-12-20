@@ -12,7 +12,7 @@ const DB = process.env.DATABASE; //ENV DATABASE URL
 const UserSchema = require('./models/user'); //USER MODEL
 const VideoSchema = require('./models/video'); //VIDEO MODEL
 const ImageSchema = require('./models/image'); //IMAGE MODEL
-app.use(express.json()); //JSON EXPRESS MIDDLEWARE
+app.use(express.json()); //JSON EXPRESS MIDDLEWARE 
 
 
 //                              All Routes
