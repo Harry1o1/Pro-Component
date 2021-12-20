@@ -2,13 +2,12 @@ import React, { useState } from 'react'
 import axios from "axios"
 // models.URLField(max_length = 200) 
 
-function Addpost({ uriwep }) {
+function Addpost() {
     const [post, setPost] = useState('dfv')
     const [picture, setPicture] = useState(null);
 
 
     const handleVideo = async (e) => {
-        // setPicture(e.target.files[0])
         let form_data = new FormData();
         form_data.append('file', picture);
         form_data.append('upload_preset', 'emonstore');
@@ -21,8 +20,8 @@ function Addpost({ uriwep }) {
         const uriwep = dara2.url
         console.log(dara2)
         console.log(uriwep)
-        
-        return uriwep
+        const name = 'Thapa'
+        return name
         
     }
 
@@ -63,7 +62,6 @@ function Addpost({ uriwep }) {
 
     return (
        <>
-        { console.log( uriweb )}
           <div>
             <h1>Upload a video</h1>
             <form onSubmit={ handlesubmit } >
