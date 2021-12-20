@@ -27,7 +27,6 @@ function Addpost() {
 
     const video = picture
     
-    console.log(uriwep)
 
     
     
