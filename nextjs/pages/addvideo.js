@@ -18,7 +18,7 @@ function Addpost() {
                 body: form_data
         })
         const dara = await res.json()
-        const uriwep = await dara.url
+        const uriwep = dara.url
         console.log(dara)
         console.log(uriwep)
         
