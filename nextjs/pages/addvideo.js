@@ -8,7 +8,7 @@ function Addpost() {
 
 
     const handleVideo = async (e) => {
-        setPicture(e.target.files[0])
+        // setPicture(e.target.files[0])
         let form_data = new FormData();
         form_data.append('file', picture);
         form_data.append('upload_preset', 'emonstore');
@@ -33,6 +33,7 @@ function Addpost() {
     
     const handlesubmit = async (e) => {
         e.preventDefault();
+        
         
         let form_data1 = new FormData();
         form_data1.append('post', post);
@@ -61,7 +62,7 @@ function Addpost() {
             <form onSubmit={ handlesubmit } >
               <div >
                 <input type='text' onChange={(e) => setPost(e.target.value)} label="Post" placeholder='Post'/>
-                <input type="file" accept="image/png, image/jpeg" onChange={ handleVideo } />
+                <input type="file" accept="image/png, image/jpeg" onChange={(e)=>{setPicture(e.target.files[0])}} />
                 <input type="submit" />
               </div>
             </form>
