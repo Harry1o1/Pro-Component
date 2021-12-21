@@ -1,3 +1,3 @@
 tasks:
   - init: npm install
-    command: npm run next 
+    command: cd ./nextjs-typescript && npm install && npm run dev
