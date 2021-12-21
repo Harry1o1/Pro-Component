@@ -16,6 +16,6 @@ tasks:
     init: npm install
     command: cd ./nextjs-typescript && npm install && npm run dev
   - name: Express
-    init : cd ./express && npm run dev && ls
+    init : cd ./express && ls
   - name: Laravel
-    init : cd ./laravel && ls
+    init : cd laravel && ls && git status && git log
