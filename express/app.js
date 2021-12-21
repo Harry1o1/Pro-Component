@@ -14,13 +14,12 @@ const VideoSchema = require('./models/video'); //VIDEO MODEL
 const ImageSchema = require('./models/image'); //IMAGE MODEL
 app.use(express.json()); //JSON EXPRESS MIDDLEWARE 
 
-
 //                              All Routes
 const home = require('./routes/home'); // ("/")
 const register = require('./routes/register'); // ("/register")
 // const profile = require('./routes/profile'); // ("/profile")
 // const login = require('./routes/login'); // ("/login")
-// const about = require('./routes/about'); // ("/about")
+const about = require('./routes/about'); // ("/about")
 // const contact = require('./routes/contact'); // ("/contact")
 
 
@@ -137,12 +136,12 @@ app.get('/contact', async (req,res) => {
     res.status(200).send('contact')
     
 })
-app.get('/about', async (req,res) => {
-    let name = 'Thapa';
-    res.cookie('jwtoken', 'Thapa')
-    res.status(200).json({ massage: 'Hello express'})
+// app.get('/about', async (req,res) => {
+//     let name = 'Thapa';
+//     res.cookie('jwtoken', 'Thapa')
+//     res.status(200).json({ massage: 'Hello express'})
     
-})
+// })
 app.get('/profile', async (req,res) => {
     res.status(200).send('profile')
     
@@ -223,14 +222,13 @@ app.post('/image', async (req,res) => {
 
 
 //Routes  ///////////////////////////////////////////////////////////////////////////////
-app.use('/', home);
+app.use('/op', home);
 app.use('/register', register);
+app.use('/about', about);
 // app.use('/login', login);
 // app.use('/about', about);
 // app.use('/contact', contact);
 // app.use('/profile', profile);
-
-
 
 
 

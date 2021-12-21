@@ -1,18 +1,17 @@
-// const CrudSchema = require('../models/crud');
+const CrudSchema = require('../models/crud');
 
 
 // Comment
 const getAllData = async (req, res) => {
         try {
                 let Thapa = 'Cókie';
-                const crud = await CrudSchema.find({});
-                res.status(200).send('iiiiiii')
-                res.cookie('jwtoken', Thapa)
-        } catch (error) {
+                res.status(200).send(Thapa)
+        }catch (error) {
                 res.status(500).json({ message: error })
                 console.log(error);
         }
 }
+
 const createData = async (req, res) => {
         try {
                 const crud = await CrudSchema.create(req.body);
