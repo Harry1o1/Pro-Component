@@ -18,4 +18,4 @@ tasks:
   - name: Express
     init : cd ./express echo 'Hello Express' && npm run dev
   - name: Laravel
-    init : cd ./laravel echo 'Hello Laravel'  >
+    init : cd ./laravel echo 'Hello Laravel' 
