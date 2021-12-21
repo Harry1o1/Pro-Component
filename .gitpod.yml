@@ -1,3 +1,8 @@
 tasks:
-  - init: npm install
-    command: cd ./nextjs && npm install && npm run dev
+  - name: Emon
+    init: npm install
+    command: cd ./nextjs-typescript && npm install && npm run dev
+  - name: Sumon
+    init : echo 'Hello sumon'
+  - name: shuhan
+    init: echo 'Hello shuhan'
