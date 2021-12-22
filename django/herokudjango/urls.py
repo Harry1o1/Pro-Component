@@ -31,7 +31,7 @@ from rest_framework_simplejwt.views import (
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
-    path('video/', include('video.urls')),
+    # path('video/', include('video.urls')),
     path('upload/', include('upload.urls')),
     path('', include('home.urls')),
     path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True))),

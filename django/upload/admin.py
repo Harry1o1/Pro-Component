@@ -4,8 +4,9 @@ from .models import Video,Image
 
 
 # Register your models here.
-# @admin.register(Video)
-# @admin.register(Image)
+
+admin.site.register(Video)
+admin.site.register(Image)
     
     
 

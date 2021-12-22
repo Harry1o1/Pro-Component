@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'django_filters',
     'rest_framework_simplejwt',    
     'rest_framework_simplejwt.token_blacklist',    
-    'video',
+    # 'video',
     'home',
     'upload',
 
