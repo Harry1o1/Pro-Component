@@ -10,7 +10,7 @@ function Addpost() {
   const handlesubmit = (e:any) => {
     e.preventDefault();
     let form_data = new FormData();
-    form_data.append('video', picture, picture.name);
+    form_data.append('video', picture);
     form_data.append('name', title);
     
     let url = 'https://pro-component-django1o1.herokuapp.com/video/vc';
