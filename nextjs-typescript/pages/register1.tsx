@@ -24,7 +24,6 @@ export default function Register1({data} : { data: any}, {error} : { error: any}
     const handlePost = async () => {
         
         let data = [];
-        let error = "";
         try {
             const res = await fetch(
                     "https://pro-component-express1o1.herokuapp.com/register", {
@@ -61,7 +60,7 @@ export default function Register1({data} : { data: any}, {error} : { error: any}
             }
             router.push('/login');
         } catch (error:any) {
-            error = error.toString();
+            let ero = error.toString();
         }
         return {
             props: {
