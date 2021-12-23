@@ -2,7 +2,7 @@ import { gql } from '@apollo/client'
 import client from './api/apollo-client'
 
 
-function Profile2({ data }: { data: any }) {
+function Profile1({ data }: { data: any }) {
     return ( 
     <>
       <pre>
@@ -30,5 +30,5 @@ export async function getStaticProps() {
   };
 }
 
-export default Profile;
+export default Profile1;
 
