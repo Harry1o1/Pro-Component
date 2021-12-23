@@ -1,5 +1,5 @@
 # Pro-component
-This is op a template for getting started
+This is a op template for getting started
 
 ## Next Steps
 
