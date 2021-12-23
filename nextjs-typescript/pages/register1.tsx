@@ -60,7 +60,7 @@ export default function Register1({data} : { data: any}, {error} : { error: any}
                 window.alert('Registration successful');
             }
             router.push('/login');
-        } catch (error) {
+        } catch (error:any) {
             error = error.toString();
         }
         return {
