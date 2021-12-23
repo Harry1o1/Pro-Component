@@ -1,12 +1,10 @@
-# A Laravel with MySQL template on Gitpod
-
-This is a [Laravel with MySQL](https://laravel.com) template configured for ephemeral development environments on [Gitpod](https://www.gitpod.io/).
+# Pro-component
 
 ## Next Steps
 
 Click the button below to start a new development environment:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/gitpod-io/template-php-laravel-mysql)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Harry1o1/Pro-Component.git)
 
 ## Get Started With Your Own Project
 
