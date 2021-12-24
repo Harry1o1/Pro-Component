@@ -47,7 +47,6 @@ function App() {
       <header className="App-header">
         <Image src="/logo.svg" alt="Vercel Logo" width={72} height={16} />
         <Image src="/vercel.svg" alt="Vercel Logo" width={200} height={86} />
-        <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
