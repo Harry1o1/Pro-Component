@@ -44,12 +44,11 @@ const handlevideo = (e:any) => {
         <form
         onSubmit={ handlevideo }
         >
-          <h2 onChange={(e:any) => setTitle(e.target.value)} label="Post Title" />
+          <h2 onChange={(e:any) => setTitle(e.target.value)}/>
           <div >
             <h1 color="primary">Upload an Image </h1>
             <input type="file" accept="image/png, image/jpeg" onChange={(e:any) => { setPicture(e.target.files[0]) }} />
             <input type="submit"
-            onClick={ oplog }
             />
           </div>
         </form>
