@@ -4,7 +4,7 @@ import axios from "axios"
 
 function Addpost() {
     const [post, setPost] = useState('dfv')
-    const [picture, setPicture] = useState(null);
+    const [picture, setPicture] = useState('');
 
 
     const handleVideo = async (e:any) => {

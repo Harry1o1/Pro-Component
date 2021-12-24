@@ -4,7 +4,7 @@ import axios from "axios"
 
 function Addpost() {
   const [title, setTitle] = useState('dfv')
-  const [picture, setPicture] = useState(null);
+  const [picture, setPicture] = useState('');
 
 
   const handlesubmit = (e:any) => {
