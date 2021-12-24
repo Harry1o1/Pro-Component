@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image'
-import { Counter } from '../redux-src/features/counter/Counter';
+// import { Counter } from '../redux-src/features/counter/Counter';
 import axios from 'axios'
 
 
@@ -46,6 +46,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Image src="/logo.svg" alt="Vercel Logo" width={72} height={16} />
+        <Image src="/vercel.svg" alt="Vercel Logo" width={200} height={86} />
         <Counter />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
