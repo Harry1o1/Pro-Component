@@ -31,9 +31,6 @@ const handlevideo = (e:any) => {
 
 
 
-const oplog = async () => {
-    console.log(picture,picture.name);
-}
 
 
     
