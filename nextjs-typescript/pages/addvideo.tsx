@@ -82,7 +82,7 @@ function Addpost() {
             <h1>Upload a video</h1>
             <form onSubmit={ handlesubmit } >
               <div >
-                <input type='text' onChange={(e:any) => setPost(e.target.value)} label="Post" placeholder='Post'/>
+                <input type='text' onChange={(e:any) => setPost(e.target.value)} />
                 <input type="file" accept="image/png, image/jpeg" onChange={(e:any)=>{setPicture(e.target.files[0])}} />
                 <input type="submit" />
               </div>

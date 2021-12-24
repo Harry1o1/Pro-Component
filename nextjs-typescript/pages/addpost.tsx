@@ -32,7 +32,7 @@ function Addpost() {
       <div>
         <h1>Add new posts </h1>
         <form onSubmit={handlesubmit} >
-          <h2 onChange={(e:any) => setTitle(e.target.value)} label="Post Title" />
+          <h2 onChange={(e:any) => setTitle(e.target.value)}/>
           <div >
             <h1 color="primary">Upload an Image </h1>
             <input type="file" accept="image/png, image/jpeg" onChange={(e:any) => { setPicture(e.target.files[0]) }} />
