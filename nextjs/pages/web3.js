@@ -8,7 +8,7 @@ import styles from '../styles/Home.module.css'
 
 
     
-// Don't know 🤔🤔🤔
+// will Return 🎉🎉🎉
 const getEthereumContract = () => {
         
       const provider = new ethers.providers.Web3Provider(ethereum);
@@ -70,7 +70,7 @@ const Home = () => {
                     console.log('else op');
                     
                 }
-                getEthereumContract();
+                // getEthereumContract();
                 
             } catch (e) {
                 console.log(e);
