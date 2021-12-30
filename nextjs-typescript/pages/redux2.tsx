@@ -17,18 +17,3 @@ const HomePage: React.FC = () => {
 }
 
 export default HomePage
-
-
-
-
-
-
-const HomePage: React.FC = () => {
-  return (
-    <>
-      <h1>Hello, world!</h1>
-    </>
-  )
-}
-
-export default HomePage
