@@ -32,6 +32,21 @@ import styles from '../styles/Home.module.css'
         }
     }
     
+// Don't know 🤔🤔🤔
+const getEthereumContract = () => {
+        
+      const provider = new ethers.providers.Web3Provider(ethereum);
+      const signer = provider.getSigner();
+      const transactionsContract = new ethers.Contract(contractAddress, contractABI, signer);
+
+    // return transactionsContract;
+    console.log({
+        provider,
+        signer,
+        transactionsContract        
+        
+    });
+};
     
  
 
@@ -73,6 +88,7 @@ const Home = () => {
                     console.log('else op');
                     
                 }
+                getEthereumContract();
                 
             } catch (e) {
                 console.log(e);
@@ -173,19 +189,3 @@ export default Home
 
 
 
-// Don't know 🤔🤔🤔
-// const getEthereumContract = () => {
-        
-//       const provider = new ethers.providers.Web3Provider(ethereum);
-//       const signer = provider.getSigner();
-//       const transactionsContract = new ethers.Contract(contractAddress, contractABI, signer);
-
-//     return transactionsContract;
-    
-//     console.log({
-//         provider,
-//         signer,
-//         transactionsContract        
-        
-//     });
-// };
