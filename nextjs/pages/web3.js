@@ -7,30 +7,6 @@ import styles from '../styles/Home.module.css'
 
 
 
-// op function🥳🥳🥳
-    const isWalletConnected = async () => {
-        if (typeof window !== "undefined") {
-            const { ethereum } = window;// We will be here🔙🔙🔙
-            try {
-                const accounts = await ethereum.request({  method:'eth_accounts'  })
-                console.log(accounts);
-                
-                (3>1) ? console.log('True') : console.log('False')
-                    
-                if (ethereum){
-                    console.log("That's my guy!")
-                    alert(`And the account is ${accounts}`)
-                }
-                if (!ethereum){
-                    console.log("That's my guy!")
-                    alert("Not logd in")
-                }                
-                
-            } catch (e) {
-                console.log(e);
-            }
-        }
-    }
     
 // Don't know 🤔🤔🤔
 const getEthereumContract = () => {
@@ -56,6 +32,12 @@ const getEthereumContract = () => {
 const Home = () => {
     
     const[ currentAccount, setCurrentAccount] = useState('')
+
+
+
+    
+    
+    
     
 //  Main Function 🥰🥰🥰🥰😍
     const connectWallet = async () => {
@@ -95,6 +77,39 @@ const Home = () => {
             }
         }
     }   
+    
+    
+    
+// op function🥳🥳🥳
+    const isWalletConnected = async () => {
+        if (typeof window !== "undefined") {
+            const { ethereum } = window;// We will be here🔙🔙🔙
+            try {
+                const accounts = await ethereum.request({  method:'eth_accounts'  })
+                console.log(accounts);
+                
+                (3>1) ? console.log('True') : console.log('False')
+                    
+                if (ethereum){
+                    console.log("That's my guy!")
+                    if (currentAccount) {
+                        alert(`And the account is ${accounts}`)
+                    } else {
+                        alert(`Not logged in`)
+                    }
+                }
+                if (!ethereum){
+                    console.log("That's my guy!")
+                    alert("Not logd in")
+                }                
+                
+            } catch (e) {
+                console.log(e);
+            }
+        }
+    }
+    
+    
     
     
     
@@ -150,8 +165,8 @@ const Home = () => {
           </main>
           
           
-          <h1 onClick={isWalletConnected}>✔️✅✅ if you are logged in</h1>
           <h1 onClick={connectWallet}>Metamask login</h1> 
+          <h1 onClick={isWalletConnected}>✔️✅✅ if you are logged in</h1>
           
           
           <footer className={styles.footer}>
