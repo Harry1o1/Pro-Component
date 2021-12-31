@@ -81,4 +81,15 @@ footer {
   width: 100%;
 }
 
-/*# sourceMappingURL=globals.css.map */
+/* @use "../src/sass/colors" as *; */
+p {
+  background: #82FFB4;
+}
+
+.hero {
+  background: #82FFB4;
+}
+
+/* op */
+
+/*# sourceMappingURL=index.css.map */
