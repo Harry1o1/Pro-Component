@@ -231,7 +231,7 @@ footer {
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb {
   margin-bottom: 0;
-  margin-top: 0.7rem;
+  margin-top: 0.9rem;
   padding: 0;
   border: 3px solid yellowgreen;
   height: 8vh;
@@ -356,5 +356,3 @@ footer {
 .pro_navbar_pc_lg {
   display: none;
 }
-
-/*# sourceMappingURL=globals.css.map */
