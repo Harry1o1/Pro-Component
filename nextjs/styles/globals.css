@@ -44,10 +44,6 @@ header {
   z-index: 1;
   /* Navbar */
 }
-header nav {
-  min-height: 15.7vh;
-  width: 100%;
-}
 header #pro-header-maincontent {
   height: 85.8vh;
   background: #64FFC9;
@@ -59,6 +55,11 @@ header #pro-header-maincontent h1 {
   text-align: center;
   font-weight: 700;
   font-size: 3rem;
+}
+
+nav {
+  min-height: 15.7vh;
+  width: 100%;
 }
 
 #hero * {

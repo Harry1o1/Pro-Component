@@ -37,7 +37,7 @@ video {
 
 }
 
-#goal{
+#goal {
     height: 2.3vh;
     width: 2.8rem;
 }
@@ -50,11 +50,6 @@ header {
     z-index: 1;
 
     /* Navbar */
-    nav {
-     min-height:  15.7vh;
-     width: 100%;
-     
-    }
     #pro-header-maincontent {
         height: 85.8vh;
         background: #64FFC9;
@@ -70,6 +65,11 @@ header {
     }
 }
 
+nav {
+    min-height: 15.7vh;
+    width: 100%;
+
+}
 
 
 #hero * {
