@@ -4,7 +4,6 @@ function Login() {
     <>
         <header className="pro-header1-sm" id="pro-header1-sm">
             
-            <Navbar1 />
             
             <div id="pro-header-maincontent">
                 <h1>Pro Header</h1>
