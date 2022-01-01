@@ -20,8 +20,8 @@ function Navbar1() {
                     <div className="pro_navbar_mb_header">
                         <h1 className="pro_navbar_brand_mb">Thapapay</h1>
                         <span className="pro_navbar_mb_btn">
-                            <ion-icon className="icon_menu" name="menu-outline"></ion-icon>
-                            <ion-icon className="icon_close" name="close-outline"></ion-icon>
+                            <ion-icon id="icon_menu" name="menu-outline"></ion-icon>
+                            <ion-icon id="icon_close" name="close-outline"></ion-icon>
                         </span>
                     </div>
                     <div className="pro_navbar_mb_main-content">

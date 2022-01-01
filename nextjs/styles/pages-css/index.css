@@ -209,17 +209,18 @@ footer {
   /* position: sticky; */
   box-shadow: 0 0 2rem black;
 }
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn .icon_menu {
+.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn #icon_menu {
   font-size: 2rem;
+  display: block;
 }
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn .icon_close {
+.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn #icon_close {
   font-size: 2rem;
   display: none;
 }
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn.active .icon_menu {
+.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn.active #icon_menu {
   display: none;
 }
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn.active .icon_close {
+.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn.active #icon_close {
   display: block;
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content {

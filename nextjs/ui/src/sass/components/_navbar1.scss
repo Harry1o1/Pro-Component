@@ -153,23 +153,24 @@
                  /* position: sticky; */
                  box-shadow: 0 0 2rem black;
 
-                 .icon_menu {
+                 #icon_menu {
                      font-size: 2rem;
+                     display: block;
 
                  }
 
-                 .icon_close {
+                 #icon_close {
                      font-size: 2rem;
                      display: none;
                  }
              }
 
              .pro_navbar_mb_btn.active {
-                 .icon_menu {
+                 #icon_menu {
                      display: none;
                  }
 
-                 .icon_close {
+                 #icon_close {
                      display: block;
                  }
              }
