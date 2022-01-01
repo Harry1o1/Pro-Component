@@ -3,6 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* only for development🙄🙄🙄 */
+  /* border: 1.5px solid #30FFA7; */
 }
 
 body {
@@ -21,19 +23,16 @@ h6 {
   font-size: 3rem;
 }
 
-img {
+.img {
   width: 95%;
   height: 50vh;
+  margin-inline: auto;
 }
 
 video {
   width: 95%;
   height: 50vh;
-}
-
-#goal {
-  height: 2.3vh;
-  width: 2.8rem;
+  margin-inline: auto;
 }
 
 /* 🎉🎉🎉We will be back🎉🎉🎉 */
@@ -64,7 +63,6 @@ nav {
   min-height: 15.7vh;
   width: 100%;
   background: red;
-  /* border: 2px solid #000000; */
 }
 
 #hero * {
@@ -84,6 +82,14 @@ footer {
   height: 68vh;
   background: #0015FF;
   width: 100%;
+}
+
+/* Testing */
+.zero {
+  height: 40vh;
+  width: 90%;
+  background: #02FFBA;
+  margin-inline: auto;
 }
 
 /* toogle */

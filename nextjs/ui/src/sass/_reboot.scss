@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* only for development🙄🙄🙄 */
+    /* border: 1.5px solid #30FFA7; */
+    
 }
 
 body {
@@ -9,6 +12,8 @@ body {
     width: 100%;
 
 }
+
+
 
 
 h1,
@@ -24,9 +29,11 @@ h6 {
 
 
 
-img {
+.img {
     width: 95%;
     height: 50vh;
+    margin-inline: auto;
+    
 }
 
 
@@ -34,13 +41,11 @@ img {
 video {
     width: 95%;
     height: 50vh;
+    margin-inline: auto;
+    
 
 }
 
-#goal {
-    height: 2.3vh;
-    width: 2.8rem;
-}
 /* 🎉🎉🎉We will be back🎉🎉🎉 */
 header {
     border-bottom-left-radius: 35px;
@@ -71,7 +76,6 @@ nav {
     min-height: 15.7vh;
     width: 100%;
     background: red;
-    /* border: 2px solid #000000; */
 
 }
 
@@ -95,4 +99,12 @@ footer {
     height: 68vh;
     background: #0015FF;
     width: 100%;
+}
+/* Testing */
+
+.zero{
+    height: 40vh;
+    width: 90%;
+    background: #02FFBA;
+    margin-inline: auto;
 }

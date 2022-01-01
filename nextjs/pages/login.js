@@ -44,9 +44,8 @@ function Login() {
             </div>
         </div>
         
-        <footer id="pro-footer1-sm">
-            
-        </footer>
+        <div class="zero"></div>
+        
     </>
   );
 }
