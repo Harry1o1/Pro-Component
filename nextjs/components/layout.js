@@ -55,8 +55,4 @@ export default function Layout({ children }) {
 
 
 
-            // <script type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/master/nextjs/ux/globals.js"></script>
-            // <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            // <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
-            
 
