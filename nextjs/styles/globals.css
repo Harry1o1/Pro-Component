@@ -99,7 +99,6 @@ footer {
   height: 8vh;
   border-radius: 0;
   margin-bottom: 1rem;
-  border-bottom: 3px solid blue;
   margin-top: 0;
   display: block;
   display: grid;
@@ -166,7 +165,7 @@ footer {
 }
 
 .pro_navbar_main_container.active:nth-child(2) {
-  border: 3px solid #FF0050;
+  background: #6BFFF5;
 }
 
 .pro_navbar_main_container.toggle {
@@ -179,11 +178,14 @@ footer {
 ****************************************************************‡*************‡***/
 .pro_navbar_main_container {
   height: 8vh;
-  /* border-bottom-left-radius: 3rem; */
-  /* border-bottom-right-radius: 3rem; */
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
   background: #FFFFFF;
   width: 100%;
-  border: 3px solid #FF00A4;
+}
+.pro_navbar_main_container .pro_navbar_mb_sm {
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header {
   /* border: 3px solid #9F00FF; */
@@ -234,7 +236,6 @@ footer {
   margin-bottom: 0;
   margin-top: 1rem;
   padding: 0;
-  border: 3px solid yellowgreen;
   height: 8vh;
   width: 100%;
   display: grid;
@@ -307,7 +308,6 @@ footer {
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_sub-menu_mb {
   display: none;
   padding: 0;
-  border: 3px solid #1BFF00;
   position: relative;
   left: 6%;
   width: 87%;
@@ -346,7 +346,6 @@ footer {
   display: none;
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_sub-menu_mb.toggle {
-  border: 2px solid #FF0050;
   top: 0.8rem;
   left: 9.5%;
   width: 80%;
