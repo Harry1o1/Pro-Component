@@ -44,7 +44,7 @@ function Login() {
             </div>
         </div>
         
-        <div class="zero"></div>
+        <div className="zero"></div>
         
     </>
   );
