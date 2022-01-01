@@ -18,6 +18,10 @@ export default function Layout({ children }) {
           strategy="beforeInteractive"
         />
         <Script
+          src="https://rawcdn.githack.com/Harry1o1/Pro-Component/master/nextjs/ux/boostrap.js"
+          strategy="beforeInteractive"
+        />
+        <Script
           src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
           strategy="beforeInteractive"
         />
