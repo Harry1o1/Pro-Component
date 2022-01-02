@@ -1,6 +1,7 @@
 import Robin from './src/dom/robin';
 
 
+Robin();
 
 const body = document.querySelector('body');
 const btn = document.querySelector('.pro_navbar_mb_btn');
@@ -51,4 +52,3 @@ console.log(body.clientHeight);
 
 
 
-Robin();
