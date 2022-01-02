@@ -1,5 +1,4 @@
-import Robin from './src/dom/robin';
-
+import { Robin } from './src/dom/robin';
 
 Robin();
 
@@ -31,24 +30,10 @@ body.onclick = () => {
     console.log('Onclick');
 }
 console.log(body.clientHeight);
+console.log('opjkjj');
 
 
 
-// body.onscroll = () => {
-//     console.log(`innerHeight is ${window.innerHeight}`);
-//     console.log(`innerwight is ${window.innerWidth}`);
-//     // console.log(`Sum is  ${window.innerHeight - window.innerWidth}`);
-//     console.log(window.scrollY);
-// }
-
-
-// body.onoffline = () => {
-//     console.log('Ofline');
-// }
-
-// body.ondrag = () => {
-//     console.log('drag');
-// }
 
 
 

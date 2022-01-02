@@ -1,7 +1,3 @@
-
-
-
-
-export default function Robin(){
-    return console.log('op');
+export function Robin(){
+    console.log('op');
 }
