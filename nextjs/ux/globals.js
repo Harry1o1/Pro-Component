@@ -1,3 +1,7 @@
+import Robin from './src/dom/robin';
+
+
+
 const body = document.querySelector('body');
 const btn = document.querySelector('.pro_navbar_mb_btn');
 const small_ul = document.querySelector('.mb_list5');
@@ -47,4 +51,4 @@ console.log(body.clientHeight);
 
 
 
-
+Robin();

@@ -14,7 +14,7 @@ export default function Layout({ children }) {
   return (
     <>
         <Script
-          src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/globals.js"
+          type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/globals.js"
           strategy="beforeInteractive"
         />
         <Script
@@ -22,11 +22,11 @@ export default function Layout({ children }) {
           strategy="beforeInteractive"
         />
         <Script
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+          type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
           strategy="beforeInteractive"
         />
         <Script
-          src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+          nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
           strategy="beforeInteractive"
         />
 
