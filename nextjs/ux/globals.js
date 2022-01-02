@@ -1,6 +1,6 @@
-import { Robin } from './src/dom/robin';
+import { Robin } from './src/dom/robin.js';
 
-Robin();
+Robin('Op Argument');
 
 const body = document.querySelector('body');
 const btn = document.querySelector('.pro_navbar_mb_btn');
@@ -25,12 +25,13 @@ small_ul.onclick = () => {
                 page_menu.classList.toggle('toggle');
                 navbar_sm.classList.toggle('toggle');
         }
-console.log('think hi one');
 body.onclick = () => {
     console.log('Onclick');
 }
+
+
+
 console.log(body.clientHeight);
-console.log('opjkjj');
 
 
 

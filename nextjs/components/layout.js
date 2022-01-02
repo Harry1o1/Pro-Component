@@ -18,9 +18,13 @@ export default function Layout({ children }) {
           strategy="beforeInteractive"
         />
         <Script
-          src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/boostrap.js"
+          src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/boostrap.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"
           strategy="beforeInteractive"
         />
+        <Script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"
+            strategy="beforeInteractive"
+        />        
         <Script
           type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
           strategy="beforeInteractive"

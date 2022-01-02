@@ -1,3 +1,4 @@
-export function Robin(){
-    console.log('op');
+export function Robin(arg){
+    console.log(arg);
+    console.trace();
 }
