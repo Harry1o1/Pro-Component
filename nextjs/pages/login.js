@@ -2,7 +2,7 @@
 function Login() {
   return (
     <>
-        <header className="pro-header1-sm" id="pro-header1-sm">
+        <header className="pro-header1-sm header" id="pro-header1-sm">
             
             
             <div id="pro-header-maincontent">

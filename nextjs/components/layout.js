@@ -1,5 +1,9 @@
 import Navbar1 from "./Navbar/navbar1";
+import Navbar2 from "./Navbar/navbar2";
+
 import Footer1 from './Footer/footer1'
+import Footer2 from './Footer/footer2'
+
 import Script from 'next/script'
 import Head from 'next/head'
 // import Document, { Html, Head, Main, NextScript } from 'next/document'
@@ -40,9 +44,9 @@ export default function Layout({ children }) {
             
         </Head>
         
-      <Navbar1 />
+      <Navbar2 />
       <main>{children}</main>
-      <Footer1 />
+      <Footer2 />
     </>
   )
 }

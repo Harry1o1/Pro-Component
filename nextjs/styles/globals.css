@@ -1,197 +1,9 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* only for development🙄🙄🙄 */
-  /* border: 1.5px solid #30FFA7; */
-}
-
-body {
-  min-height: 100vh;
-  width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: blue;
-  font-weight: 700;
-  font-size: 3rem;
-}
-
-img {
-  width: 95%;
-  height: 40vh;
-  position: relative;
-  left: 10%;
-}
-
-video {
-  width: 95%;
-  height: 50vh;
-  margin-inline: auto;
-}
-
-/* 🎉🎉🎉We will be back🎉🎉🎉 */
-header {
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
-  background: #D7DBFF;
-  height: 100vh;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-}
-header #pro-header-maincontent {
-  height: 85.8vh;
-  background: #64FFC9;
-  width: 100%;
-  display: grid;
-  place-items: center;
-}
-header #pro-header-maincontent h1 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 3rem;
-}
-
-nav {
-  min-height: 15.7vh;
-  width: 100%;
-  background: red;
-}
-
-#hero * {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  border: 1px solid #000000;
-  /* Typography */
-  text-align: center;
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 4rem;
-  z-index: 2;
-}
-
-footer {
-  height: 68vh;
-  background: #0015FF;
-  width: 100%;
-}
-
-/* Testing */
-.zero {
-  height: 40vh;
-  width: 90%;
-  background: #02FFBA;
-  margin-inline: auto;
-}
-
 /* toogle */
+/* @forward "reboot";           for now 🖖🖖🖖🖖🖖                   */
 /* imports */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* only for development🙄🙄🙄 */
-  /* border: 1.5px solid #30FFA7; */
-}
-
-body {
-  min-height: 100vh;
-  width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: blue;
-  font-weight: 700;
-  font-size: 3rem;
-}
-
-img {
-  width: 95%;
-  height: 40vh;
-  position: relative;
-  left: 10%;
-}
-
-video {
-  width: 95%;
-  height: 50vh;
-  margin-inline: auto;
-}
-
-/* 🎉🎉🎉We will be back🎉🎉🎉 */
-header {
-  border-bottom-left-radius: 35px;
-  border-bottom-right-radius: 35px;
-  background: #D7DBFF;
-  height: 100vh;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-header #pro-header-maincontent {
-  height: 85.8vh;
-  background: #64FFC9;
-  width: 100%;
-  display: grid;
-  place-items: center;
-}
-
-header #pro-header-maincontent h1 {
-  text-align: center;
-  font-weight: 700;
-  font-size: 3rem;
-}
-
-nav {
-  min-height: 15.7vh;
-  width: 100%;
-  background: red;
-}
-
-#hero * {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  border: 1px solid #000000;
-  /* Typography */
-  text-align: center;
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 4rem;
-  z-index: 2;
-}
-
-footer {
-  height: 68vh;
-  background: #0015FF;
-  width: 100%;
-}
-
-/* Testing */
-.zero {
-  height: 40vh;
-  width: 90%;
-  background: #02FFBA;
-  margin-inline: auto;
-}
-
 /* toogle */
+/* @forward "reboot";           for now 🖖🖖🖖🖖🖖                   */
 @media (min-width: 360px) and (max-width: 490px) {
   .pro_navbar_main_container.active {
     height: 100vh;
@@ -499,4 +311,47 @@ footer {
   .pro_navbar_main_container {
     display: none;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 3px solid #9F00FF; */
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero {
+  background: red;
+  height: 100vh;
+}
+
+#container {
+  margin-inline: auto;
+  height: 25vh;
+  width: 80%;
+  margin-top: 10rem;
+  text-align: center;
+  font-style: bold;
+  font-weight: 700;
+  /* display: grid; */
+  /* place-items: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
