@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 
 
@@ -23,19 +24,33 @@ function Navbar2() {
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                   <ul className="navbar-nav me-auto mb-2 mb-md-0">
                     <li className="nav-item">
-                      <a className="nav-link active" aria-current="page" href="#">Goals</a>
+                    
+                    <Link href="/">
+                        <a className="nav-link active" aria-current="page">Home</a>
+                    </Link>
+                    
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link active" aria-current="page" href="#">Status</a>
+                     <Link href="redux">
+                        <a className="nav-link active" aria-current="page">Redux</a>
+                    </Link>
+                    
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link active" aria-current="page" href="#">Notes</a>
+                     <Link href="/login">
+                        <a className="nav-link active" aria-current="page">Login</a>
+                    </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link active" aria-current="page" href="#">Task</a>
+                     <Link href="/django">
+                        <a className="nav-link active" aria-current="page">Django</a>
+                    </Link>
                     </li>
                     <li className="nav-item">
-                      <a className="nav-link active" aria-current="page" href="#">Library</a>
+                    <Link href="/goals">
+                        <a className="nav-link active" aria-current="page">Goals</a>
+                    </Link>
+
                     </li>
                   </ul>
                   <form className="d-flex">
