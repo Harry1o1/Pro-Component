@@ -22,21 +22,21 @@ Robin('Op Argument');
 
 
 
-btn.onclick = () => {
-    btn.classList.toggle('active');
-    navbar_sm.classList.toggle('active');
-};
+// btn.onclick = () => {
+//     btn.classList.toggle('active');
+//     navbar_sm.classList.toggle('active');
+// };
 
-small_ul.onclick = () => {
-    const pp = document.querySelector('.pro_navbar_mb_main-content').childElementCount;
-    console.log(pp);
-    sub.classList.toggle('toggle');
-    page_menu.classList.toggle('toggle');
-    navbar_sm.classList.toggle('toggle');
-}
-body.onclick = () => {
-    console.log('Onclick');
-}
+// small_ul.onclick = () => {
+//     const pp = document.querySelector('.pro_navbar_mb_main-content').childElementCount;
+//     console.log(pp);
+//     sub.classList.toggle('toggle');
+//     page_menu.classList.toggle('toggle');
+//     navbar_sm.classList.toggle('toggle');
+// }
+// body.onclick = () => {
+//     console.log('Onclick');
+// }
 
 
 
