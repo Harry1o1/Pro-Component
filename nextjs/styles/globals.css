@@ -12,6 +12,11 @@ body {
   width: 100%;
 }
 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
 h1,
 h2,
 h3,
