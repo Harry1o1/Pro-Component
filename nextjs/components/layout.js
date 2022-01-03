@@ -19,11 +19,11 @@ export default function Layout({ children }) {
     <>
 
         {/* Testing🖖🖖🖖 */}
-        
         <Script
-          src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/boostrap.js" 
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
           strategy="beforeInteractive"
         />
+
      
         <Script
           type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -63,5 +63,9 @@ export default function Layout({ children }) {
         
                 // <Script
         //   type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/globals.js"
+        //   strategy="beforeInteractive"
+        // />   
+                // <Script
+        //   src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/boostrap.js" 
         //   strategy="beforeInteractive"
         // />
