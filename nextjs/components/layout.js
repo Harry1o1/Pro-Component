@@ -17,10 +17,7 @@ import Head from 'next/head'
 export default function Layout({ children }) {
   return (
     <>
-        <Script
-          type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/globals.js"
-          strategy="beforeInteractive"
-        />
+
         {/* Testing🖖🖖🖖 */}
         
         <Script
@@ -63,3 +60,8 @@ export default function Layout({ children }) {
             // src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"
             // strategy="beforeInteractive"
         // />   😌
+        
+                // <Script
+        //   type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/globals.js"
+        //   strategy="beforeInteractive"
+        // />
