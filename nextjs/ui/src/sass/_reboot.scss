@@ -14,17 +14,7 @@ body {
 }
 
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-#redux{
-  margin-inline: auto;
-  height: 40vh;
-  width: 80%;
-    
-}
 
 h1,
 h2,
@@ -39,9 +29,9 @@ h6 {
 
 
 
-.img {
+img {
     width: 95%;
-    height: 50vh;
+    height: 40vh;
     margin-inline: auto;
     
 }
@@ -60,7 +50,7 @@ video {
 header {
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
-    background: #64FFC9;
+    background: #D7DBFF;
     height: 100vh;
     position: relative;
     bottom: 0;

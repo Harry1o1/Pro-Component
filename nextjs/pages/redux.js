@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-            <img src="/logo.svg" id="redux" alt="Vercel Logo"  />
+            <img src="/logo.svg" alt="Vercel Logo"  />
         <Counter />
         <p>
           Edit <code>src/App.js</code> and save to reload.
