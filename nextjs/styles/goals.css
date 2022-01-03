@@ -41,3 +41,9 @@ body {
   -moz-user-select: none;
   user-select: none;
 }
+
+#menu {
+  height: 2.3rem;
+  width: 40px;
+  font-size: 5rem;
+}
