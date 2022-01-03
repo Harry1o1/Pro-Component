@@ -1,7 +1,4 @@
-import { Robin } from './src/dom/robin.js';
-
-Robin('Op Argument');
-
+import { Robin } from './src/toogle/robin.js';
 const body = document.querySelector('body');
 const btn = document.querySelector('.pro_navbar_mb_btn');
 const small_ul = document.querySelector('.mb_list5');
@@ -10,21 +7,28 @@ const navbar_main_content = document.querySelector('.pro_navbar_mb_main-content'
 const sub = document.querySelector('.pro_navbar_sub-menu_mb');
 const page_menu = document.querySelector('.pro_navbar_page-menu_mb');
 
+
+
+
+Robin('Op Argument');
+
+
+
+
+
+
 btn.onclick = () => {
-        btn.classList.toggle('active');
-        navbar_sm.classList.toggle('active');
+    btn.classList.toggle('active');
+    navbar_sm.classList.toggle('active');
 };
 
-
-
-
 small_ul.onclick = () => {
-                const pp = document.querySelector('.pro_navbar_mb_main-content').childElementCount;
-                console.log(pp);
-                sub.classList.toggle('toggle');
-                page_menu.classList.toggle('toggle');
-                navbar_sm.classList.toggle('toggle');
-        }
+    const pp = document.querySelector('.pro_navbar_mb_main-content').childElementCount;
+    console.log(pp);
+    sub.classList.toggle('toggle');
+    page_menu.classList.toggle('toggle');
+    navbar_sm.classList.toggle('toggle');
+}
 body.onclick = () => {
     console.log('Onclick');
 }
@@ -32,9 +36,3 @@ body.onclick = () => {
 
 
 console.log(body.clientHeight);
-
-
-
-
-
-
