@@ -1,5 +1,5 @@
-import Head from 'next/head'
 import Link from 'next/link'
+import Head from 'next/head'
 
 
 
@@ -10,7 +10,7 @@ function Navbar2() {
         <>
         
         <Head>
-            <link rel="stylesheet" href="../../styles/css/navbar2.css" />
+            <link rel="stylesheet" href="https://rawcdn.githack.com/Harry1o1/Pro-Component/8211a1afd48590cebc43f85d86598deed787887e/nextjs/styles/css/navbar2.css" />
             
         </Head>
                     {/* Fixed navbar */}
@@ -67,7 +67,7 @@ function Navbar2() {
               </div>
             </nav>
             <div id="wrapper">
-              <div className="scrollmenu bg-light">
+              <div className="scrollmenu bg-">
                     <a href className="scrollmagic"> Page1 </a>
                     <a href className="scrollmagic"> Page2 </a>
                     <a href className="scrollmagic"> Page3 </a>
