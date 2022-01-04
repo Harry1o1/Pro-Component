@@ -1,6 +1,8 @@
 #wrapper {
+    margin-top: 10rem;
     overflow: hidden;
     height: 58px;
+    background-color: #70FFA9;
 }
 
 
@@ -13,7 +15,7 @@
 }
 
 
-@media (min-width: 470px) and (max-width: 700px) {
+@media (min-width: 700px) and (max-width: 1500px) {
     #menu {
         display: none;
     }
@@ -49,5 +51,5 @@ a {
     position: absolute;
     width: 100%;
     height: 5px;
-    background: #70FFA9;
+    background: black ;
 }
