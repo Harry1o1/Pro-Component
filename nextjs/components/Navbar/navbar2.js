@@ -10,7 +10,7 @@ function Navbar2() {
         <>
         
         <Head>
-            <link rel="stylesheet" href="../../styles/css/navbar2.css" />
+            <link rel="stylesheet" href="https://raw.githack.com/Harry1o1/Pro-Component/master/nextjs/styles/css/navbar2.css" />
             
         </Head>
                     {/* Fixed navbar */}
