@@ -325,6 +325,7 @@ body {
   background: #f8f9fa;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 #hero {
@@ -361,3 +362,28 @@ body {
   width: 40px;
   font-size: 5rem;
 }
+
+.ionic {
+  margin-top: 5rem;
+}
+
+/* .pro-navbar-scrolling{margin-top: 4.3rem;
+
+    width: 470px;
+    height: 50vh;
+    &-ul{
+
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li{
+            min-width: 5rem;
+            width: 60%;
+            height: 5rem;
+            background: #FF0054;
+            margin-right: 3rem;
+
+        }
+    }
+} */
