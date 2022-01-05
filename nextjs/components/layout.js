@@ -1,6 +1,7 @@
 import Navbar1 from "./Navbar/navbar1";
 import Navbar2 from "./Navbar/navbar2";
-import Navbar2 from "./Navbar/navbar3";
+import Navbar3 from "./Navbar/navbar3";
+import Navbar4 from "./Navbar/navbar4";
 
 import Footer1 from './Footer/footer1'
 import Footer2 from './Footer/footer2'
@@ -27,7 +28,11 @@ export default function Layout({ children }) {
           strategy="beforeInteractive"
         />
 
-     
+         <Script
+            src = 'https://raw.githack.com/Harry1o1/Pro-Component/master/nextjs/ux/globals.js'
+            strategy = "beforeInteractive" 
+        />     
+        
         <Script
           type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
           strategy="beforeInteractive"
@@ -44,7 +49,7 @@ export default function Layout({ children }) {
             
         </Head>
         
-      <Navbar3 />
+      <Navbar4 />
       <main>{children}</main>
       <Footer2 />
     </>

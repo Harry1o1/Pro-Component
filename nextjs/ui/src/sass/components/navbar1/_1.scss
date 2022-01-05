@@ -25,18 +25,20 @@
                         width: 100%;
                         height: 9.5vh;
                         border-radius: 0;
-                        margin-bottom: 1rem;
                         margin-top: 0;
                         display: block;
                         display: grid;
+                        padding-right: 20px;
                         place-items: center;
                         grid-template-columns: repeat(5, 1fr);
 
                         li {
+                            margin-inline: auto;
                             position: relative;
                             align-items: center;
                             justify-content: center;
                             width: 50%;
+                            margin-bottom: 2rem;
 
                         }
                     }
@@ -91,8 +93,11 @@
                             align-items: left;
                             justify-content: left;
                             width: 80%;
+                            height: 3.7rem;
 
-                            .pro_toggle_navbar_mb {}
+                            .pro_toggle_navbar_mb {
+                                padding: 1rem;
+                            }
                         }
                     }
 
@@ -125,7 +130,9 @@
 
         /* ********************‡**********‡       End      ****************‡**************‡
 ****************************************************************‡*************‡***/
-
+#nav2{
+    display: none;
+}
         .pro_navbar_main_container {
             height: 8vh;
             border-bottom-left-radius: 2rem;
@@ -138,6 +145,7 @@
                 border-bottom-right-radius: 2rem;
 
                 .pro_navbar_mb_header {
+                    
                     /* border: 3px solid #9F00FF; */
                     display: grid;
                     grid-template-columns: 85% 1fr;
@@ -149,28 +157,36 @@
                         font-size: 2.7rem;
                         margin: 0;
                         padding: 0;
+                        font-style: bold;
+                        font-weight: 700;
+                        padding-left: 1rem;
                     }
 
                     .pro_navbar_mb_btn {
                         margin-top: 0.4rem;
                         background: #fff;
-                        border-radius: 0.8rem;
-                        width: 3rem;
-                        height: 3rem;
+                        border-radius: 0.5rem;
+                        width: 2.5rem;
+                        height: 2.5rem;
                         display: grid;
                         place-items: center;
                         /* position: sticky; */
-                        box-shadow: 0 0 2rem #000000;
+                        /* box-shadow: 0 0 2rem #232757; */
+                        /* background: #3EFFC5; */
+                        /* background: rgba(240, 240, 240, 0.5); */
 
                         #icon_menu {
-                            font-size: 2rem;
+                            font-size: 2.5rem;
                             display: block;
+                            margin-right: 2rem;
 
                         }
 
                         #icon_close {
-                            font-size: 2rem;
+                            font-size: 2.5rem;
                             display: none;
+                            margin-right: 2rem;
+                            
                         }
                     }
 
@@ -186,6 +202,7 @@
                 }
 
                 .pro_navbar_mb_main-content {
+                    
                     height: 8vh;
                     /* border-bottom: 3px solid red; */
 
@@ -195,39 +212,43 @@
 
                     .pro_navbar_page-menu_mb {
                         overflow: hidden;
-                        height: 58px;
-                        background-color: #70FFA9;
+                        /* height: 58px; */
                         /* box-sizing: content-box; */
                         margin-bottom: 0;
                         /* margin-top: 1rem; */
                         padding: 0;
                         height: 10vh;
                         margin-inline: auto;
+                        display: flex;
+                        flex-direction: row;
+                        margin-top: 0.6rem;
+                        padding-left: 17px;
+                        
 
                         /* max-width: 100%; */
-                        /* display: grid; */
 
-                        /* grid-template-columns: repeat(5, 1fr); */
-                        /* grid-gap: 20px; */
-                        display: inline-block;
 
 
                         li {
                             /* display: flex; */
                             /* align-items: center; */
                             /* justify-content: center; */
-                            overflow: auto;
-                            display: inline-block;
-                            white-space: nowrap;
+                            /* overflow: auto; */
+                            /* display: inline-block; */
+                            /* white-space: nowrap; */
+                            display: grid;
+                            grid-template-columns: repeat(5, 1fr);
+                            /* grid-gap: 20px; */
+                            height: 3.4vh;
+                            place-items: center;
 
                             .pro_toggle_navbar_mb {
-                                /* margin-left: 0.5rem; */
-                                /* display: flex; */
-                                /* flex-direction: column; */
-                                /* align-items: center; */
-                                /* justify-content: center; */
-                                padding: 1.6rem;
-                                border-radius: 45%;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 1.7rem;
+                                border-radius: 50%;
                                 /* display: inline-block; */
 
 
@@ -369,7 +390,6 @@
         .pro_navbar_pc_lg {
             display: none;
         }
-
 
     }
 }
