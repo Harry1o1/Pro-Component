@@ -22,7 +22,7 @@ function Navbar4() {
                   <ul className="pro_navbar_page-menu_mb">
                     <li>
                       <div className="pro_toggle_navbar_mb">
-                      <Link href="redux">
+                      <Link href="/">
                             <ion-icon name="home-outline" className="mb_icons" />
                       </Link>
                         
@@ -31,25 +31,37 @@ function Navbar4() {
                     </li>
                     <li>
                       <div className="pro_toggle_navbar_mb">
-                        <ion-icon name="logo-tiktok" className="mb_icons" />
+                      <Link href="/">
+                            <ion-icon name="logo-tiktok" className="mb_icons" />
+                      </Link>
+                            
                         <span className="mb_items">Sorts</span>
                       </div>
                     </li>
                     <li>
                       <div className="pro_toggle_navbar_mb">
-                        <ion-icon name="chatbubbles-outline" className="mb_icons" />
+                      <Link href="/">
+                            <ion-icon name="chatbubbles-outline" className="mb_icons" />
+                      </Link>
+                            
                         <span className="mb_items">Messages</span>
                       </div>
                     </li>
                     <li>
                       <div className="pro_toggle_navbar_mb">
-                        <ion-icon name="notifications-outline" className="mb_icons" />
+                      <Link href="/">
+                            <ion-icon name="notifications-outline" className="mb_icons" />
+                       </Link>
+                            
                         <span className="mb_items">Notifications</span>
                       </div>
                     </li>
                     <li>
                       <div className="pro_toggle_navbar_mb">
-                        <ion-icon name="notifications-outline" className="mb_icons" />
+                       <Link href="/">
+                            <ion-icon name="notifications-outline" className="mb_icons" />
+                        </Link>
+                            
                         <span className="mb_items">Notifications</span>
                       </div>
                     </li>                        

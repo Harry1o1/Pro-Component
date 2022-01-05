@@ -29,7 +29,7 @@ export default function Layout({ children }) {
         />
 
          <Script
-            src = 'https://raw.githack.com/Harry1o1/Pro-Component/master/nextjs/ux/globals.js'
+            type='module' src = 'https://raw.githack.com/Harry1o1/Pro-Component/master/nextjs/ux/globals.js'
             strategy = "beforeInteractive" 
         />     
         
