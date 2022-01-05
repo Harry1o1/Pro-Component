@@ -29,7 +29,7 @@ export default function Layout({ children }) {
         />
 
          <Script
-            type='module' src = 'https://raw.githack.com/Harry1o1/Pro-Component/master/nextjs/ux/globals.js'
+            type="module" src='https://raw.githack.com/Harry1o1/Pro-Component/master/nextjs/ux/globals.js'
             strategy = "beforeInteractive" 
         />     
         
@@ -50,7 +50,7 @@ export default function Layout({ children }) {
         </Head>
         
       <Navbar4 />
-      <main>{children}</main>
+      <main id="main">{children}</main>
       <Footer2 />
     </>
   )
