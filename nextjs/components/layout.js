@@ -1,5 +1,7 @@
 import Navbar1 from "./Navbar/navbar1";
 import Navbar2 from "./Navbar/navbar2";
+import Navbar2 from "./Navbar/navbar3";
+
 import Footer1 from './Footer/footer1'
 import Footer2 from './Footer/footer2'
 
@@ -42,7 +44,7 @@ export default function Layout({ children }) {
             
         </Head>
         
-      <Navbar2 />
+      <Navbar3 />
       <main>{children}</main>
       <Footer2 />
     </>
