@@ -26,10 +26,9 @@
 /* div.scrollmenu a:hover {
     background: #0F9;
 } */
-::-webkit-scrollbar {
-  display: none;
-}
-
+/* ::-webkit-scrollbar {
+    display: none;
+} */
 #marker {
   position: absolute;
   width: 100%;
