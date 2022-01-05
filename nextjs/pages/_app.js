@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+
 import Layout from '../components/layout'
 
 import { store } from '../components/app/store';

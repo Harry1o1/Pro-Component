@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import Head from 'next/head'
+// import Head from 'next/head'
+import styles from '../../styles/Navbar2.module.css'
 
 
 
@@ -9,10 +10,6 @@ function Navbar2() {
     return (
         <>
         
-        <Head>
-            <link rel="stylesheet" href="https://raw.githack.com/Harry1o1/Pro-Component/master/nextjs/styles/css/navbar2.css" />
-            
-        </Head>
                     {/* Fixed navbar */}
             <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
               <div className="container-fluid">
