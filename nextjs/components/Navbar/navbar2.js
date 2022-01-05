@@ -64,27 +64,28 @@ function Navbar2() {
               </div>
             </nav>
             <div id="wrapper">
-              <div className="scrollmenu bg-">
-                    <a href className="scrollmagic"> Page1 </a>
-                    <a href className="scrollmagic"> Page2 </a>
-                    <a href className="scrollmagic"> Page3 </a>
-                    <a href className="scrollmagic"> Page4 </a>
-                    <a href className="scrollmagic"> Page5 </a>
-                    <a href className="scrollmagic"> Page6 </a>
-                    <a href className="scrollmagic"> Page7 </a>
-                    <a href className="scrollmagic"> Page8 </a>
-                    <a href className="scrollmagic"> Page9 </a>
-                    <a href className="scrollmagic"> Page10 </a>
-                    <a href className="scrollmagic"> Page11 </a>
-                    <a href className="scrollmagic"> Page12 </a>
-                    <a href className="scrollmagic"> Page13 </a>
-                    <a href className="scrollmagic"> Page14 </a>
-                    <a href className="scrollmagic"> Page15 </a>
-                    <a href className="scrollmagic"> Page16 </a>
-                    <a href className="scrollmagic"> Page17 </a>
-                    <a href className="scrollmagic"> Page18 </a>
-                    <a href className="scrollmagic"> Page19 </a>
-                    <a href className="scrollmagic"> Page20 </a>
+              <div className={styles.scrollmanu}>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    <a href className={styles.scrollmagic}> Page1 </a>
+                    
                   
                </div>
                <div id="marker" />

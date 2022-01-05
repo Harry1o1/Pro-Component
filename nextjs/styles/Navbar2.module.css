@@ -10,12 +10,12 @@
     display: none;
   }
 }
-.scrollmenu {
+#scrollmenu {
   overflow: auto;
   white-space: nowrap;
 }
 
-a {
+.scrollmagic {
   display: inline-block;
   color: black;
   text-align: center;
