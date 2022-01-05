@@ -31,7 +31,7 @@ function Navbar4() {
                     </li>
                     <li>
                       <div className="pro_toggle_navbar_mb">
-                      <Link href="/">
+                      <Link href="/goals">
                             <ion-icon name="logo-tiktok" className="mb_icons" />
                       </Link>
                             
@@ -40,7 +40,7 @@ function Navbar4() {
                     </li>
                     <li>
                       <div className="pro_toggle_navbar_mb">
-                      <Link href="/">
+                      <Link href="/django">
                             <ion-icon name="chatbubbles-outline" className="mb_icons" />
                       </Link>
                             
@@ -49,7 +49,7 @@ function Navbar4() {
                     </li>
                     <li>
                       <div className="pro_toggle_navbar_mb">
-                      <Link href="/">
+                      <Link href="/express">
                             <ion-icon name="notifications-outline" className="mb_icons" />
                        </Link>
                             
@@ -58,7 +58,7 @@ function Navbar4() {
                     </li>
                     <li>
                       <div className="pro_toggle_navbar_mb">
-                       <Link href="/">
+                       <Link href="/redux">
                             <ion-icon name="notifications-outline" className="mb_icons" />
                         </Link>
                             
