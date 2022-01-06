@@ -28,3 +28,9 @@ class VideoCreate(CreateAPIView):
 # Create your views here.
 def index(request):
     return HttpResponse("Hello world!")
+    
+    
+    
+    
+    
+    

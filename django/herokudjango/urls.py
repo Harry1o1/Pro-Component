@@ -33,6 +33,7 @@ urlpatterns = [
     path('api/', include('api.urls')),
     # path('video/', include('video.urls')),
     path('upload/', include('upload.urls')),
+    path('todo/', include('todo.urls')),
     path('', include('home.urls')),
     path("graphql", csrf_exempt(GraphQLView.as_view(graphiql=True))),
     
