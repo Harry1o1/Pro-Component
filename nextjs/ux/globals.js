@@ -8,12 +8,32 @@ const sub = document.querySelector('.pro_navbar_sub-menu_mb');
 const page_menu = document.querySelector('.pro_navbar_page-menu_mb');
 let menu = document.querySelector('span');
 let navbar2 = document.querySelector('body');
+let marker = document.querySelector('#marker');
+let items = document.querySelectorAll('.op');
 
-// let navbar2_close = document.querySelector('#navbar2_close');
+
+
+
+
+
+
+// Pagr indicTor
+    function indicator(e) {
+    
+        marker.style.left = e.offsetLeft + 'px';
+        marker.style.width = e.offsetWidth + 'px';
+        console.log(marker.style.width);
+    
+    };
+    items.forEach(link => {
+        link.addEventListener('click', (e) => {
+            indicator(e.target);
+        })
+    });
+
 
 
 Robin('Op Argument');
-
 
 btn.onclick = () => {
     navbar2.classList.toggle('active')

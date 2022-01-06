@@ -1,0 +1,116 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.scroll {
+    margin-inline: auto;
+    padding: 4px;
+    height: 5vh;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+}
+
+
+
+.scroll li {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    min-width: 5.8rem;
+    text-align: center;
+    
+}
+
+
+
+.scroll li a {
+    text-align: center;
+    text-decoration: none;
+    /* background: rgba(240, 240, 255, 0.5); */
+    /* height: 4rem; */
+    font-size: 1.3rem;
+    font-style: bold;
+    font-weight: 700vh;
+    color: #000000;
+
+}
+
+
+/* @keyframes example {
+    from {
+        font-size: 1rem;
+    }
+
+    to {
+        font-size: 0.4rem;
+
+    }
+} */
+
+/* The element to apply the animation to */
+
+.scroll li:hover {
+    /* animation-name: example; */
+    /* animation-duration: 0.3s; */
+    color: black;
+    /* background: rgba(240, 240, 255, 0.5); */
+
+
+}
+
+#marker {
+    background: #000;
+    width: 0;
+    height: 5px;
+    position: absolute;
+    /* bottom: 0.3vh; */
+    left: 0;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+
+
+}
+
+
+
+
+#line {
+    background: #000;
+    height: 1px;
+    width: 100%;
+    margin-top: 0.2rem;
+
+
+
+}

@@ -11,6 +11,18 @@
 @include navbar1-4;
 
 
+@media (min-width: 360px) and (max-width: 490px) {
+        #navbar2{
+            display: none;
+        }
+    }
+@media (min-width: 490px) and (max-width: 1500px) {
+        #nav2{
+            display: none;
+        }
+    }
+
+
 
 * {
     margin: 0;
@@ -105,22 +117,16 @@ body {
     white-space: nowrap;
 }
 
-a {
+/* a {
     display: inline-block;
     color: black;
     text-align: center;
     padding: 20px;
     text-decoration: none;
-}
+} */
 
 
 
-#marker {
-    position: absolute;
-    width: 100%;
-    height: 5px;
-    background: black;
-}
 
 
 
