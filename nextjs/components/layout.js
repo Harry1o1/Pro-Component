@@ -49,7 +49,6 @@ export default function Layout({ children }) {
             
         </Head>
         
-      <Navbar4 />
       <main id="main">{children}</main>
       <Footer2 />
     </>
@@ -59,7 +58,7 @@ export default function Layout({ children }) {
 
 
 
-
+//       <Navbar4 />
 
 
 
