@@ -49,7 +49,7 @@ export default function Layout({ children }) {
             
         </Head>
         
-      <main id="main">{children}</main>
+      {children}
       <Footer2 />
     </>
   )
