@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* Navbar4 */
+/* Navbar5 */
 /* @forward "reboot";           for now 🖖🖖🖖🖖🖖                   */
 ::-webkit-scrollbar {
   display: none;
@@ -58,10 +58,11 @@ body {
 
 #hero {
   background: red;
+  margin-top: 1rem;
 }
 
 /* imports */
-/* Navbar4 */
+/* Navbar5 */
 /* @forward "reboot";           for now 🖖🖖🖖🖖🖖                   */
 #nav2 {
   display: none;
@@ -72,16 +73,17 @@ body {
     display: none;
   }
 
-  .pro_navbar_sub-menu_mb {
-    display: block;
-  }
-
   /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Active 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
   .pro_navbar_main_container.active {
     height: 100vh;
   }
+  .pro_navbar_main_container.active #sun-menu {
+    display: block;
+  }
+  .pro_navbar_main_container.active .pro_navbar_sub-menu_mb {
+    display: block;
+  }
   .pro_navbar_main_container.active #gift {
-    display: none;
     height: 70vh;
     margin-top: 1.5rem;
     margin-bottom: 3.5rem;
@@ -134,9 +136,6 @@ body {
 .pro_navbar_main_container.active #marker,
 .pro_navbar_main_container.active #line {
     display: none;
-  }
-  .pro_navbar_main_container.active .pro_navbar_toggle-menu_mb {
-    display: block;
   }
   .pro_navbar_main_container.active #circle {
     display: block;
@@ -195,9 +194,17 @@ body {
   .pro_navbar_mb_main-content.toggle .pro_navbar_mb_main-content.toggle:first-child {
     display: none;
   }
+  .pro_navbar_mb_main-content.toggle .pro_navbar_mb_main-content.toggle:nth-child(3) {
+    display: block;
+  }
 
   .pro_navbar_main_container.active:nth-child(2) {
     background: #6BFFF5;
+  }
+
+  .pro_navbar_main_container.active:nth-child(3) {
+    background: #6BFFF5;
+    display: block;
   }
 
   .pro_navbar_main_container.toggle {
@@ -213,7 +220,7 @@ body {
 }
 
 .pro_navbar_main_container {
-  height: 11vh;
+  height: 10.8vh;
   /* border-bottom-left-radius: 2rem; */
   /* border-bottom-right-radius: 2rem; */
   background: #FFFFFF;
@@ -235,7 +242,7 @@ body {
   /* padding-top: 10%; */
   position: relative;
   top: 0.3rem;
-  font-size: 2.7rem;
+  font-size: 1.7rem;
   margin: 0;
   padding: 0;
   font-style: bold;
@@ -279,20 +286,15 @@ body {
   display: none;
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb {
-  /* display: none; */
   overflow: hidden;
-  /* height: 58px; */
-  /* box-sizing: content-box; */
   margin-bottom: 0;
-  /* margin-top: 1rem; */
-  padding: 0;
   height: 10vh;
   margin-inline: auto;
   display: flex;
   flex-direction: row;
   margin-top: 0.6rem;
   padding-left: 1.1rem;
-  /* max-width: 100%; */
+  padding-bottom: 0.8rem;
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb li {
   /* display: flex; */
@@ -306,14 +308,16 @@ body {
   /* grid-gap: 20px; */
   height: 3.4vh;
   place-items: center;
+  /* margin-bottom: 1rem; */
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb li .pro_toggle_navbar_mb {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.7rem;
+  padding: 1.3rem;
   border-radius: 50%;
+  /* margin-bottom: 2rem; */
   /* display: inline-block; */
   /* box-shadow: 0 0 2rem #784D68; */
   background: rgba(240, 240, 255, 0.5);
@@ -417,28 +421,27 @@ body {
 }
 .pro_navbar_main_container .scroll {
   padding: 4px;
-  height: 44px;
+  height: 40px;
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   display: grid;
   /* grid-template-columns: repeat(10, 1fr); */
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: 35px 8px;
+  grid-template-columns: repeat(20, 70px);
+  grid-template-rows: 25px 5px;
 }
 .pro_navbar_main_container .scroll * {
   list-style: none;
   display: grid;
   place-items: center;
-  min-width: 5.8rem;
   text-align: center;
   height: 4vh;
 }
 .pro_navbar_main_container .scroll li a {
   text-align: center;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-style: bold;
   font-weight: 700vh;
   color: #000000;
@@ -452,8 +455,9 @@ body {
 }
 .pro_navbar_main_container #marker {
   background: #000;
-  height: 7px;
+  height: 4.5px;
   position: relative;
+  top: 0.2rem;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
   border-radius: 25px;
@@ -463,6 +467,8 @@ body {
   background: #000;
   height: 1px;
   width: 100%;
+  position: relative;
+  bottom: 0.3rem;
 }
 @keyframes sidebar {
   0% {
