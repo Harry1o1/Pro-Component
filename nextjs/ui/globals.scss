@@ -1,9 +1,7 @@
-@use "./src/sass" as *;
+/* @use "./src/sass" as *; */
+@import "./components/navbar1";
 
 
-::-webkit-scrollbar {
-    display: none;
-}
 
 
 * {
@@ -87,67 +85,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* imports */
-@import "./src/sass";
-
-
-
-
-@include navbar1-1;
-@include navbar1-2;
-@include navbar1-3;
-@include navbar1-4;
-
-
 @media (min-width: 360px) and (max-width: 490px) {
         #navbar2{
             display: none;
@@ -158,3 +95,8 @@ body {
             display: none;
         }
     }
+
+
+
+/* ok including */
+@include navbar1;

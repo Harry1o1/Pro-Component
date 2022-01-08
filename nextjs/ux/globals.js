@@ -9,7 +9,7 @@ const page_menu = document.querySelector('.pro_navbar_page-menu_mb');
 let menu = document.querySelector('span');
 let navbar2 = document.querySelector('body');
 let marker = document.querySelector('#marker');
-let items = document.querySelectorAll('.op');
+let items = document.querySelectorAll('.scroll_li_a');
 let navbar = document.querySelector('.scroll');
 
 
@@ -61,8 +61,7 @@ function myFunction() {
 Robin('Op Argument');
 if (btn !== 'undefined') {
     btn.onclick = () => {
-    navbar2.classList.toggle('active')
-    console.log('navbar2');
+        navbar2.classList.toggle('active')
     };
     btn.onclick = () => {
         btn.classList.toggle('active');
@@ -72,17 +71,6 @@ if (btn !== 'undefined') {
 
 
 
-if ( small_ul.onclick !== 'undefined') {
-
-    small_ul.onclick = () => {
-        const pp = document.querySelector('.pro_navbar_mb_main-content').childElementCount;
-        console.log(pp);
-        sub.classList.toggle('toggle');
-        page_menu.classList.toggle('toggle');
-        navbar_sm.classList.toggle('toggle');
-    }
-
-}
 
 
 
