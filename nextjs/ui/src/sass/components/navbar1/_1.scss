@@ -412,59 +412,114 @@
         
         
         /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Scroll 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
+        
         .scroll {
-            margin-inline: auto;
             padding: 4px;
-            height: 5vh;
+            height: 44px;
             width: 100%;
             overflow-x: auto;
             overflow-y: hidden;
             white-space: nowrap;
-            display: flex;
+            display: grid;
+            /* grid-template-columns: repeat(10, 1fr); */
+            grid-template-columns: repeat(20, 1fr);
+            grid-template-rows: 35px 8px;
+            
         }
         
-        .scroll li {
+        
+        
+        .scroll * {
             list-style: none;
             display: grid;
             place-items: center;
             min-width: 5.8rem;
             text-align: center;
-        
+            height: 4vh;
+            
+            
         }
+        
+        
         
         .scroll li a {
             text-align: center;
             text-decoration: none;
-            /* background: rgba(240, 240, 255, 0.5); */
-            /* height: 4rem; */
             font-size: 1.3rem;
             font-style: bold;
             font-weight: 700vh;
             color: #000000;
+            position: relative;
         }
         
-        .scroll li:hover {
-            color: black;
+        
+        .scroll li a:focus {
+            background: red;
+            /* animation-name: sidebar; */
+            /* animation-duration: 4s; */
+            position: relative;
+          
         }
+        
         
         #marker {
             background: #000;
-            width: 0;
-            height: 5px;
-            position: absolute;
-            /* bottom: 0.3vh; */
-            left: 0;
+            height: 7px;
+            position: relative;
             -webkit-border-radius: 25px;
             -moz-border-radius: 25px;
             border-radius: 25px;
+            grid-row: 2;
         }
+        
+        
+        
         
         #line {
             background: #000;
             height: 1px;
             width: 100%;
-            margin-top: 0.2rem;
+            
         }
+        
+        
+            /* The animation code */
+        @keyframes sidebar {
+          0%   {background-color:red; left:0px; top:0px;}
+          25%  {background-color:yellow; left:200px; top:0px;}
+          50%  {background-color:blue; left:200px; top:200px;}
+          75%  {background-color:green; left:0px; top:200px;}
+          100% {background-color:red; left:0px; top:0px;}
+        }
+        
+        /* The element to apply the animation to */
+        .animation {
+          width: 100px;
+          height: 100px;
+          position: relative;
+          background-color: red;
+          animation-name: sidebar;
+          animation-duration: 4s;
+        }    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         #nav2{
             display: none;
         }

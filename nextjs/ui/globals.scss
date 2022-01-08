@@ -1,44 +1,170 @@
-/* imports */
-/* @use "./src/sass" as *; */
-/* @import "./src/sass"; */
+@use "./src/sass" as *;
 
 
-
-
-/* @include navbar1-1; */
-/* @include navbar1-2; */
-/* @include navbar1-3; */
-/* @include navbar1-4; */
-
-
-/* @media (min-width: 360px) and (max-width: 490px) {
-        #navbar2{
-            display: none;
-        }
-    } */
-/* @media (min-width: 490px) and (max-width: 1500px) {
-        #nav2{
-            display: none;
-        }
-    } */
-
+::-webkit-scrollbar {
+    display: none;
+}
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 3px solid #9F00FF; */
-    
+
 }
 
 body {
     min-height: 100vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
 }
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+
+@media (min-width: 360px) and (max-width: 768px){
+    
+    #navbar-lg{
+        display: none;
+    }
+    body{
+        padding-top: 0;
+        padding: 0;
+        margin: 0;
+        
+    }
+    
+}
+
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+    body{
+        padding-top: 3rem;
+        background: #FF3B6A;
+        
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .scroll {
+    padding: 4px;
+    height: 44px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 35px 8px;
+    
+} */
+
+
+
+/* .scroll * {
+    list-style: none;
+    display: grid;
+    place-items: center;
+    min-width: 5.8rem;
+    text-align: center;
+    height: 4vh;
+    
+    
+} */
+
+
+
+/* .scroll li a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-style: bold;
+    font-weight: 700vh;
+    color: #000000;
+
+} */
+
+
+/* .scroll li a:focus {
+    background: red;
+
+} */
+
+
+/* #marker {
+    background: #000;
+    height: 7px;
+    position: relative;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    grid-row: 2;
+} */
+
+
+
+
+/* #line {
+    background: #000;
+    height: 1px;
+    width: 100%;
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* #hero{
     background: red;
     height: 100vh;
@@ -82,14 +208,14 @@ body {
 /* .ionic{
     margin-top: 5rem;
 } */
-    
 
 
 
 
-/* ::-webkit-scrollbar {
+
+::-webkit-scrollbar {
     display: none;
-} */
+}
 
 
 
@@ -132,3 +258,47 @@ body {
 /* #main{
     margin-top: 5rem;
 } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* imports */
+@import "./src/sass";
+
+
+
+
+@include navbar1-1;
+@include navbar1-2;
+@include navbar1-3;
+@include navbar1-4;
+
+
+@media (min-width: 360px) and (max-width: 490px) {
+        #navbar2{
+            display: none;
+        }
+    }
+@media (min-width: 490px) and (max-width: 1500px) {
+        #nav2{
+            display: none;
+        }
+    }

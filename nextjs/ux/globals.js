@@ -11,52 +11,60 @@ let navbar2 = document.querySelector('body');
 let marker = document.querySelector('#marker');
 let items = document.querySelectorAll('.op');
 
-
-
-
-
-
-
-// Pagr indicTor
+// Scroll💯
     function indicator(e) {
-    
-        marker.style.left = e.offsetLeft + 'px';
+        let rule = 3.6;
+        marker.style.left = e.offsetLeft - rule + 'px';
         marker.style.width = e.offsetWidth + 'px';
-        console.log(marker.style.width);
-    
+        
     };
     items.forEach(link => {
         link.addEventListener('click', (e) => {
             indicator(e.target);
         })
+        link.addEventListener('dbclick', (e) => {
+            indicator(e.target);
+        })
+        
     });
-
+    
+    
+    
 
 
 Robin('Op Argument');
-
-btn.onclick = () => {
+if (btn !== 'undefined') {
+    btn.onclick = () => {
     navbar2.classList.toggle('active')
     console.log('navbar2');
+    };
+    btn.onclick = () => {
+        btn.classList.toggle('active');
+        navbar_sm.classList.toggle('active');
+    };
 }
 
 
 
-btn.onclick = () => {
-    btn.classList.toggle('active');
-    navbar_sm.classList.toggle('active');
-};
+if ( small_ul.onclick !== 'undefined') {
 
-small_ul.onclick = () => {
-    const pp = document.querySelector('.pro_navbar_mb_main-content').childElementCount;
-    console.log(pp);
-    sub.classList.toggle('toggle');
-    page_menu.classList.toggle('toggle');
-    navbar_sm.classList.toggle('toggle');
+    small_ul.onclick = () => {
+        const pp = document.querySelector('.pro_navbar_mb_main-content').childElementCount;
+        console.log(pp);
+        sub.classList.toggle('toggle');
+        page_menu.classList.toggle('toggle');
+        navbar_sm.classList.toggle('toggle');
+    }
+
 }
-body.onclick = () => {
-    console.log('Onclick');
-}
+
+
+
+
+
+// body.onclick = () => {
+//     console.log('Onclick');
+// }
 
 
 

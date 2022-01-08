@@ -2,6 +2,7 @@ import Navbar1 from "./Navbar/navbar1";
 import Navbar2 from "./Navbar/navbar2";
 import Navbar3 from "./Navbar/navbar3";
 import Navbar4 from "./Navbar/navbar4";
+import Navbar5 from "./Navbar/navbar5";
 
 import Footer1 from './Footer/footer1'
 import Footer2 from './Footer/footer2'
@@ -48,8 +49,10 @@ export default function Layout({ children }) {
             <link rel="stylesheet" href="https://rawcdn.githack.com/Harry1o1/Pro-Component/954263aba7cb3c534a8e1305284346dfd450bec7/nextjs/styles/boostrap.css" />
             
         </Head>
-        
-      {children}
+      <Navbar5 />
+      <div id="hero">
+            {children}
+      </div>
       <Footer2 />
     </>
   )
