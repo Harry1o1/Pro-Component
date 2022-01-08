@@ -60,110 +60,111 @@ function Navbar7() {
                   
                 </ul>
                 {/* Scrolling📜📜📜 op  li.scroll_li*20>a[href=#].scroll_li_a{ Page$ }*/}
-                <div className="scroll">
-                
-                    <Link href="/">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Index </a></li>
-                        
-                    </Link>
-
-                    <Link href="/upload2">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Upload2 </a></li>
-                      
-                    </Link>
-
-                    <Link href="/upload">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Upload </a></li>
-                        
-                    </Link>
-
-                    <Link href="/reupload1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Reu1.. </a></li>
-                        
-                    </Link>
-
-                    <Link href="/register2">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Regis2.. </a></li>
-                        
-                    </Link>
-
-                    <Link href="/register1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Regis1.. </a></li>
-                        
-                    </Link>
-
-                    <Link href="/home">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Home </a></li>
-                        
-                    </Link>
-
-                    <Link href="/profile2">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Profile2 </a></li>
-                        
-                    </Link>
-
-                    <Link href="/profile1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Profile1 </a></li>
-                        
-                    </Link>
-
-                    <Link href="/goals">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Goals </a></li>
-                        
-                    </Link>
-
-                    <Link href="/fileupload1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Filup1.. </a></li>
-                        
-                    </Link>
-
-                    <Link href="/subscription">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Subs.. </a></li>
-                        
-                    </Link>
-
-                    <Link href="/django">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Django </a></li>
-                        
-                    </Link>
-
-                    <Link href="/contract">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Contr.. </a></li>
-                        
-                    </Link>
-
-                    <Link href="/addvideo">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Addv.. </a></li>
-                        
-                    </Link>
-
-                    <Link href="/addpost">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Addp.. </a></li>
-                        
-                    </Link>
-
-                    <Link href="/about">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> About </a></li>
-                        
-                    </Link>
-
-                    <Link href="/login">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Login </a></li>
-                        
-                    </Link>
-
-                    <Link href="/web3">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Web3 </a></li>
-                    </Link>
-
-                    <Link href="/library">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Library </a></li>
-                        
-                    </Link>
-                      
-                  <div id="marker" />
+                 <div className="sidebar-sm">
+                    <div className="scroll">
+                        <Link href="/">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Index </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/upload2">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Upload2 </a></li>
+                          
+                        </Link>
+    
+                        <Link href="/upload">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Upload </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/reupload1">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Reu1.. </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/register2">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Regis2.. </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/register1">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Regis1.. </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/home">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Home </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/profile2">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Profile2 </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/profile1">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Profile1 </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/goals">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Goals </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/fileupload1">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Filup1.. </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/subscription">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Subs.. </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/django">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Django </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/contract">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Contr.. </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/addvideo">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Addv.. </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/addpost">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Addp.. </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/about">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> About </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/login">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Login </a></li>
+                            
+                        </Link>
+    
+                        <Link href="/web3">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Web3 </a></li>
+                        </Link>
+    
+                        <Link href="/library">
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Library </a></li>
+                            
+                        </Link>
+                          
+                      <div id="marker" />
+                    </div>
+                    <div id="line" />
                 </div>
-                <div id="line" />
               </div>
             </div>
           </nav>
