@@ -32,7 +32,7 @@ export default function Layout({ children }) {
         />
 
          <Script
-            type="module" src='https://raw.githack.com/Harry1o1/Pro-Component/master/nextjs/ux/globals.js'
+            type="module" src='https://rawcdn.githack.com/Harry1o1/Pro-Component/9ef717ad7ea49197b3b9b77d13673886256abd62/nextjs/ux/globals.js'
             strategy = "beforeInteractive" 
         />     
         
@@ -63,21 +63,4 @@ export default function Layout({ children }) {
 
 
 
-//       <Navbar4 />
-
-
-
-
-//         <Script
-            // src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"
-            // strategy="beforeInteractive"
-        // />   😌
-        
-                // <Script
-        //   type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/globals.js"
-        //   strategy="beforeInteractive"
-        // />   
-                // <Script
-        //   src="https://rawcdn.githack.com/Harry1o1/Pro-Component/cfeba9789dbccad1191a0f97fd2a841e89abc501/nextjs/ux/boostrap.js" 
-        //   strategy="beforeInteractive"
-        // />
+//  go little bro go little bro 👍👌👌
