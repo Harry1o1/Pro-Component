@@ -46,6 +46,7 @@ body {
   top: 0;
   width: 100%;
   background: #FFFFFF;
+  /* height: 5rem; */
 }
 
 .sticky + #hero {
@@ -169,10 +170,17 @@ body {
 }
 
 .pro_navbar_main_container {
-  height: 10.8vh;
+  height: 13vh;
   background: #FFFFFF;
   width: 100%;
   /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Scroll 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
+  /* .scroll_li_a:focus {
+      background: red;
+      animation-name: sidebar;
+      animation-duration: 4s;
+      position: relative;
+
+  } */
   /* The animation code */
   /* The element to apply the animation to */
 }
@@ -189,7 +197,7 @@ body {
   /* padding-top: 10%; */
   position: relative;
   top: 0.3rem;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   margin: 0;
   padding: 0;
   font-style: bold;
@@ -206,14 +214,17 @@ body {
   place-items: center;
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn #icon_menu {
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: block;
-  margin-right: 2rem;
+  position: relative;
+  bottom: 0.2rem;
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn #icon_close {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   display: none;
   margin-right: 2rem;
+  position: relative;
+  bottom: 0.2rem;
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn.active #icon_menu {
   display: none;
@@ -266,13 +277,12 @@ body {
 }
 .pro_navbar_main_container .scroll {
   padding: 4px;
-  height: 40px;
+  height: 50px;
   width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   display: grid;
-  /* grid-template-columns: repeat(10, 1fr); */
   grid-template-columns: repeat(20, 70px);
   grid-template-rows: 25px 5px;
 }
@@ -282,6 +292,7 @@ body {
   place-items: center;
   text-align: center;
   height: 4vh;
+  grid-row: 1/2;
 }
 .pro_navbar_main_container .scroll_li_a {
   text-align: center;
@@ -292,12 +303,6 @@ body {
   color: #000000;
   position: relative;
 }
-.pro_navbar_main_container .scroll_li_a:focus {
-  background: red;
-  /* animation-name: sidebar; */
-  /* animation-duration: 4s; */
-  position: relative;
-}
 .pro_navbar_main_container #marker {
   background: #000;
   height: 4.5px;
@@ -305,15 +310,18 @@ body {
   top: 0.2rem;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
-  border-radius: 25px;
-  grid-row: 2;
+  border-radius: 30px;
+  grid-row: 2/3;
 }
 .pro_navbar_main_container #line {
   background: #000;
   height: 1px;
   width: 100%;
   position: relative;
-  bottom: 0.3rem;
+  bottom: 0.9rem;
+}
+.pro_navbar_main_container .sidebar-sm {
+  height: 38px;
 }
 @keyframes sidebar {
   0% {

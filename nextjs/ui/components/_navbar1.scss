@@ -107,7 +107,7 @@
         display: none;
     }
     .pro_navbar_main_container {
-        height: 10.8vh;
+        height: 13vh;
         background: #FFFFFF;
         width: 100%;
     
@@ -125,7 +125,7 @@
                     /* padding-top: 10%; */
                     position: relative;
                     top: 0.3rem;
-                    font-size: 1.7rem;
+                    font-size: 1.9rem;
                     margin: 0;
                     padding: 0;
                     font-style: bold;
@@ -143,16 +143,19 @@
                     place-items: center;
     
                     #icon_menu {
-                        font-size: 2.5rem;
+                        font-size: 2rem;
                         display: block;
-                        margin-right: 2rem;
+                        position: relative;
+                        bottom: 0.2rem;
     
                     }
     
                     #icon_close {
-                        font-size: 2.5rem;
+                        font-size: 2.3rem;
                         display: none;
                         margin-right: 2rem;
+                        position: relative;
+                        bottom: 0.2rem;
     
                     }
                 }
@@ -228,13 +231,12 @@
         
         .scroll {
             padding: 4px;
-            height: 40px;
+            height: 50px;
             width: 100%;
             overflow-x: auto;
             overflow-y: hidden;
             white-space: nowrap;
             display: grid;
-            /* grid-template-columns: repeat(10, 1fr); */
             grid-template-columns: repeat(20, 70px);
             grid-template-rows: 25px 5px;
             
@@ -248,6 +250,7 @@
             place-items: center;
             text-align: center;
             height: 4vh;
+            grid-row: 1 / 2;
             
             
         }
@@ -265,13 +268,13 @@
         }
         
         
-        .scroll_li_a:focus {
+        /* .scroll_li_a:focus {
             background: red;
-            /* animation-name: sidebar; */
-            /* animation-duration: 4s; */
+            animation-name: sidebar;
+            animation-duration: 4s;
             position: relative;
           
-        }
+        } */
         
         
         #marker {
@@ -281,8 +284,9 @@
             top: 0.2rem;
             -webkit-border-radius: 25px;
             -moz-border-radius: 25px;
-            border-radius: 25px;
-            grid-row: 2;
+            border-radius: 30px;
+            grid-row: 2 / 3;
+            
         }
         
         
@@ -293,7 +297,13 @@
             height: 1px;
             width: 100%;
             position: relative;
-            bottom: 0.3rem;
+            bottom: 0.9rem;
+            
+        }
+        
+        
+        .sidebar-sm{
+            height: 38px;
         }
         
         

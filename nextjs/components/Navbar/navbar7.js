@@ -12,7 +12,7 @@ function Navbar7() {
           <nav className="pro_navbar_main_container" id="nav1">
             <div className="pro_navbar_mb_sm">
               <div className="pro_navbar_mb_header">
-                <h1 className="pro_navbar_brand_mb">Thapapay</h1>
+                <h1 className="pro_navbar_brand_mb">Emon</h1>
                 <span className="pro_navbar_mb_btn">
                   <ion-icon id="icon_menu" name="menu-outline" />
                   <ion-icon id="icon_close" name="close-outline" />

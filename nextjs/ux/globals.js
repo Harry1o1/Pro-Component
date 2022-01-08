@@ -10,7 +10,7 @@ let menu = document.querySelector('span');
 let navbar2 = document.querySelector('body');
 let marker = document.querySelector('#marker');
 let items = document.querySelectorAll('.scroll_li_a');
-let navbar = document.querySelector('.scroll');
+let navbar = document.querySelector('.sidebar-sm');
 
 
 
