@@ -71,11 +71,22 @@ function Navbar5() {
                   <li id="scroll-li-3"><a href="#" className="op" id="scroll-li-a"> page3 </a></li>
                   <li id="scroll-li-4"><a href="#" className="op" id="scroll-li-a"> page4 </a></li>
                   <li id="scroll-li-5"><a href="#" className="op" id="scroll-li-a"> page5 </a></li>
-                  <li id="scroll-li-1"><a href="#" className="op" id="scroll-li-a"> page6 </a></li>
-                  <li id="scroll-li-2"><a href="#" className="op" id="scroll-li-a"> page7 </a></li>
-                  <li id="scroll-li-3"><a href="#" className="op" id="scroll-li-a"> page8 </a></li>
-                  <li id="scroll-li-4"><a href="#" className="op" id="scroll-li-a"> page9 </a></li>
-                  <li id="scroll-li-5"><a href="#" className="op" id="scroll-li-a"> page10 </a></li>
+                  <li id="scroll-li-p"><a href="#" className="op" id="scroll-li-a"> page6 </a></li>
+                  <li id="scroll-li-l"><a href="#" className="op" id="scroll-li-a"> page7 </a></li>
+                  <li id="scroll-li-m"><a href="#" className="op" id="scroll-li-a"> page8 </a></li>
+                  <li id="scroll-li-n"><a href="#" className="op" id="scroll-li-a"> page9 </a></li>
+                  <li id="scroll-li-b"><a href="#" className="op" id="scroll-li-a"> page10 </a></li>
+                  <li id="scroll-li-v"><a href="#" className="op" id="scroll-li-a"> page1 </a></li>
+                  <li id="scroll-li-c"><a href="#" className="op" id="scroll-li-a"> page2 </a></li>
+                  <li id="scroll-li-x"><a href="#" className="op" id="scroll-li-a"> page3 </a></li>
+                  <li id="scroll-li-z"><a href="#" className="op" id="scroll-li-a"> page4 </a></li>
+                  <li id="scroll-li-a"><a href="#" className="op" id="scroll-li-a"> page5 </a></li>
+                  <li id="scroll-li-s"><a href="#" className="op" id="scroll-li-a"> page6 </a></li>
+                  <li id="scroll-li-d"><a href="#" className="op" id="scroll-li-a"> page7 </a></li>
+                  <li id="scroll-li-f"><a href="#" className="op" id="scroll-li-a"> page8 </a></li>
+                  <li id="scroll-li-h"><a href="#" className="op" id="scroll-li-a"> page9 </a></li>
+                  <li id="scroll-li-h"><a href="#" className="op" id="scroll-li-a"> page10 </a></li>
+                 
                   <div id="marker" />
                 </div>
                 <div id="line" />

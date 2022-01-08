@@ -176,7 +176,7 @@ body {
 
   /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Active 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
   .pro_navbar_main_container.active #gift {
-    display: block;
+    display: none;
     height: 70vh;
     margin-top: 1.5rem;
     margin-bottom: 3.5rem;
