@@ -78,17 +78,17 @@ function Navbar7() {
                     </Link>
 
                     <Link href="/reupload1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Reupload1 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Reu1.. </a></li>
                         
                     </Link>
 
                     <Link href="/register2">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Register2 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Regis2.. </a></li>
                         
                     </Link>
 
                     <Link href="/register1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Register1 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Regis1.. </a></li>
                         
                     </Link>
 
@@ -118,7 +118,7 @@ function Navbar7() {
                     </Link>
 
                     <Link href="/subscription">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Subscription </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Subs.. </a></li>
                         
                     </Link>
 
@@ -156,8 +156,8 @@ function Navbar7() {
                       <li className="scroll_li"><a href="#" className="scroll_li_a"> Web3 </a></li>
                     </Link>
 
-                    <Link href="/redux">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Redux </a></li>
+                    <Link href="/library">
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Library </a></li>
                         
                     </Link>
                       
