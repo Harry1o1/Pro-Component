@@ -19,7 +19,7 @@ function Navbar7() {
                 </span>
               </div>
               <div className="pro_navbar_mb_main-content">
-                {/* Page📃📃📃 */}
+                {/* Settings-☝️menu📃📃📃 */}
                 <ul className="pro_navbar_page-menu_mb" id="circle">
                 
                   <li>
@@ -113,7 +113,7 @@ function Navbar7() {
                     </Link>
 
                     <Link href="/fileupload1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Foleupload1 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Filup1.. </a></li>
                         
                     </Link>
 
@@ -128,17 +128,17 @@ function Navbar7() {
                     </Link>
 
                     <Link href="/contract">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Contract </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Contr.. </a></li>
                         
                     </Link>
 
                     <Link href="/addvideo">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Addvideo </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Addv.. </a></li>
                         
                     </Link>
 
                     <Link href="/addpost">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Addpost </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Addp.. </a></li>
                         
                     </Link>
 
