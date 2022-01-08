@@ -45,6 +45,17 @@ body {
     background: #FF3B6A;
   }
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #FFFFFF;
+}
+
+.sticky + #hero {
+  padding-top: 4rem;
+}
+
 #hero {
   background: red;
 }
@@ -61,7 +72,14 @@ body {
     display: none;
   }
 
+  .pro_navbar_sub-menu_mb {
+    display: block;
+  }
+
   /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Active 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
+  .pro_navbar_main_container.active {
+    height: 100vh;
+  }
   .pro_navbar_main_container.active #gift {
     display: none;
     height: 70vh;
@@ -128,7 +146,7 @@ body {
     border-radius: 0;
     margin-top: 0;
     display: grid;
-    padding-right: 20px;
+    padding-right: 1.3rem;
     place-items: center;
     grid-template-columns: repeat(5, 1fr);
   }
@@ -158,7 +176,7 @@ body {
     border-radius: 0;
     margin-top: 0;
     display: grid;
-    padding-right: 20px;
+    padding-right: 1.4rem;
     place-items: center;
     grid-template-columns: repeat(5, 1fr);
   }
@@ -195,9 +213,9 @@ body {
 }
 
 .pro_navbar_main_container {
-  height: 8vh;
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
+  height: 11vh;
+  /* border-bottom-left-radius: 2rem; */
+  /* border-bottom-right-radius: 2rem; */
   background: #FFFFFF;
   width: 100%;
   /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Scroll 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
@@ -273,7 +291,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 0.6rem;
-  padding-left: 17px;
+  padding-left: 1.1rem;
   /* max-width: 100%; */
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb li {
@@ -315,7 +333,7 @@ body {
   width: 77%;
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
-  border-radius: 30px;
+  border-radius: 2rem;
 }
 .pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_toggle-menu_mb .wrapper {
   background: #af43f1;
