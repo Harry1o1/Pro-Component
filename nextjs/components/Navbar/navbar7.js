@@ -68,27 +68,27 @@ function Navbar7() {
                     </Link>
 
                     <Link href="/upload2">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Upload2 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a d-inline-block text-truncate" style="max-width: 50px;"> Upload2 </a></li>
                       
                     </Link>
 
                     <Link href="/upload">
                       <li className="scroll_li"><a href="#" className="scroll_li_a"> Upload </a></li>
-                        
+                        ionic
                     </Link>
 
                     <Link href="/reupload1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Reupload1 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a  d-inline-block text-truncate" style="max-width: 50px;"> Reupload1 </a></li>
                         
                     </Link>
 
                     <Link href="/register2">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Register2 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a d-inline-block text-truncate" style="max-width: 50px;"> Register2 </a></li>
                         
                     </Link>
 
                     <Link href="/register1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Register1 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a d-inline-block text-truncate" style="max-width: 50px;"> Register1 </a></li>
                         
                     </Link>
 
@@ -98,12 +98,12 @@ function Navbar7() {
                     </Link>
 
                     <Link href="/profile2">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Profile2 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a d-inline-block text-truncate" style="max-width: 50px;"> Profile2 </a></li>
                         
                     </Link>
 
                     <Link href="/profile1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Profile1 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a d-inline-block text-truncate" style="max-width: 50px;"> Profile1 </a></li>
                         
                     </Link>
 
@@ -113,12 +113,12 @@ function Navbar7() {
                     </Link>
 
                     <Link href="/fileupload1">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Foleupload1 </a></li>
+                      <li className="scroll_li"><a href="#" className="scroll_li_a d-inline-block text-truncate" style="max-width: 50px;"> Foleupload1 </a></li>
                         
                     </Link>
 
-                    <Link href="/express">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Express </a></li>
+                    <Link href="/subscription">
+                      <li className="scroll_li"><a href="#" className="scroll_li_a d-inline-block text-truncate" style="max-width: 50px;"> Subscription </a></li>
                         
                     </Link>
 
@@ -127,8 +127,8 @@ function Navbar7() {
                         
                     </Link>
 
-                    <Link href="/cookie">
-                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Cookies </a></li>
+                    <Link href="/contract">
+                      <li className="scroll_li"><a href="#" className="scroll_li_a"> Contract </a></li>
                         
                     </Link>
 
@@ -212,3 +212,19 @@ function Navbar7() {
 
 
 export default Navbar7;
+
+
+
+
+
+<!-- Block level -->
+<div class="row">
+  <div class="col-2 text-truncate">
+    Praeterea iter est quasdam res quas ex communi.
+  </div>
+</div>
+
+<!-- Inline level -->
+<span class="d-inline-block text-truncate" style="max-width: 150px;">
+  Praeterea iter est quasdam res quas ex communi.
+</span>
