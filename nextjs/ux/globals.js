@@ -39,9 +39,14 @@ function myFunction() {
 
 // Scroll💯
     function indicator(e) {
-        let rule = 3.6;
-        marker.style.left = e.offsetLeft - rule + 'px';
-        marker.style.width = e.offsetWidth + 'px';
+        let rule1 = 7;
+        let rule2 = 5;
+        
+        marker.style.left = e.offsetLeft - rule1 + 'px';
+        marker.style.width = e.offsetWidth + rule2 + 'px';
+        
+        
+        console.log(marker.style.left);
         
     };
     items.forEach(link => {

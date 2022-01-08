@@ -174,13 +174,6 @@ body {
   background: #FFFFFF;
   width: 100%;
   /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Scroll 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
-  /* .scroll_li_a:focus {
-      background: red;
-      animation-name: sidebar;
-      animation-duration: 4s;
-      position: relative;
-
-  } */
   /* The animation code */
   /* The element to apply the animation to */
 }
@@ -283,7 +276,9 @@ body {
   overflow-y: hidden;
   white-space: nowrap;
   display: grid;
-  grid-template-columns: repeat(20, 70px);
+  grid-template-columns: repeat(20, 1fr);
+  /* grid-template-columns: repeat(20, 70px); */
+  grid-column-gap: 25px;
   grid-template-rows: 25px 5px;
 }
 .pro_navbar_main_container .scroll_li {
@@ -300,7 +295,15 @@ body {
   font-size: 1rem;
   font-style: bold;
   font-weight: 700vh;
-  color: #000000;
+  position: relative;
+  color: #6c757d !important;
+}
+.pro_navbar_main_container .scroll_li_a:focus {
+  color: #000000 !important;
+  font-style: bold;
+  font-weight: 700;
+  /* animation-name: sidebar; */
+  /* animation-duration: 4s; */
   position: relative;
 }
 .pro_navbar_main_container #marker {

@@ -237,7 +237,12 @@
             overflow-y: hidden;
             white-space: nowrap;
             display: grid;
-            grid-template-columns: repeat(20, 70px);
+            grid-template-columns: repeat(20, 1fr);
+            /* grid-template-columns: repeat(20, 70px); */
+            
+            grid-column-gap: 25px;
+            
+            
             grid-template-rows: 25px 5px;
             
         }
@@ -263,18 +268,20 @@
             font-size: 1rem;
             font-style: bold;
             font-weight: 700vh;
-            color: #000000;
             position: relative;
+            color: #6c757d !important;
         }
         
         
-        /* .scroll_li_a:focus {
-            background: red;
-            animation-name: sidebar;
-            animation-duration: 4s;
+        .scroll_li_a:focus {
+            color: #000000 !important;
+            font-style: bold;
+            font-weight: 700;
+            /* animation-name: sidebar; */
+            /* animation-duration: 4s; */
             position: relative;
           
-        } */
+        }
         
         
         #marker {

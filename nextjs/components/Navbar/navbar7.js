@@ -78,17 +78,17 @@ function Navbar7() {
                         </Link>
     
                         <Link href="/reupload1">
-                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Reu1.. </a></li>
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Reupload1 </a></li>
                             
                         </Link>
     
                         <Link href="/register2">
-                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Regis2.. </a></li>
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Register2 </a></li>
                             
                         </Link>
     
                         <Link href="/register1">
-                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Regis1.. </a></li>
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Register1 </a></li>
                             
                         </Link>
     
@@ -113,12 +113,12 @@ function Navbar7() {
                         </Link>
     
                         <Link href="/fileupload1">
-                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Filup1.. </a></li>
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Fileupload1 </a></li>
                             
                         </Link>
     
                         <Link href="/subscription">
-                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Subs.. </a></li>
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Subscription </a></li>
                             
                         </Link>
     
@@ -128,17 +128,17 @@ function Navbar7() {
                         </Link>
     
                         <Link href="/contract">
-                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Contr.. </a></li>
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Contract </a></li>
                             
                         </Link>
     
                         <Link href="/addvideo">
-                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Addv.. </a></li>
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Addvideo </a></li>
                             
                         </Link>
     
                         <Link href="/addpost">
-                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Addp.. </a></li>
+                          <li className="scroll_li"><a href="#" className="scroll_li_a"> Addpost </a></li>
                             
                         </Link>
     
