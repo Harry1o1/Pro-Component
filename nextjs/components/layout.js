@@ -15,7 +15,7 @@ import Script from 'next/script'
 import Head from 'next/head'
 // import Document, { Html, Head, Main, NextScript } from 'next/document'
 
-// opbro
+// opbro🎉🎉🎉🎉😎😎😎😎
 
 
 
@@ -32,7 +32,7 @@ export default function Layout({ children }) {
         />
 
          <Script
-            type="module" src='https://rawcdn.githack.com/Harry1o1/Pro-Component/9ef717ad7ea49197b3b9b77d13673886256abd62/nextjs/ux/globals.js'
+            type="module" src='https://rawcdn.githack.com/Harry1o1/Pro-Component/8f2f7108b8742089c79a14649a98c9453581f6d8/nextjs/ux/globals.js'
             strategy = "beforeInteractive" 
         />     
         
