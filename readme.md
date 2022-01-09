@@ -130,15 +130,23 @@ Breef preview🤟🤟🤟🤟🤟
     Python vertual env
   <br>
 </h1>
-### install it
+
+
+### Install it
+```bash
+pip install virtualenv
+```
+
+### Set it up
 ```bash
 python3 -m venv venv
 ```
-### install it
+
+
+### Drop 💧💧💧 the beats
 ```bash
 source venv/bin/activate
 ```
-
 
 
 
