@@ -79,65 +79,65 @@ function Navbar8() {
             <li className="scroll_li"><a href="#" className="scroll_li_a"> Page20 </a></li> */}
             
                 
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page1 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Pagetilwtuwla1 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page2 </a></Link>
+            <li className="scroll_li">
+                <Link href="/goals"><a href="" className="scroll_li_a"> goals </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page3 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page3 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page4 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Pagetiw85wpuw74 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page5 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page5 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page6 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page6 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page7 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page7 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page8 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page8 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page9 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page9 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page10 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page10 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page11 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page11 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page12 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page12 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page13 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page13 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page14 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page14 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page15 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page15 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page16 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page16 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page17 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page17 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page18 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page18 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page19 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page19 </a></Link>
             </li>
-            <li class="scroll_li">
-                <Link href="/"><a href="" class="scroll_li_a"> Page20 </a></Link>
+            <li className="scroll_li">
+                <Link href="/"><a href="" className="scroll_li_a"> Page20 </a></Link>
             </li>
             
             
