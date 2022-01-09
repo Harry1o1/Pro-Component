@@ -37,12 +37,16 @@ function myFunction() {
 
 
 
+
+
+
 // Scroll💯
     function indicator(e) {
-        let rule1 = 7;
-        let rule2 = 5;
+        let rule1 = 9;
+        let rule2 = 9;
         
         marker.style.left = e.offsetLeft - rule1 + 'px';
+        
         marker.style.width = e.offsetWidth + rule2 + 'px';
         
         
@@ -52,6 +56,7 @@ function myFunction() {
     items.forEach(link => {
         link.addEventListener('click', (e) => {
             indicator(e.target);
+            
         })
         link.addEventListener('dbclick', (e) => {
             indicator(e.target);

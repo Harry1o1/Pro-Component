@@ -343,6 +343,8 @@ body {
   text-align: center;
   height: 4vh;
   grid-row: 1/2;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .pro_navbar_main_container .scroll_li_a {
   text-align: center;
@@ -352,8 +354,8 @@ body {
   font-weight: 700vh;
   position: relative;
   color: #6c757d !important;
-  padding-left: 0.9rem;
-  padding-right: 0.9rem;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
   position: relative;
   top: 0.4rem;
 }
@@ -363,7 +365,6 @@ body {
   font-weight: 700;
   /* animation-name: sidebar; */
   /* animation-duration: 4s; */
-  position: relative;
 }
 .pro_navbar_main_container #marker {
   background: #000;
