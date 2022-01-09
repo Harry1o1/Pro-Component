@@ -8,7 +8,7 @@ function Django({data, error}) {
         {data.map( (curElem) => {
             return(
                 <div className ="alert alert-primary" key={curElem.id}>
-                    <Link href={`/blog2/${curElem.id}`}>
+                    <Link passHref href={`/blog2/${curElem.id}`}>
                         <h3>{curElem.name}</h3>
                     </Link>
                     <h4>{curElem.email}</h4>
@@ -60,6 +60,6 @@ export async function getStaticProps() {
 export default Django;
 
                     // </Link>
-                    // <Link href={`/blog/${curElem.id}`}>
+                    // <Link passHref href={`/blog/${curElem.id}`}>
 
 

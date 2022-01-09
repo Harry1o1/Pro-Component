@@ -35,7 +35,7 @@ function Navbar4() {
                     <ul className="pro_navbar_page-menu_mb" id="circle">
                         <li>
                             <div className="pro_toggle_navbar_mb">
-                                <Link href="/">
+                                <Link passHref href="/">
                                     <ion-icon name="home-outline" className="mb_icons" />
                                 </Link>
                                 <span className="mb_items">Home</span>
@@ -43,7 +43,7 @@ function Navbar4() {
                         </li>
                                 <li>
                                   <div className="pro_toggle_navbar_mb">
-                                  <Link href="/goals">
+                                  <Link passHref href="/goals">
                                         <ion-icon name="logo-tiktok" className="mb_icons" />
                                   </Link>
                                         
@@ -52,7 +52,7 @@ function Navbar4() {
                                 </li>
                                 <li>
                                   <div className="pro_toggle_navbar_mb">
-                                  <Link href="/django">
+                                  <Link passHref href="/django">
                                         <ion-icon name="chatbubbles-outline" className="mb_icons" />
                                   </Link>
                                         
@@ -61,7 +61,7 @@ function Navbar4() {
                                 </li>
                                 <li>
                                   <div className="pro_toggle_navbar_mb">
-                                  <Link href="/express">
+                                  <Link passHref href="/express">
                                         <ion-icon name="notifications-outline" className="mb_icons" />
                                    </Link>
                                         
@@ -70,7 +70,7 @@ function Navbar4() {
                                 </li>
                                 <li>
                                   <div className="pro_toggle_navbar_mb">
-                                   <Link href="/redux">
+                                   <Link passHref href="/redux">
                                         <ion-icon name="notifications-outline" className="mb_icons" />
                                     </Link>
                                         
@@ -185,23 +185,23 @@ function Navbar4() {
                   <div className="collapse navbar-collapse" id="navbarCollapse">
                     <ul className="navbar-nav me-auto mb-2 mb-md-0">
                       <li className="nav-item">
-                        <link href="/" />
+                        <Link passHref href="/" />
                         <a className="nav-link active" aria-current="page">Home</a>
                       </li>
                       <li className="nav-item">
-                        <link href="redux" />
+                        <Link passHref href="redux" />
                         <a className="nav-link active" aria-current="page">Redux</a>
                       </li>
                       <li className="nav-item">
-                        <link href="/login" />
+                        <Link passHref href="/login" />
                         <a className="nav-link active" aria-current="page">Login</a>
                       </li>
                       <li className="nav-item">
-                        <link href="/django" />
+                        <Link passHref href="/django" />
                         <a className="nav-link active" aria-current="page">Django</a>
                       </li>
                       <li className="nav-item">
-                        <link href="/goals" />
+                        <Link passHref href="/goals" />
                         <a className="nav-link active" aria-current="page">Goals</a>
                       </li>
                     </ul>

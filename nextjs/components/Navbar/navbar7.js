@@ -62,101 +62,101 @@ function Navbar7() {
                 {/* Scrolling📜📜📜 op  li.scroll_li*20>a[href=#].scroll_li_a{ Page$ }*/}
                  <div className="sidebar-sm">
                     <div className="scroll">
-                        <Link href="/">
+                        <Link passHref href="/">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Index </a></li>
                             
                         </Link>
     
-                        <Link href="/upload2">
+                        <Link passHref href="/upload2">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Upload2 </a></li>
                           
                         </Link>
     
-                        <Link href="/upload">
+                        <Link passHref href="/upload">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Upload </a></li>
                             
                         </Link>
     
-                        <Link href="/reupload1">
+                        <Link passHref href="/reupload1">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Reupload1 </a></li>
                             
                         </Link>
     
-                        <Link href="/register2">
+                        <Link passHref href="/register2">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Register2 </a></li>
                             
                         </Link>
     
-                        <Link href="/register1">
+                        <Link passHref href="/register1">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Register1 </a></li>
                             
                         </Link>
     
-                        <Link href="/home">
+                        <Link passHref href="/home">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Home </a></li>
                             
                         </Link>
     
-                        <Link href="/profile2">
+                        <Link passHref href="/profile2">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Profile2 </a></li>
                             
                         </Link>
     
-                        <Link href="/profile1">
+                        <Link passHref href="/profile1">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Profile1 </a></li>
                             
                         </Link>
     
-                        <Link href="/goals">
+                        <Link passHref href="/goals">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Goals </a></li>
                             
                         </Link>
     
-                        <Link href="/fileupload1">
+                        <Link passHref href="/fileupload1">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Fileupload1 </a></li>
                             
                         </Link>
     
-                        <Link href="/subscription">
+                        <Link passHref href="/subscription">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Subscription </a></li>
                             
                         </Link>
     
-                        <Link href="/django">
+                        <Link passHref href="/django">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Django </a></li>
                             
                         </Link>
     
-                        <Link href="/contract">
+                        <Link passHref href="/contract">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Contract </a></li>
                             
                         </Link>
     
-                        <Link href="/addvideo">
+                        <Link passHref href="/addvideo">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Addvideo </a></li>
                             
                         </Link>
     
-                        <Link href="/addpost">
+                        <Link passHref href="/addpost">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Addpost </a></li>
                             
                         </Link>
     
-                        <Link href="/about">
+                        <Link passHref href="/about">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> About </a></li>
                             
                         </Link>
     
-                        <Link href="/login">
+                        <Link passHref href="/login">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Login </a></li>
                             
                         </Link>
     
-                        <Link href="/web3">
+                        <Link passHref href="/web3">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Web3 </a></li>
                         </Link>
     
-                        <Link href="/library">
+                        <Link passHref href="/library">
                           <li className="scroll_li"><a href="#" className="scroll_li_a"> Library </a></li>
                             
                         </Link>
@@ -179,23 +179,23 @@ function Navbar7() {
               <div className="collapse navbar-collapse" id="navbarCollapse">
                 <ul className="navbar-nav me-auto mb-2 mb-md-0">
                   <li className="nav-item">
-                    <link href="/" />
+                    <Link passHref href="/" />
                     <a className="nav-link active" aria-current="page">Home</a>
                   </li>
                   <li className="nav-item">
-                    <link href="redux" />
+                    <Link passHref href="redux" />
                     <a className="nav-link active" aria-current="page">Redux</a>
                   </li>
                   <li className="nav-item">
-                    <link href="/login" />
+                    <Link passHref href="/login" />
                     <a className="nav-link active" aria-current="page">Login</a>
                   </li>
                   <li className="nav-item">
-                    <link href="/django" />
+                    <Link passHref href="/django" />
                     <a className="nav-link active" aria-current="page">Django</a>
                   </li>
                   <li className="nav-item">
-                    <link href="/goals" />
+                    <Link passHref href="/goals" />
                     <a className="nav-link active" aria-current="page">Goals</a>
                   </li>
                 </ul>
