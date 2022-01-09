@@ -57,7 +57,7 @@ function Navbar8() {
         {/* Scrolling📜📜📜 op  li.scroll_li*20>a[href=#].scroll_li_a{ Page$ }*/}
         <div className="sidebar-sm">
           <div className="scroll">
-           {/* <li className="scroll_li"><a href="#" className="scroll_li_a"> Page1yfzdiTdYrzry </a></li>
+            {/*<li className="scroll_li"><a href="#" className="scroll_li_a"> Page1yfzdiTdYrzry </a></li>
             <li className="scroll_li"><a href="#" className="scroll_li_a"> Page2</a></li>
             <li className="scroll_li"><a href="#" className="scroll_li_a"> Page3 </a></li>
             <li className="scroll_li"><a href="#" className="scroll_li_a"> Page4 </a></li>
@@ -144,8 +144,8 @@ function Navbar8() {
             
             <div id="marker" />
           </div>
+          </div>
           <div id="line" />
-        </div>
       </div>
     </div>
   </nav>
@@ -198,7 +198,7 @@ function Navbar8() {
         
         
         
-    
+    </>
     );
 }
 
