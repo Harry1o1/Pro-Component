@@ -56,27 +56,7 @@ function Navbar8() {
         {/* Scrolling📜📜📜 op  li.scroll_li*20>a[href=#].scroll_li_a{ Page$ }*/}
         <div className="sidebar-sm">
           <div className="scroll">
-           {/* <li className="scroll_li"><a href="#" className="scroll_li_a"> Page1yfzdiTdYrzry </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page2</a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page3 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page4 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page5 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page6 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page7 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page8 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page9 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page10 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page11 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page12 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page13 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page14 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page15 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page16 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page17 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page18 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page19 </a></li>
-            <li className="scroll_li"><a href="#" className="scroll_li_a"> Page20 </a></li> */}
-            
+                
                 
             <li className="scroll_li">
                 <Link href="/"><a href="" className="scroll_li_a"> Pagetilwtuwla1 </a></Link>
@@ -88,7 +68,7 @@ function Navbar8() {
                 <Link href="/"><a href="" className="scroll_li_a"> Page3 </a></Link>
             </li>
             <li className="scroll_li">
-                <Link href="/"><a href="" className="scroll_li_a"> Pagetiw85wpuw74 </a></Link>
+                <Link href="/"><a href="" className="scroll_li_a"> Pk74 </a></Link>
             </li>
             <li className="scroll_li">
                 <Link href="/"><a href="" className="scroll_li_a"> Page5 </a></Link>

@@ -44,8 +44,15 @@ function myFunction() {
     function indicator(e) {
         let rule1 = 9;
         let rule2 = 9;
+        let ifcon = 100;
         
         marker.style.left = e.offsetLeft - rule1 + 'px';
+        if (e.offsetLeft > ifcon) {
+            marker.style.right = e.offsetLeft - rule1 + 'px';
+            console.log('working');
+            
+            
+        }
         
         marker.style.width = e.offsetWidth + rule2 + 'px';
         

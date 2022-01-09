@@ -354,8 +354,8 @@ body {
   font-weight: 700vh;
   position: relative;
   color: #6c757d !important;
-  padding-left: 0.3rem;
-  padding-right: 0.3rem;
+  padding-left: 0;
+  padding-right: 0;
   position: relative;
   top: 0.4rem;
 }
