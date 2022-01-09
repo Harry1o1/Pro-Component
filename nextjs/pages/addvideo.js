@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import axios from "axios"
+import Image from 'next/image'
+
 // models.URLField(max_length = 200) 
 
 function Addpost() {
@@ -88,7 +90,13 @@ function Addpost() {
               </div>
             </form>
           </div>
-          <img width='400' src = { video ? URL.createObjectURL(video) : "" }/>
+            <Image
+                  src= { video ? URL.createObjectURL(video) : "" }
+                  alt="Picture of the author"
+                  width={500}
+                  height={500}
+            />        
+          
        </>
     )
 }

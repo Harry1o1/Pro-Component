@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import axios from "axios"
+import Image from 'next/image'
+
 
 
 function Addpost() {
@@ -54,7 +56,13 @@ const oplog = async () => {
           </div>
         </form>
       </div>
-        <img src={picture?URL.createObjectURL(picture):""} />
+            <Image
+                  src={picture?URL.createObjectURL(picture):""}
+                  alt="Picture of the author"
+                  width={500}
+                  height={500}
+            />        
+        
    </>
   )
 }
