@@ -19,8 +19,8 @@ Promise.all([getUserAccount(), getUserPermissions()])
   .then(function (results) {
     const acct = results[0];
     const perm = results[1];
-    console.log(acct);
-    console.log(perm);
+    console.log('acct');
+    console.log('perm');
   });    
 
 
@@ -76,8 +76,8 @@ export default function Upload(data, error) {
             axios
                 .post(url,formData,config)
                 .then((res) => {
-                    console.log(res.data);
-                    console.log(res);
+                    console.log('datqs');
+                    console.log('data');
                     const data = res.data;
                     if (res.status === 404) {
                         console.log('noooooo');

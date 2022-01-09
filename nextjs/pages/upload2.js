@@ -20,7 +20,7 @@ const handlevideo = (e) => {
     let url = 'https://api.cloudinary.com/v1_1/SpaceX/image/upload';
     axios.post(url, data, )
     .then(res => {
-      console.log(res.data);
+      console.log('datas');
     }).catch(err => console.log(err))
 };
 
