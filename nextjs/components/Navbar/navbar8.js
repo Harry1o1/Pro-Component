@@ -140,8 +140,6 @@ function Navbar8() {
                 <Link href="/"><a href="" className="scroll_li_a"> Page20 </a></Link>
             </li>
             
-            
-            
             <div id="marker" />
           </div>
           <div id="line" />
@@ -149,8 +147,8 @@ function Navbar8() {
       </div>
     </div>
   </nav>
-  {/* /////////////////////////  End  ///////////////////////////*/}
-  {/*////////////////////////////// Nav2 ///////////////////////////*/}
+  
+  
   <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-dark" id="navbar2">
     <div className="container-fluid">
       <a className="navbar-brand" href="#">Emon</a>
