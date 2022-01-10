@@ -1,2 +1,2 @@
 tasks:
-  - init: npm install
+  - init: cd nextjs && npm install && npm run dev
