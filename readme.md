@@ -204,11 +204,28 @@ cd example-app && php artisan serve we will be back
 
 
 
-### Ssh git
-pkg install openssh
+<h1 align="center">
+<br>
+  <br>
+    <br>
+    Github
+  <br>
+</h1>
+
+### git ssh 
+```bash
+ssh-keygen -o
+```
+### ssh cat
+```bash
+cat ~/.ssh/id_rsa.pub
+```
 
 
 
 
 
-
+### An important git command
+```bash
+git config --list
+```
