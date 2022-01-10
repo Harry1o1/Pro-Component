@@ -1,5 +1,5 @@
 """
-ASGI config for herokudjango project.
+ASGI config for aladdin_django_server project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'herokudjango.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'aladdin_django_server.settings')
 
 application = get_asgi_application()
