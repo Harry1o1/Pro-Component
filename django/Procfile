@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn herokudjango.wsgi --log-file -
+web: gunicorn aladdin_django_server.wsgi --log-file -
