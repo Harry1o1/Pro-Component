@@ -12,7 +12,26 @@
 
 
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Harry1o1/Pro-Component.git)
+<img align="center">[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Harry1o1/Pro-Component.git)</img>
+<img align="left">[![view nextjs](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Harry1o1/Pro-Component.git)</img>
+<img align="right">[![view ionic](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Harry1o1/Pro-Component.git)</img>
+
+
+
+
+
+
+<img align="center">[![view django](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Harry1o1/Pro-Component.git)</img>
+<img align="left">[![view express](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Harry1o1/Pro-Component.git)</img>
+<img align="right">[![view laravel](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Harry1o1/Pro-Component.git)</img>
+
+
+
+
+
+
+
+
 <h4 align="center">🚀 All Projects in this repo</h4>
 all projects 🪵🪵🪵
 ## 😎 Introducing The Project
@@ -25,97 +44,6 @@ in each repo you will guide 🦮🦮🦮 accordingly for your interest
 
 last but not 🚫🚫🚫 least it is very responsive repo 
 
-
-> The project referred to [express-generator-typescript](https://github.com/seanpmaxwell/express-generator-typescript)
-
-
-## 🗂 Code Structure (default)
-
-```bash
-│
-├── /.vscode
-│   ├── launch.json
-│   └── settings.json
-│
-├── /src
-│   ├── /configs
-│   │   ├── development.json
-│   │   ├── production.json
-│   │   └── test.json
-│   │
-│   ├── /controllers
-│   │   ├── auth.controller.ts
-│   │   ├── index.controller.ts
-│   │   └── users.controller.ts
-│   │
-│   ├── /dtos
-│   │   └── users.dto.ts
-│   │
-│   ├── /exceptions
-│   │   └── HttpException.ts
-│   │
-│   ├── /http
-│   │   ├── auth.http
-│   │   └── users.http
-│   │
-│   ├── /interfaces
-│   │   ├── auth.interface.ts
-│   │   ├── routes.interface.ts
-│   │   └── users.interface.ts
-│   │
-│   ├── /middlewares
-│   │   ├── auth.middleware.ts
-│   │   ├── error.middleware.ts
-│   │   └── validation.middleware.ts
-│   │
-│   ├── /models
-│   │   └── users.model.ts
-│   │
-│   ├── /routes
-│   │   ├── auth.route.ts
-│   │   ├── index.route.ts
-│   │   └── users.route.ts
-│   │
-│   ├── /services
-│   │   ├── auth.service.ts
-│   │   └── users.service.ts
-│   │
-│   ├── /tests
-│   │   ├── auth.test.ts
-│   │   ├── index.test.ts
-│   │   └── users.test.ts
-│   │
-│   ├── /utils
-│   │   ├── logger.ts
-│   │   ├── util.ts
-│   │   └── vaildateEnv.ts
-│   │
-│   ├── app.ts
-│   ├── index.ts
-│   └── server.ts
-│
-├── .dockerignore
-├── .editorconfig
-├── .env
-├── .eslintignore
-├── .eslintrc
-├── .gitignore
-├── .huskyrc
-├── .lintstagedrc.json
-├── .prettierrc
-├── .swcrc
-├── docker-compose.yml
-├── Dockerfile
-├── ecosystem.config.js
-├── jest.config.js
-├── Makefile
-├── nginx.conf
-├── nodemon.json
-├── package-lock.json
-├── package.json
-├── swagger.yaml
-└── tsconfig.json
-```
 
 
 
@@ -229,3 +157,15 @@ cat ~/.ssh/id_rsa.pub
 ```bash
 git config --list
 ```
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                                                        # # #                                                   
