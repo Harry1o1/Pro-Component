@@ -1,5 +1,5 @@
 """
-WSGI config for aladdin_django_server project.
+WSGI config for agenda_django_server project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'aladdin_django_server.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'agenda_django_server.settings')
 
 application = get_wsgi_application()
