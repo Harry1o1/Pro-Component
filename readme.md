@@ -116,7 +116,7 @@ composer create-project laravel/laravel example-app
 
 ### serve it
 ```bash
-cd example-app && php artisan serve we will be back
+cd example-app && php artisan serve
 ```
 
 

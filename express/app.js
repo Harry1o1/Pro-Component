@@ -10,6 +10,8 @@ const port = process.env.PORT || 5000; //PORT FOR HOSTING
 const connectDb = require('./db/connect'); //MONGOOSE 1
 const DB = process.env.DATABASE; //ENV DATABASE URL
 const UserSchema = require('./models/user'); //USER MODEL
+const Checklist1Schema = require('./models/checklist_commonday'); //USER MODEL
+
 const VideoSchema = require('./models/video'); //VIDEO MODEL
 const ImageSchema = require('./models/image'); //IMAGE MODEL
 app.use(express.json()); //JSON EXPRESS MIDDLEWARE 
@@ -48,9 +50,10 @@ app.use('/graphql', graphqlHTTP({
   rootValue: root,
   graphiql: true,
 }));
+
+
+
 // Graphql //////////////////////////////////////////////////////////////////////////////
-
-
 
 // app.get('/', (req,res) => {
 //     res.status(200).send('yeh bro that whatup😎😎😎')
@@ -81,6 +84,17 @@ app.use('/graphql', graphqlHTTP({
 
 
 //Routes  ///////////////////////////////////////////////////////////////////////////////
+app.get('/checklist1', async (req, res) => {
+    const user = await Checklist1Schema.find({});
+    console.log(user);
+    try {
+        res.status(200).json(user);
+    } catch (e) {
+        console.log(e);
+        res.send('error')
+    }
+});
+
 app.get('/register', async (req, res) => {
     const user = await UserSchema.find({});
     console.log(user);
@@ -140,12 +154,7 @@ app.get('/contact', async (req,res) => {
     res.status(200).send('contact')
     
 })
-// app.get('/about', async (req,res) => {
-//     let name = 'Thapa';
-//     res.cookie('jwtoken', 'Thapa')
-//     res.status(200).json({ massage: 'Hello express'})
-    
-// })
+
 app.get('/profile', async (req,res) => {
     res.status(200).send('profile')
     
