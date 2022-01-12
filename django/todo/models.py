@@ -45,3 +45,25 @@ class Note(models.Model):
     
 
     
+    
+    
+    
+    
+    
+    
+class Checklist(models.Model): 
+    today_date_temporary = models.CharField(max_length=100,blank=True,null=True)
+    
+    is_todays_bath = models.BooleanField(default=False)
+    
+    
+    # main = models.CharField(max_length=300,blank=True,null=True)    
+    # video = models.CharField(max_length=100,blank=True,null=True)
+    # image = models.CharField(max_length=100,blank=True,null=True)
+    # time = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        # return f"{self.tittle}: {self.main}: {self.video}: {self.image}: to {self.time}"
+        return f"{self.today_date_temporary}:{self.is_todays_bath}"
+        
+    
+    

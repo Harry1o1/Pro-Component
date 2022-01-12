@@ -17,6 +17,8 @@ app.use(express.json()); //JSON EXPRESS MIDDLEWARE
 //                              All Routes
 const home = require('./routes/home'); // ("/")
 const register = require('./routes/register'); // ("/register")
+const checklist_commonday = require('./routes/checklist_commonday'); // ("/register")
+
 // const profile = require('./routes/profile'); // ("/profile")
 // const login = require('./routes/login'); // ("/login")
 const about = require('./routes/about'); // ("/about")
@@ -50,7 +52,9 @@ app.use('/graphql', graphqlHTTP({
 
 
 
-
+// app.get('/', (req,res) => {
+//     res.status(200).send('yeh bro that whatup😎😎😎')
+// })
 
 
 
@@ -222,9 +226,11 @@ app.post('/image', async (req,res) => {
 
 
 //Routes  ///////////////////////////////////////////////////////////////////////////////
-app.use('/op', home);
+app.use('/', home);
 app.use('/register', register);
+app.use('/checklist1', checklist_commonday);
 app.use('/about', about);
+
 // app.use('/login', login);
 // app.use('/about', about);
 // app.use('/contact', contact);
