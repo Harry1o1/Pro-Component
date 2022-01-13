@@ -1,5 +1,5 @@
 @import "./components/navbar1";
-
+@include navbar1;
 
 
 
@@ -7,14 +7,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: red; */
 
 }
 
 body {
     min-height: 100vh;
     width: 100%;
-    background: yellow;
+    position: relative;
 
 }
 
@@ -116,25 +115,6 @@ body {
 }
 
 
-/* @media (min-width: 700px) and (max-width: 900px) { */
-
-/* @media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
-    body{
-        padding-top: 3rem;
-        background: #0015FF;
-        
-    }
-    
-    
-    
-} */
-
-/* #navbar1 {
-    background: #00FF16;
-} */
 
 
 .sticky {
@@ -167,30 +147,14 @@ body {
 }
 /*  Sorry😈👿🤠 for now but update it later✅✅✅*/
 
+.width{
+    width: 90%;
+    margin-inline: auto;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
 
 
 
-/* @media (min-width: 360px) and (max-width: 490px) {
-    body {
-        background: red;
-    }
-
-    #navbar2 {
-        display: none;
-
-    }
-} */
-
-/* @media (min-width: 500px) and (max-width: 1500px) {
-        body{
-            background: red;
-        }
-        #nav2{
-            display: none;
-        }
-    } */
 
 
-
-/* ok including */
-@include navbar1;
