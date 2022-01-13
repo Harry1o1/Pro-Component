@@ -14,20 +14,37 @@ let navbar = document.querySelector('.sidebar-sm');
 
 
 
-// When the user scrolls the page, execute myFunction 
-window.onscroll = function() {myFunction()};
-// Get the offset position of the navbar
-let sticky = navbar.offsetTop;
-// let sticky = navbar.getBoundingClientRect();
+if (navbar !== null) {
+    let sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+    window.onscroll = function() {myFunction()};
+    
+
+}
+if (btn !== null) {
+    btn.onclick = () => {
+        navbar2.classList.toggle('active')
+    };
+    btn.onclick = () => {
+        btn.classList.toggle('active');
+        navbar_sm.classList.toggle('active');
+    };
+}
 
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
+
+
+if (navbar === null) {
+    console.log('null');
+} else {
+    console.log('op');
+    
 }
 
 
@@ -37,10 +54,8 @@ function myFunction() {
 
 
 
-
-
-
 // Scroll💯
+if (marker !== 'undefined') {
     function indicator(e) {
         let rule1 = 9;
         let rule2 = 9;
@@ -71,29 +86,14 @@ function myFunction() {
         
     });
     
-    
-    
-
-
-Robin('Op Argument');
-if (btn !== 'undefined') {
-    btn.onclick = () => {
-        navbar2.classList.toggle('active')
-    };
-    btn.onclick = () => {
-        btn.classList.toggle('active');
-        navbar_sm.classList.toggle('active');
-    };
 }
-
-
-
-
-
-
-
+    
+    
+    
+    
 
 
 
 
 console.log(body.clientHeight);
+Robin('Op Argument');
