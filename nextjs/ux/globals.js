@@ -130,7 +130,7 @@ if (segment_items2 !== 'undefined' && segment_indicator2 !== 'undefined') {
 // Segment3🥳🥳🥳
 if (segment_items3 !== 'undefined' && segment_indicator3 !== 'undefined') {
     function indicator(e) {
-        let ifcon1 = 52;
+        let ifcon1 = 54;
         let ifcon2 = 140;
         let ifcon3 = 160;
         
@@ -139,23 +139,12 @@ if (segment_items3 !== 'undefined' && segment_indicator3 !== 'undefined') {
         let third = 15.2;
         
         let width_rule = 20;
+        let left_rule = 28;
         
-        // segment_indicator3.style.left = e.offsetLeft + 'px';
         
-        if (e.offsetLeft > ifcon1 ) {
-            if (e.offsetLeft > ifcon2 ) {
-                console.log('80');
-                segment_indicator3.style.left = second + 'rem';
-            } 
-            if (e.offsetLeft > ifcon3) {
-                console.log('80+');
-                segment_indicator3.style.left = third + 'rem';
-            }
-        }else{
-            console.log('1st');
-            segment_indicator3.style.left = first + 'rem';
-            
-        }
+        segment_indicator3.style.left = e.offsetLeft - left_rule + 'px';
+
+
         
         segment_indicator3.style.width = e.offsetWidth + width_rule + 'px';
         console.log(segment_indicator3.style.left);
