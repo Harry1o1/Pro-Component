@@ -52,6 +52,7 @@ body {
   align-items: center;
   margin-right: 2rem;
   width: auto;
+  
 }
 
 #segment3 { 
@@ -111,9 +112,9 @@ body {
 #segment-indicator2 {
   width: 35%;
   min-width: 35%;
-  min-height: 6vh;
+  min-height: 5.5vh;
   position: relative;
-  bottom: 3.9rem;
+  bottom: 4rem;
   left: 3rem;
   border-radius: 5px;
   background: transparent;
@@ -124,9 +125,9 @@ body {
 #segment-indicator3 {
   width: 25%;
   min-width: 25%;
-  min-height: 6vh;
+  min-height: 5.3vh;
   position: relative;
-  bottom: 3.9rem;
+  bottom: 4rem;
   left: 1.6rem;
   border-radius: 5px;
   background: transparent;
