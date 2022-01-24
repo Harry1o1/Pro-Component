@@ -3,6 +3,7 @@
 #nav2 {
   display: none;
 }
+
 @media (min-width: 360px) and (max-width: 490px) {
   ::-webkit-scrollbar, #circle, #nav2 {
     display: none;
@@ -311,6 +312,7 @@ body {
   min-height: 100vh;
   width: 100%;
   position: relative;
+  background: red;
 }
 
 .bd-placeholder-img {
