@@ -6,7 +6,7 @@ import Navbar5 from "./Navbar/navbar5";
 import Navbar6 from "./Navbar/navbar6";
 import Navbar7 from "./Navbar/navbar7";
 import Navbar8 from "./Navbar/navbar8";
-import Navbar8 from "./Navbar/navbar9";
+import Navbar9 from "./Navbar/navbar9";
 
 
 import Footer1 from './Footer/footer1'

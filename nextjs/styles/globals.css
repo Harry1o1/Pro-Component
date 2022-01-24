@@ -3,7 +3,6 @@
 #nav2 {
   display: none;
 }
-
 @media (min-width: 360px) and (max-width: 490px) {
   ::-webkit-scrollbar, #circle, #nav2 {
     display: none;
