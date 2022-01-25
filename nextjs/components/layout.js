@@ -30,11 +30,11 @@ export default function Layout({ children }) {
 
         {/* Testing🖖🖖🖖 */}
         <Script
-          type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
           strategy="beforeInteractive"
         />
         <Script
-          src="https://rawcdn.githack.com/Harry1o1/Pro-Component/fae2d70b54658c1af6428ddfb80e9aa14f93b7c4/nextjs/ux/globals.js" 
+          type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/fae2d70b54658c1af6428ddfb80e9aa14f93b7c4/nextjs/ux/globals.js" 
           strategy="beforeInteractive"
         />
 
