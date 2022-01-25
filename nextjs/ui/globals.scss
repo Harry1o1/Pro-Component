@@ -1,11 +1,20 @@
+/* Imports🤗🤗🤗 */
 @import "./components/navbar1";
+
+
+/* Using it s🤗🤗🤗 */
 @include navbar1;
+
+
+
+
+/* #Starting😎😎😎 || Mobile 📲📲📲 firts || Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
-}
+} 
 
 body {
     min-height: 100vh;
@@ -14,104 +23,6 @@ body {
 
 }
 
-
-
-
-
-
-.bd-placeholder-img {
-    font-size: 1.125rem;
-    text-anchor: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-}
-
-@media (min-width: 360px) and (max-width: 700px) {
-
-    #navbar1 {
-        background: #FFFFFF;
-    }
-    .sidebar-sm{
-        background: #FFFFFF;
-        
-    }
-
-    #navbar2 {
-        display: none;
-        /* display: block; */
-        
-    }
-
-    body {
-        padding-top: 0;
-        padding: 0;
-        margin: 0;
-    }
-
-    * {
-        /* background: red; */
-    }
-
-}
-
-
-
-
-
-
-
-@media (min-width: 700px) and (max-width: 950px) {
-    .sidebar-sm,#circle,#banners{
-        display: none;
-    }
-    #navbar2{
-        display: block;
-    }
-    #navnar1{
-        display: none;
-    }
-    .pro_navbar_main_container{
-        display: none;
-    }
-    body{
-        padding-top: 5rem;
-        margin: 0;
-        background: red;
-    }
-    
-}
-
-
-@media (min-width: 960px) {
-    .sidebar-sm,#circle,#banners{
-        display: none;
-    }
-    #navbar2{
-        display: block;
-    }
-    #navnar1{
-        display: none;
-    }
-    .pro_navbar_main_container{
-        display: none;
-    }
-    body{
-        padding-top: 5rem;
-        margin: 0;
-        background: red;
-    }
-    .d-flex{
-        background: red;
-        position: relative;
-        left: 10rem;
-    }
-
-}
-
-
-
-
 .sticky {
     position: fixed;
     top: 0;
@@ -119,7 +30,6 @@ body {
     background: #FFFFFF;
     /* height: 5rem; */
 }
-
 
 .sticky+#hero {
     padding-top: 4rem;
@@ -134,24 +44,18 @@ body {
     background: #FFFFFF;
 }
 
-
-
 #menu{
     height: 2rem;
     width: 2rem;
 }
-/*  Sorry😈👿🤠 for now but update it later✅✅✅*/
 
+/*  Sorry😈👿🤠 for now but update it later✅✅✅*/
 .width{
     width: 90%;
     margin-inline: auto;
     margin-bottom: 0.5rem;
     border-radius: 5px;
 }
-
-
-
-
 
 #segment2{
   display: grid;
@@ -165,7 +69,6 @@ body {
     
 }
 
-
 #segment2-item1{
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -178,8 +81,9 @@ body {
   align-items: center;
   margin-left: 2rem;
   width: auto;
-    
+  
 }
+
 #segment2-item2{
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -205,9 +109,8 @@ body {
   margin: 1rem;
   border-radius: 15px;
   
-  
-  
 }
+
 #segment3-item1 {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -220,6 +123,7 @@ body {
   align-items: center;
   
 }
+
 #segment3-item2 {
   font-size: 1em;
   font-style: bold;
@@ -228,7 +132,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
+
 #segment3-item3 {
   font-size: 1em;
   font-style: bold;
@@ -240,14 +146,8 @@ body {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   /* padding-right: 1rem; */
+  
 }
-
-
-
-
-
-
-
 
 #segment-indicator2 {
   width: 35%;
@@ -260,6 +160,7 @@ body {
   background: transparent;
   box-shadow: 35px 35px 70px #a1a1a1, -35px -35px 70px #ffffff;
   border: 1px solid #FFFFFF;
+  
 }
 
 #segment-indicator3 {
@@ -273,5 +174,75 @@ body {
   background: transparent;
   box-shadow: 35px 35px 70px #a1a1a1, -35px -35px 70px #ffffff;
   border: 1px solid #FFFFFF;
+  
 }
 
+
+
+
+
+
+
+/*                              All media queries                               */
+@media (min-width: 360px) and (max-width: 700px) {
+
+    #navbar1 {
+        background: #FFFFFF;
+    }
+    .sidebar-sm{
+        background: #FFFFFF;
+        
+    }
+
+    #navbar2 {
+        display: none;
+        display: block;
+        
+    }
+
+
+
+} 
+@media (min-width: 700px) and (max-width: 950px) {
+    .sidebar-sm,#circle,#banners{
+        display: none;
+    }
+    #navbar2{
+        display: block;
+    }
+    #navnar1{
+        display: none;
+    }
+    .pro_navbar_main_container{
+        display: none;
+    }
+    body{
+        padding-top: 5rem;
+        margin: 0;
+    }
+    
+}
+/* @media (min-width: 960px) {
+    .sidebar-sm,#circle,#banners{
+        display: none;
+    }
+    #navbar2{
+        display: block;
+    }
+    #navnar1{
+        display: none;
+    }
+    .pro_navbar_main_container{
+        display: none;
+    }
+    body{
+        padding-top: 5rem;
+        margin: 0;
+    }
+    .d-flex{
+        position: relative;
+        left: 10rem;
+    }
+
+} */
+                                                                                                                                                                                                                                                                                                                                                

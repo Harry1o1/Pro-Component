@@ -1,4 +1,10 @@
 import { Robin } from './src/toogle/robin.js';
+import { Notes_page } from './todo/notes.js';//Update later
+
+
+
+
+
 const body = document.querySelector('body');
 const btn = document.querySelector('.pro_navbar_mb_btn');
 const small_ul = document.querySelector('.mb_list5');
@@ -39,6 +45,8 @@ if (navbar !== null) {
     
 
 }
+
+
 if (btn !== null) {
     btn.onclick = () => {
         navbar2.classList.toggle('active')
@@ -48,9 +56,6 @@ if (btn !== null) {
         navbar_sm.classList.toggle('active');
     };
 }
-
-
-
 
 
 
@@ -170,11 +175,9 @@ if (segment_items3 !== 'undefined' && segment_indicator3 !== 'undefined') {
 
 
 // Others😅😅😅
-console.log(body.clientHeight);
+// console.log(body.clientHeight);
 Robin('Op Argument');
-if (navbar === null) {
-    console.log('null');
-}else {
-    console.log('op');
-    
-}
+Notes_page('Op Argument');
+
+
+                                                                                                                                                                                                                                                                                                                                                

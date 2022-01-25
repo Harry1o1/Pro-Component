@@ -1,8 +1,0 @@
-{
-  "run": {
-    "type": "file",
-    "url": "https://nextjs-one-ochre-26.vercel.app/addvideo",
-    "file": "django/api/templates/index.html",
-    "ignoreCurrent": true
-  }
-}
