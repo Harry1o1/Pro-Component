@@ -124,7 +124,7 @@
                 .pro_navbar_brand_mb {
                     /* padding-top: 10%; */
                     position: relative;
-                    top: 0.3rem;
+                    top: 0.7rem;
                     font-size: 1.9rem;
                     margin: 0;
                     padding: 0;
@@ -231,44 +231,59 @@
         
         .scroll {
             padding: 4px;
+            
+            
             height: 60px;
             width: 100%;
+            
+            
             overflow-x: auto;
             overflow-y: hidden;
             white-space: nowrap;
             display: grid;
+            
+            
             grid-template-columns: repeat(20, 1fr);
-            grid-template-rows: 35px 5px;
+            grid-template-rows: 40px 5px;
             
         }
         
         
         
         .scroll_li {
+            
             list-style: none;
             display: grid;
             place-items: center;
             text-align: center;
-            height: 4vh;
             grid-row: 1 / 2;
-            padding-left: 0.5rem;
-            padding-right: 0.5rem;
+            
+            
+            height: 4vh;
+            
+            
+            padding-left: 0.7rem;
+            padding-right: 0.7rem;
         }
         
         
         
         .scroll_li_a {
+            
             text-align: center;
             text-decoration: none;
+            
+            
             font-size: 1rem;
             font-style: bold;
             font-weight: 700vh;
-            position: relative;
+            
+            
             color: #6c757d !important;
-            padding-left: 0;
-            padding-right: 0;
+            
+            
             position: relative;
-            top: 0.4rem;
+            top: 0.5rem;
             
             
         }
@@ -286,26 +301,33 @@
         
         #marker {
             background: #000;
-            height: 4.5px;
+            height: 3px;
+            min-width: 10%;
+            
             position: relative;
-            top: 0.2rem;
-            -webkit-border-radius: 25px;
-            -moz-border-radius: 25px;
-            border-radius: 30px;
+            top: 0.1rem;
+            
             grid-row: 2 / 3;
             
+            z-index: 2;
         }
         
         
         
         
         #line {
-            background: #000;
-            height: 1px;
-            width: 100%;
-            position: relative;
-            bottom: 0.9rem;
             
+            height: 1.5px;
+            width: 100%;
+            
+            position: relative;
+            bottom: 0.7rem;
+            border-radius: 0px;
+            background: #e0e0e0;
+            box-shadow:  18px 18px 36px #727272,
+                         -18px -18px 36px #ffffff;        
+            
+            z-index: 1;
         }
         
         
