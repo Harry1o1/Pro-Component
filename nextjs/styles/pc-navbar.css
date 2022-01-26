@@ -1,1 +1,41 @@
+#pc_navbar_top,
+#pc_navbar_left {
+    display: none;
+}
 
+
+
+/*                              Pc                                      */
+@media (min-width: 960px) {
+
+    body {
+        background: #B6FF00;
+    }
+
+    #pc_navbar_top {
+        display: block;
+        
+        
+        background: #00FFA4;
+        height: 5vh;
+        width: 100%;
+        
+        
+        position: fixed;
+        bottom: 0;
+        
+        
+    }
+
+    #pc_navbar_left {
+        display: block;
+        
+        background: #4400FF;
+        height: 5vh;
+        width: 100%;
+        
+        position: fixed;
+        
+    }
+
+}

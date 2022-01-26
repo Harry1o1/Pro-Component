@@ -175,9 +175,9 @@ if (segment_items3 !== 'undefined' && segment_indicator3 !== 'undefined') {
 
 
 // Others😅😅😅
-// console.log(body.clientHeight);
-Robin('Op Argument');
-Notes_page('Op Argument');
+console.log(body.clientHeight);
+// Robin('Op Argument');
+// Notes_page('Op Argument');
 
 
                                                                                                                                                                                                                                                                                                                                                 
