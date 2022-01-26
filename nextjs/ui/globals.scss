@@ -1,14 +1,15 @@
 /* Imports🤗🤗🤗 */
-@import "./components/navbar1";
+@use "./components" as *;
+@use "./mb" as *;
+@use "./pc" as *;
+/* @use "./src" as *; */
+
+@import "./agenda";
 
 
-/* Using it s🤗🤗🤗 */
-@include navbar1;
 
 
-
-
-/* #Starting😎😎😎 || Mobile 📲📲📲 firts || Global */
+/*              #Starting😎😎😎 || Mobile 📲📲📲 firts || Global                 */
 * {
     margin: 0;
     padding: 0;
@@ -23,168 +24,12 @@ body {
 
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #FFFFFF;
-    /* height: 5rem; */
-}
-
-.sticky+#hero {
-    padding-top: 4rem;
-}
-
-#hero {
-    margin-top: 0.2rem;
-    min-height: 95vh;
-}
-
-.sidebar-sm {
-    background: #FFFFFF;
-}
-
-#menu{
-    height: 2rem;
-    width: 2rem;
-}
-
-/*  Sorry😈👿🤠 for now but update it later✅✅✅*/
-.width{
-    width: 90%;
-    margin-inline: auto;
-    margin-bottom: 0.5rem;
-    border-radius: 5px;
-}
-
-#segment2{
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr;
-  min-height: 8vh;
-  width: 90%;
-  margin-inline: auto;
-  margin: 1rem;
-  border-radius: 15px;
-    
-}
-
-#segment2-item1{
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  font-size: 1em;
-  font-style: bold;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 2rem;
-  width: auto;
-  
-}
-
-#segment2-item2{
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  font-size: 1em;
-  font-style: bold;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 2rem;
-  width: auto;
-  
-}
-
-#segment3 { 
-  display: grid;
-  place-items: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  min-height: 8vh;
-  width: 90%;
-  margin-inline: auto;
-  margin: 1rem;
-  border-radius: 15px;
-  
-}
-
-#segment3-item1 {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  font-size: 1em;
-  font-style: bold;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-#segment3-item2 {
-  font-size: 1em;
-  font-style: bold;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-#segment3-item3 {
-  font-size: 1em;
-  font-style: bold;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  /* padding-right: 1rem; */
-  
-}
-
-#segment-indicator2 {
-  width: 35%;
-  min-width: 35%;
-  min-height: 5.5vh;
-  position: relative;
-  bottom: 4rem;
-  left: 3rem;
-  border-radius: 5px;
-  background: transparent;
-  box-shadow: 35px 35px 70px #a1a1a1, -35px -35px 70px #ffffff;
-  border: 1px solid #FFFFFF;
-  
-}
-
-#segment-indicator3 {
-  width: 25%;
-  min-width: 25%;
-  min-height: 5.3vh;
-  position: relative;
-  bottom: 4rem;
-  left: 1.6rem;
-  border-radius: 5px;
-  background: transparent;
-  box-shadow: 35px 35px 70px #a1a1a1, -35px -35px 70px #ffffff;
-  border: 1px solid #FFFFFF;
-  
-}
 
 
 
 
-
-
-
-/*                              All media queries                               */
-@media (min-width: 360px) and (max-width: 700px) {
+/*                                      pc                                     */
+/* @media (min-width: 360px) and (max-width: 700px) {
 
     #navbar1 {
         background: #FFFFFF;
@@ -199,11 +44,8 @@ body {
         display: block;
         
     }
-
-
-
-} 
-@media (min-width: 700px) and (max-width: 950px) {
+} */ 
+/* @media (min-width: 700px) and (max-width: 950px) {
     .sidebar-sm,#circle,#banners{
         display: none;
     }
@@ -221,7 +63,7 @@ body {
         margin: 0;
     }
     
-}
+} */
 /* @media (min-width: 960px) {
     .sidebar-sm,#circle,#banners{
         display: none;
@@ -245,4 +87,52 @@ body {
     }
 
 } */
+
+@media (min-width: 900px) {
+    
+    
+    
+    
+    /* Using it in Pc 🍼🐥🍼🐥  🤗🤗🤗 */
+    @include displays-pc;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Using it in mobile 📱📱📱📲📲📲 🤗🤗🤗 */
+@include navbar1;
+@include displays-mb;
+
+
                                                                                                                                                                                                                                                                                                                                                 
