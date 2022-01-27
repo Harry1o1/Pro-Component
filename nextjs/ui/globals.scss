@@ -16,6 +16,10 @@
     box-sizing: border-box;
 
 }
+#pc_navbar_top,#pc_navbar_left{
+    display: none;
+}
+/*                                   Displays                                    */
 
 
 body {
@@ -24,10 +28,41 @@ body {
     background: #FFFFFF;
 
 
-
-
-
 }
+
+
+    @include navbar2-mb;
+    .mb-navbartop-icons{
+        font-size: 1.3rem;
+    }
+
+
+main{
+    
+    min-height: 100vh;
+    width: 100%;
+    
+    /*     for now      */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+footer{
+    
+    background: green;
+    
+    
+}
+
+
+
+
+
+
+
 
 
 
@@ -36,7 +71,9 @@ body {
 
 /*                                      pc                                     */
 @media (min-width: 900px) {
-
+    #mb_navbar_top{
+        display: none;
+    }
     body{
         /* display: grid; */
         /* grid-template-rows: 50vh 50vh; */
@@ -56,7 +93,7 @@ body {
         
         position: relative;
         top: 0.2rem;
-        left: 4rem;
+        left: 10rem;
         /* left: 5%; */
         
     }
@@ -150,7 +187,7 @@ body {
     #pc_navbar_left ul{
         margin-bottom: 9vh;
         
-        height: 150vh;
+        height: 400vh;
     }
     #pc_navbar_left ul li{
         font-size: 2rem;

@@ -39,7 +39,7 @@
         /* Staring */
         #menu-icon{
             position: relative;
-            left: 1rem;
+            left: 1.5rem;
             padding: 0;
             margin: 0;
             font-size: 4rem;
@@ -50,7 +50,7 @@
             color: #000;
             
             position: relative;
-            left: 2rem;
+            left: 5rem;
             top: 0.5rem;
         }        
         
@@ -64,7 +64,7 @@
             width: 320px;
             
             position: relative;
-            left: 3rem;
+            left: 10rem;
             top: 0.2rem;
             
             
@@ -126,14 +126,14 @@
             
             
             width: 10%;
-            min-height: 97%;
+            height: 97%;
             
             position: fixed;
             top: 5.3rem;
             left: 0;
             
             
-            border-right: 1px solid #000000;
+            border-right: 2px solid #000000;
             
             
             z-index: 2;
@@ -142,6 +142,9 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        
+        height: 150vh;
+        
         
         padding-right: 1.9rem;
     }
