@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Navbar5 */
+/* @forward "./navbar2-pc.scss"; */
 /* Imports🤗🤗🤗 */
 /* @use "./src" as *; */
 .sticky {
@@ -154,14 +155,124 @@
   box-sizing: border-box;
 }
 
+#pc_navbar_top, #pc_navbar_left {
+  display: none;
+}
+
+/*                                   Displays                                    */
 body {
   min-height: 100vh;
   width: 100%;
   background: #FFFFFF;
 }
 
+#mb_navbar_top {
+  /* background: yellow; */
+  height: 12vh;
+}
+
+#mb_navbartop_header {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 50px 1fr 1fr 130px 1fr 1fr 50px;
+  color: #000000;
+  height: 6vh;
+  width: 100%;
+}
+
+#mb_navbartop_brand {
+  color: #000000;
+  font-style: italic;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+#dropdown-icon-mb {
+  font-size: 2rem;
+  position: relative;
+  /* bottom: 0.3rem; */
+}
+
+#menu-icon-mb {
+  font-size: 1.8rem;
+  /* position: relative; */
+  bottom: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+#profile-icon-mb {
+  font-size: 1.7rem;
+}
+
+#mb_navbartop_scroll {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  /* background: red; */
+  border-bottom: 1px solid #000000;
+  height: 6vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  text-decoration: none;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  position: relative;
+  bottom: 0.3rem;
+}
+
+#mb_navbartop_scroll li {
+  /* background: #1CFF00; */
+  height: 5.9vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+#mb_navbartop_scroll li:hover {
+  border-bottom: 3px solid #000000;
+}
+
+.mb_navbartopscroll_pages {
+  position: relative;
+  top: 0.2rem;
+  font-size: 1.3rem;
+}
+
+#mb_navbartop_scroll li:last-child {
+  /* background: #4F00FF; */
+  margin-right: 0;
+}
+
+.mb-navbartop-icons {
+  font-size: 1.3rem;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  /*     for now      */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background: green;
+}
+
 /*                                      pc                                     */
 @media (min-width: 900px) {
+  #mb_navbar_top {
+    display: none;
+  }
+
   body {
     /* display: grid; */
     /* grid-template-rows: 50vh 50vh; */
@@ -198,7 +309,7 @@ body {
   /* Staring */
   #menu-icon {
     position: relative;
-    left: 1rem;
+    left: 1.5rem;
     padding: 0;
     margin: 0;
     font-size: 4rem;
@@ -207,7 +318,7 @@ body {
   #pc-navbartop-brand {
     color: #000;
     position: relative;
-    left: 2rem;
+    left: 5rem;
     top: 0.5rem;
   }
 
@@ -217,7 +328,7 @@ body {
     height: 3.5vh;
     width: 320px;
     position: relative;
-    left: 3rem;
+    left: 10rem;
     top: 0.2rem;
   }
 
@@ -259,11 +370,11 @@ body {
     display: flex;
     justify-content: center;
     width: 10%;
-    min-height: 97%;
+    height: 97%;
     position: fixed;
     top: 5.3rem;
     left: 0;
-    border-right: 1px solid #000000;
+    border-right: 2px solid #000000;
     z-index: 2;
   }
 
@@ -271,6 +382,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    height: 150vh;
     padding-right: 1.9rem;
   }
 
@@ -299,7 +411,7 @@ body {
     padding: 1rem;
     position: relative;
     top: 0.2rem;
-    left: 4rem;
+    left: 10rem;
     /* left: 5%; */
   }
 
@@ -374,7 +486,7 @@ body {
 
   #pc_navbar_left ul {
     margin-bottom: 9vh;
-    height: 150vh;
+    height: 400vh;
   }
 
   #pc_navbar_left ul li {
