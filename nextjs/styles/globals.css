@@ -160,81 +160,173 @@ body {
   background: #FFFFFF;
 }
 
-#pc_navbar_top {
-  background: #000;
-  color: #000;
-  height: 5vh;
-  width: 100%;
-  position: fixed;
-  top: 0;
-}
-
-main {
-  background: #ACB3FF;
-  min-height: 300vh;
-}
-
-/* The sidebar menu */
-#pc_navbar_left {
-  height: 100%;
-  /* Full-height: remove this if you want "auto" height */
-  width: 160px;
-  /* Set the width of the sidebar */
-  position: fixed;
-  /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1;
-  /* Stay on top */
-  top: 0;
-  /* Stay at the top */
-  left: 0;
-  background-color: #111;
-  /* Black */
-  overflow-x: hidden;
-  /* Disable horizontal scroll */
-  padding-top: 20px;
-}
-
-/* The navigation menu links */
-#pc_navbar_left a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-/* When you mouse over the navigation links, change their color */
-#pc_navbar_left a:hover {
-  color: #f1f1f1;
-}
-
-/* Style page content */
-.main {
-  margin-left: 160px;
-  /* Same as the width of the sidebar */
-  padding: 0px 10px;
-}
-
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  #pc_navbar_left {
-    padding-top: 15px;
-  }
-
-  #pc_navbar_left a {
-    font-size: 18px;
-  }
-}
-footer {
-  background: #FFFFFF;
-  color: #000;
-  height: 10vh;
-  width: 100%;
-  text-align: center;
-}
-
 /*                                      pc                                     */
 @media (min-width: 900px) {
+  body {
+    /* display: grid; */
+    /* grid-template-rows: 50vh 50vh; */
+    /* grid-template-columns: 20% 80%; */
+  }
+
+  /* The sidebar menu */
+  /* The sidebar Top menu */
+  #pc_navbar_top {
+    /* display: grid; */
+    /* grid-template-rows: 1fr 1fr; */
+    /* grid-template-columns: 10px 10px 100px 10px 10px 10px 10px 10px; */
+    background: #FFFFFF;
+    color: #FFFFFF;
+    border-radius: 0px;
+    background: #e0e0e0;
+    box-shadow: 20px 20px 45px #b1b1b1, -20px -20px 45px #ffffff;
+    min-height: 5vh;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    top: -0.5rem;
+    z-index: 1;
+    /* for now only */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    border-bottom: 1px solid #000000;
+  }
+
+  /* #pc_navbartop_tools{
+      background: red;
+  } */
+  /* Staring */
+  #menu-icon {
+    position: relative;
+    left: 1rem;
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+  }
+
+  #pc-navbartop-brand {
+    color: #000;
+    position: relative;
+    left: 2rem;
+    top: 0.5rem;
+  }
+
+  #navbar-top-form {
+    border: 1px solid #FFFFFF;
+    display: flex;
+    height: 3.5vh;
+    width: 320px;
+    position: relative;
+    left: 3rem;
+    top: 0.2rem;
+  }
+
+  #searchbar {
+    width: 250px;
+    height: 2.4vh;
+    position: relative;
+    top: 0.6rem;
+    left: 1rem;
+  }
+
+  #search-icon {
+    height: 1.8vh;
+    position: relative;
+    top: -0.1rem;
+    left: 0em;
+  }
+
+  #voicesearch-icon {
+    position: relative;
+  }
+
+  #profile-icon {
+    position: relative;
+    /* left: 2rem; */
+    /* top: 0.4rem; */
+    /* font-size: 3.5rem; */
+  }
+
+  #dropdown-icon {
+    position: relative;
+    /* left: 1rem; */
+  }
+
+  /* The sidebar Left menu */
+  #pc_navbar_left {
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    min-height: 97%;
+    position: fixed;
+    top: 5.3rem;
+    left: 0;
+    border-right: 1px solid #000000;
+    z-index: 2;
+  }
+
+  #pc_navbar_left ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 1.9rem;
+  }
+
+  #pc_navbar_left ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+    /* right: 1rem; */
+    width: 5.8rem;
+    margin-top: 2rem;
+    text-decoration: none;
+    font-size: 3.4rem;
+    color: #818181;
+  }
+
+  #pc_navbar_left ul li:hover {
+    color: #000000;
+    border-right: 5px solid #26283D;
+    font-size: 5rem;
+  }
+
+  .pc-navbartop-icons {
+    color: #000000;
+    font-size: 2.5rem;
+    padding: 1rem;
+    position: relative;
+    top: 0.2rem;
+    left: 4rem;
+    /* left: 5%; */
+  }
+
+  main {
+    background: #FFFFFF;
+    margin-left: 6rem;
+    margin-top: 5vh;
+    padding: 0px 10px;
+    /* for now only */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  footer {
+    background: #FFFFFF;
+    color: #000;
+    margin-left: 6rem;
+    height: 10vh;
+    /* for now only */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   /* Using it in Pc 🍼🐥🍼🐥  🤗🤗🤗 */
   .sidebar-sm, #circle, #banners {
     display: none;
@@ -252,308 +344,58 @@ footer {
     display: none;
   }
 }
-/* Using it in mobile 📱📱📱📲📲📲 🤗🤗🤗 */
-#nav2 {
-  display: none;
-}
-
-@media (min-width: 360px) and (max-width: 490px) {
-  ::-webkit-scrollbar, #circle, #nav2 {
-    display: none;
-  }
-
-  /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Active 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
-  .pro_navbar_main_container.active {
+/*                               End pc                                        */
+/*                              Landscape                                      */
+@media (min-width: 900px) and (max-height: 423px) {
+  #pc_navbar_left {
+    width: 7%;
     height: 100vh;
-  }
-  .pro_navbar_main_container.active .scroll,
-.pro_navbar_main_container.active #marker,
-.pro_navbar_main_container.active #line {
-    display: none;
-  }
-  .pro_navbar_main_container.active #circle {
-    display: block;
-    border-bottom: 2px solid black;
-    width: 100%;
-    height: 9.5vh;
-    border-radius: 0;
-    margin-top: 0;
-    display: grid;
-    padding-right: 1.3rem;
-    place-items: center;
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .pro_navbar_main_container.active #circle li {
-    margin-inline: auto;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    margin-bottom: 2rem;
+    top: 4.6rem;
+    padding-bottom: 9rem;
   }
 
-  .pro_navbar_mb_sm .pro_navbar_mb_main-content {
-    height: 91vh;
-  }
-  .pro_navbar_mb_sm .pro_navbar_mb_main-content .form-control {
-    display: block;
-    position: relative;
-    left: 5%;
-    width: 90%;
-  }
-  .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb {
-    display: block;
-    border-bottom: 2px solid black;
-    width: 100%;
-    height: 9.5vh;
-    border-radius: 0;
-    margin-top: 0;
-    display: grid;
-    padding-right: 1.4rem;
-    place-items: center;
-    grid-template-columns: repeat(5, 1fr);
-  }
-  .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb li {
-    margin-inline: auto;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    margin-bottom: 2rem;
-  }
-  .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_sub-menu_mb {
-    display: grid;
+  #pc_navbar_left ul li {
+    width: 4.2rem;
+    /* background: red; */
   }
 
-  .pro_navbar_mb_main-content.toggle .pro_navbar_mb_main-content.toggle:first-child {
-    display: none;
-  }
-  .pro_navbar_mb_main-content.toggle .pro_navbar_mb_main-content.toggle:nth-child(3) {
-    display: block;
+  #pc_navbar_left ul li:hover, #pc_navbar_left ul li:focus {
+    font-size: 3rem;
+    border-right: 3px solid #26283D;
   }
 
-  .pro_navbar_main_container.active:nth-child(2) {
-    background: #6BFFF5;
+  .pc-navbartop-icons {
+    font-size: 1rem;
   }
 
-  .pro_navbar_main_container.active:nth-child(3) {
-    background: #6BFFF5;
-    display: block;
+  #menu-icon {
+    font-size: 1rem;
   }
 
-  .pro_navbar_main_container.toggle {
-    height: 15vh;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+  #pc_navbar_left ul {
+    margin-bottom: 9vh;
+    height: 150vh;
   }
-}
-/* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Normal 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
-#nav2,
-.pro_navbar_page-menu_mb {
-  display: none;
-}
 
-.pro_navbar_main_container {
-  height: 15vh;
-  background: #FFFFFF;
-  width: 100%;
-  /* 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 Scroll 🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉🎉 */
-  /* The animation code */
-  /* The element to apply the animation to */
-}
-.pro_navbar_main_container .pro_navbar_mb_sm {
-  border-bottom-left-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header {
-  /* border: 3px solid #9F00FF; */
-  display: grid;
-  grid-template-columns: 85% 1fr;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_brand_mb {
-  /* padding-top: 10%; */
-  position: relative;
-  top: 0.7rem;
-  font-size: 1.9rem;
-  margin: 0;
-  padding: 0;
-  font-style: bold;
-  font-weight: 700;
-  padding-left: 1rem;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn {
-  margin-top: 0.4rem;
-  background: #fff;
-  border-radius: 0.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  display: grid;
-  place-items: center;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn #icon_menu {
-  font-size: 2rem;
-  display: block;
-  position: relative;
-  bottom: 0.2rem;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn #icon_close {
-  font-size: 2.3rem;
-  display: none;
-  margin-right: 2rem;
-  position: relative;
-  bottom: 0.2rem;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn.active #icon_menu {
-  display: none;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_header .pro_navbar_mb_btn.active #icon_close {
-  display: block;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content {
-  height: 8vh;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .form-control {
-  display: none;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb {
-  overflow: hidden;
-  margin-bottom: 0;
-  height: 10vh;
-  margin-inline: auto;
-  display: flex;
-  flex-direction: row;
-  margin-top: 0.6rem;
-  padding-left: 1.1rem;
-  padding-bottom: 0.8rem;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb li {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  height: 3.4vh;
-  place-items: center;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb li .pro_toggle_navbar_mb {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.3rem;
-  border-radius: 50%;
-  background: rgba(240, 240, 255, 0.5);
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb li .mb_items {
-  color: black;
-  display: none;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb li .mb_icons {
-  font-size: 1rem;
-}
-.pro_navbar_main_container .pro_navbar_mb_sm .pro_navbar_mb_main-content .pro_navbar_page-menu_mb.toggle {
-  background: red;
-  display: none;
-}
-.pro_navbar_main_container .scroll {
-  padding: 4px;
-  height: 60px;
-  width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  display: grid;
-  grid-template-columns: repeat(20, 1fr);
-  grid-template-rows: 40px 5px;
-}
-.pro_navbar_main_container .scroll_li {
-  list-style: none;
-  display: grid;
-  place-items: center;
-  text-align: center;
-  grid-row: 1/2;
-  height: 4vh;
-  padding-left: 0.7rem;
-  padding-right: 0.7rem;
-}
-.pro_navbar_main_container .scroll_li_a {
-  text-align: center;
-  text-decoration: none;
-  font-size: 1rem;
-  font-style: bold;
-  font-weight: 700vh;
-  color: #6c757d !important;
-  position: relative;
-  top: 0.5rem;
-}
-.pro_navbar_main_container .scroll_li_a:focus {
-  color: #000000 !important;
-  font-style: bold;
-  font-weight: 700;
-  /* animation-name: sidebar; */
-  /* animation-duration: 4s; */
-}
-.pro_navbar_main_container #marker {
-  background: #000;
-  height: 3px;
-  min-width: 10%;
-  position: relative;
-  top: 0.1rem;
-  grid-row: 2/3;
-  z-index: 2;
-}
-.pro_navbar_main_container #line {
-  height: 1.5px;
-  width: 100%;
-  position: relative;
-  bottom: 0.7rem;
-  border-radius: 0px;
-  background: #e0e0e0;
-  box-shadow: 18px 18px 36px #727272, -18px -18px 36px #ffffff;
-  z-index: 1;
-}
-.pro_navbar_main_container .sidebar-sm {
-  height: 50px;
-}
-@keyframes sidebar {
-  0% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
+  #pc_navbar_left ul li {
+    font-size: 2rem;
+    margin-top: 1.5rem;
   }
-  25% {
-    background-color: yellow;
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    background-color: blue;
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    background-color: green;
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    background-color: red;
-    left: 0px;
-    top: 0px;
-  }
-}
-.pro_navbar_main_container .animation {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  background-color: red;
-  animation-name: sidebar;
-  animation-duration: 4s;
-}
-.pro_navbar_main_container #navbar2 {
-  display: none;
-}
-.pro_navbar_main_container .pro_navbar_pc_lg {
-  display: none;
-}
 
+  main {
+    margin-left: 3rem;
+    margin-top: 4vh;
+  }
+
+  footer {
+    height: 10vh;
+    margin-left: 4.2rem;
+  }
+}
+/* Using it in mobile 📱📱📱📲📲📲 🤗🤗🤗 */
+/* @include navbar1; */
 #navbar2 {
   display: none;
 }
+
+/*              Ending😎😎😎 || Mobile 📲📲📲 firts || Global                 */
