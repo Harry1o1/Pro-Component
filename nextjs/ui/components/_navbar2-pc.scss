@@ -1,0 +1,175 @@
+    @mixin navbar2-pc{
+        /* The sidebar Top menu */
+        #pc_navbar_top {
+            
+            /* display: grid; */
+            /* grid-template-rows: 1fr 1fr; */
+            /* grid-template-columns: 10px 10px 100px 10px 10px 10px 10px 10px; */
+             
+            background: #FFFFFF;
+            color: #FFFFFF;
+            border-radius: 0px;
+            background: #e0e0e0;
+            box-shadow:  20px 20px 45px #b1b1b1,
+                         -20px -20px 45px #ffffff;
+            
+            min-height: 5vh;
+            width: 100%;
+            
+            padding: 0;
+            
+            
+            position: fixed;
+            top: -0.5rem;
+            
+            z-index: 1;
+            
+            /* for now only */
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            
+            
+            border-bottom: 1px solid #000000;
+            
+        }
+        /* #pc_navbartop_tools{
+            background: red;
+        } */
+        /* Staring */
+        #menu-icon{
+            position: relative;
+            left: 1rem;
+            padding: 0;
+            margin: 0;
+            font-size: 4rem;
+            
+        }
+        #pc-navbartop-brand{
+            
+            color: #000;
+            
+            position: relative;
+            left: 2rem;
+            top: 0.5rem;
+        }        
+        
+        #navbar-top-form{
+            
+            border: 1px solid #FFFFFF;
+            display: flex;
+            
+            
+            height: 3.5vh;
+            width: 320px;
+            
+            position: relative;
+            left: 3rem;
+            top: 0.2rem;
+            
+            
+        }
+        #searchbar{
+            width: 250px;
+            height: 2.4vh;
+            
+            position: relative;
+            top: 0.6rem;
+            left: 1rem;
+        }
+        
+        #search-icon{
+            
+            height: 1.8vh;
+            
+            position: relative;
+            top: -0.1rem;
+            left: 0em;
+            
+            
+            
+            
+        }
+        #voicesearch-icon{
+            position: relative;
+            
+        }
+        #rocket-icon{
+        }
+        #notifications-icon{
+        }
+        #profile-icon{
+            
+            position: relative;
+            /* left: 2rem; */
+            /* top: 0.4rem; */
+            
+            /* font-size: 3.5rem; */
+        }
+        #allapps-icon{
+            
+            
+        }
+        #dropdown-icon{
+            
+            position: relative;
+            /* left: 1rem; */
+            
+        }
+        /* The sidebar Left menu */
+        #pc_navbar_left {
+            
+            overflow-x: hidden;
+            background-color: #FFFFFF;
+            display: flex;
+            justify-content: center;
+            
+            
+            width: 10%;
+            min-height: 97%;
+            
+            position: fixed;
+            top: 5.3rem;
+            left: 0;
+            
+            
+            border-right: 1px solid #000000;
+            
+            
+            z-index: 2;
+        }
+        #pc_navbar_left ul{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+        padding-right: 1.9rem;
+    }
+        #pc_navbar_left ul li{
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            
+            /* position: relative; */
+            /* right: 1rem; */
+            
+            width: 5.8rem;
+            
+            
+            margin-top: 2rem;
+            
+            text-decoration: none;
+            font-size: 3.4rem;
+            
+            
+            color: #818181;
+        }
+        #pc_navbar_left ul li:hover {
+            color: #000000;
+            border-right: 5px solid #26283D;
+            
+            font-size: 5rem;
+        }
+    }
