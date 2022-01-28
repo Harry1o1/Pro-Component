@@ -109,7 +109,7 @@ function Navbar10() {
           </nav>
           {/* ///////////////////////////////// Pc Navbar End /////////////////////////////////////*/}
           {/* ///////////////////////////////// Mb /////////////////////////////////////*/}
-          <nav id="mb_navbar_top" className=" ">
+          <nav id="mb_navbar_top">
             <div id="mb_navbartop_header">
               {/* Dropdown */}
               <ion-icon name="caret-down-outline" className="mb-navbartop-icons" id="dropdown-icon-mb" />
