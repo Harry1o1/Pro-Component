@@ -18,8 +18,8 @@ let marker = document.querySelector('#marker');
 let items = document.querySelectorAll('.scroll_li_a');
 let navbar = document.querySelector('.sidebar-sm');
 
-let navbarmb_top_scroll = document.querySelector('#mb_navbartop_scroll');
-let navbarmb_bottom_scroll = document.querySelector('#mb_navbartop_scroll');
+let navbarmb_top_scroll = document.querySelector('#mb_navbartop_scroll-container');
+let navbarmb_bottom_scroll = document.querySelector('#mb_navbar_bottom');
 
 
 let segment_items2 = document.querySelectorAll('.segment-item2');
@@ -57,14 +57,17 @@ if (navbarmb_top_scroll !== null) {
     function myFunction() {
       if (window.pageYOffset >= sticky) {
         navbarmb_top_scroll.classList.add("pi_eft1");
-        navbarmb_top_scroll.classList.add("pi_eft2");
+        navbarmb_bottom_scroll.classList.add("pi_eft2");
         
         // body.classList.add("pi_eft1");
         
         
         console.log('mb op');
       } else {
-        // navbar.classList.remove("sticky");
+        // body.classList.remove("sticky");
+        navbarmb_top_scroll.classList.remove("pi_eft1");
+        navbarmb_bottom_scroll.classList.remove("pi_eft2");
+        
       }
     }
     window.onscroll = function() {myFunction()};

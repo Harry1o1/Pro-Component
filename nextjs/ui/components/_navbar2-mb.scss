@@ -69,6 +69,9 @@
             /* background: red; */
             border-bottom: 1.2px solid #999999;
             
+            position: fixed;
+            top: 0;
+            
             height: 6vh;
             width: 100%;
             
@@ -96,6 +99,9 @@
         
         
         #mb_navbartop_scroll li{
+            
+            /* position: fixed; */
+            /* top: 0; */
             
             /* background: #1CFF00; */
             

@@ -58,6 +58,101 @@ footer{
     
     
 }
+/* #mb_navbartop_scroll-container{
+    bottom: green;
+    
+    position: relative;
+    top: 7rem;
+    
+    position: fixed;
+    top: 0;
+    
+} */
+
+/* Javascript power🤠🤠🤠 puspa kabhi jhukaga nahi!!! */
+
+
+.pi_eft1{
+    
+    background: #FFFFFF;
+    
+    
+    width: 100%;
+
+    
+    position: fixed;
+    top: 0;
+    
+    
+    
+    
+}
+@keyframes pi_eft2 {
+    0% {
+        background-color:red;
+        top:0px;
+        
+    }
+    25%{
+        background-color:yellow;
+          top:-0.5rem;
+        
+    }
+    50%{
+        background-color:blue;
+          top:0.9rem;
+        
+    }
+    100% {
+        background-color:red; 
+        top:-1.5rem;
+        
+    }
+}
+
+
+
+.pi_eft2{
+    background: green;
+    display: none;
+    /* animation-name: pi_eft2; */
+    /* animation-duration: 2s; */
+    
+    /* display: none; */
+    /* top: 50rem; */
+    /* bottom: -0.5rem; */
+    /* top: 0; */
+}
+
+
+
+
+/* The element to apply the animation to */
+/* .animation {
+          width: 100px;
+          height: 100px;
+          position: relative;
+          background-color: red;
+          animation-name: sidebar;
+          animation-duration: 4s;
+        } */    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,7 +168,7 @@ footer{
 
 /*                                      pc                                     */
 @media (min-width: 900px) {
-    #mb_navbar_top{
+    #mb_navbar_top,#mb_navbar_bottom{
         display: none;
     }
     body{
