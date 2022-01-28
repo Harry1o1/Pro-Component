@@ -34,15 +34,6 @@ export default function Layout({ children }) {
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
           strategy="beforeInteractive"
         />
-        <Script
-          type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/fae2d70b54658c1af6428ddfb80e9aa14f93b7c4/nextjs/ux/globals.js" 
-          strategy="beforeInteractive"
-        />
-
-         <Script
-            type="module" src='https://rawcdn.githack.com/Harry1o1/Pro-Component/8f2f7108b8742089c79a14649a98c9453581f6d8/nextjs/ux/globals.js'
-            strategy = "beforeInteractive" 
-        />     
         
         <Script
           type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -51,6 +42,10 @@ export default function Layout({ children }) {
         
         <Script
           type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+          strategy="beforeInteractive"
+        />
+        <Script
+          type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/27fc0f3ddff96b5289274c81cce350112e712854/nextjs/ux/globals.js" 
           strategy="beforeInteractive"
         />
 
@@ -82,3 +77,12 @@ export default function Layout({ children }) {
 
 //  go little bro go little bro 👍👌👌
     //   <Footer2 />
+        // <Script
+        //   type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/fae2d70b54658c1af6428ddfb80e9aa14f93b7c4/nextjs/ux/globals.js" 
+        //   strategy="beforeInteractive"
+        // />
+
+        //  <Script
+            // type="module" src='https://rawcdn.githack.com/Harry1o1/Pro-Component/8f2f7108b8742089c79a14649a98c9453581f6d8/nextjs/ux/globals.js'
+            // strategy = "beforeInteractive" 
+        // />     
