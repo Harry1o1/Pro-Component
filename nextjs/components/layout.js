@@ -8,6 +8,7 @@ import Navbar7 from "./Navbar/navbar7";
 import Navbar8 from "./Navbar/navbar8";
 import Navbar9 from "./Navbar/navbar9";
 import Navbar10 from "./Navbar/navbar10";
+import Navbar11 from "./Navbar/navbar11";
 
 
 import Footer1 from './Footer/footer1'
@@ -50,12 +51,11 @@ export default function Layout({ children }) {
         />
 
         
-        <Navbar10 />
+        <Navbar11 />
         {/* Page content */}
-        <main className=" ">
-            {/* <h1>op</h1> */}
-                {children}
-                
+        <main>
+            {children}
+            
         </main>    
         {/* Sometimes not needed */}
         <footer>
