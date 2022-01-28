@@ -149,6 +149,10 @@
 }
 
 /*              #Starting😎😎😎 || Mobile 📲📲📲 firts || Global                 */
+::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -315,7 +319,7 @@ body {
 }
 
 main {
-  min-height: 300vh;
+  min-height: 130vh;
   width: 100%;
   /*     for now      */
   display: flex;
