@@ -37,23 +37,23 @@ let sticky;
 
 
 // Sticky💎💎💎
-if (navbar !== null) {
-    sticky = navbar.offsetTop;
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-    window.onscroll = function() {myFunction()};
+// if (navbar !== null) {
+//     sticky = navbar.offsetTop;
+//     function myFunction() {
+//       if (window.pageYOffset >= sticky) {
+//         navbar.classList.add("sticky");
+//       } else {
+//         navbar.classList.remove("sticky");
+//       }
+//     }
+//     window.onscroll = function() {myFunction()};
     
 
-}
+// }
 
 // Sticky       Navbar2  Top scroll 📜📜📜📜        Mb💎💎💎
 if (navbarmb_top_scroll !== null) {
-    let sticky = navbarmb_top_scroll.offsetTop;
+    sticky = navbarmb_top_scroll.offsetTop;
     function myFunction() {
       if (window.pageYOffset >= sticky) {
         navbarmb_top_scroll.classList.add("pi_eft1");
