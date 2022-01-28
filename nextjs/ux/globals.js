@@ -28,7 +28,7 @@ let segment_items3 = document.querySelectorAll('.segment-item3');
 let segment_indicator3 = document.querySelector('#segment-indicator3');
 
 
-
+let sticky;
 
 
 
@@ -38,7 +38,7 @@ let segment_indicator3 = document.querySelector('#segment-indicator3');
 
 // Sticky💎💎💎
 if (navbar !== null) {
-    let sticky = navbar.offsetTop;
+    sticky = navbar.offsetTop;
     function myFunction() {
       if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky");
