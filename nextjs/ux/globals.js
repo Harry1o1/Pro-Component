@@ -4,7 +4,7 @@ import { Notes_page } from './todo/notes.js';//Update later
 
 
 
-
+//                                All variables
 const body = document.querySelector('body');
 const btn = document.querySelector('.pro_navbar_mb_btn');
 const small_ul = document.querySelector('.mb_list5');
@@ -17,6 +17,11 @@ let navbar2 = document.querySelector('body');
 let marker = document.querySelector('#marker');
 let items = document.querySelectorAll('.scroll_li_a');
 let navbar = document.querySelector('.sidebar-sm');
+
+let navbarmb_top_scroll = document.querySelector('#mb_navbartop_scroll');
+let navbarmb_bottom_scroll = document.querySelector('#mb_navbartop_scroll');
+
+
 let segment_items2 = document.querySelectorAll('.segment-item2');
 let segment_indicator2 = document.querySelector('#segment-indicator2');
 let segment_items3 = document.querySelectorAll('.segment-item3');
@@ -45,6 +50,28 @@ if (navbar !== null) {
     
 
 }
+
+// Sticky       Navbar2  Top scroll 📜📜📜📜        Mb💎💎💎
+if (navbarmb_top_scroll !== null) {
+    let sticky = navbarmb_top_scroll.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbarmb_top_scroll.classList.add("pi_eft1");
+        navbarmb_top_scroll.classList.add("pi_eft2");
+        
+        // body.classList.add("pi_eft1");
+        
+        
+        console.log('mb op');
+      } else {
+        // navbar.classList.remove("sticky");
+      }
+    }
+    window.onscroll = function() {myFunction()};
+    
+
+}
+
 
 
 if (btn !== null) {

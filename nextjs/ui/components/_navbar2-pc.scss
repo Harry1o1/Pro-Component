@@ -45,6 +45,14 @@
             font-size: 4rem;
             
         }
+        #menu-icon:hover{
+            
+            color: #000000;
+            
+            
+            border-bottom: none;
+            
+        }
         #pc-navbartop-brand{
             
             color: #000;
@@ -90,9 +98,19 @@
             
             
         }
+        #search-icon:hover{
+            
+            border-bottom: none;
+            
+            
+        }
         #voicesearch-icon{
             position: relative;
             
+        }
+        
+        #voicesearch-icon:hover{
+            border-bottom: none;
         }
         #rocket-icon{
         }
@@ -158,7 +176,7 @@
             /* position: relative; */
             /* right: 1rem; */
             
-            width: 5.8rem;
+            width: 6.4rem;
             
             
             margin-top: 2rem;
