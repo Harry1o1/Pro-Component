@@ -30,7 +30,7 @@ function Navbar10() {
             {/*   </div>   */}
           </nav>    
           {/* Left navigation */}
-          <nav className="sclass=" pc-navbartop-icons" idenav" id="pc_navbar_left">
+          <nav className="sclass=" id="pc_navbar_left">
             <ul>
               <li>
                 <ion-icon name="albums-outline" />
@@ -248,9 +248,5 @@ export default Navbar10;
 
 
 
-  
-  
-  
-  
   
   
