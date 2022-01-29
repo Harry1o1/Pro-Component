@@ -29,7 +29,7 @@ let segment_indicator3 = document.querySelector('#segment-indicator3');
 
 
 let sticky;
-
+let mb = 1100;
 
 
 
@@ -52,7 +52,7 @@ let sticky;
 // }
 
 // Sticky       Navbar2  Top scroll 📜📜📜📜        Mb💎💎💎
-if (navbarmb_top_scroll !== null) {
+if (navbarmb_top_scroll !== null && body.clientHeight < mb) {
     sticky = navbarmb_top_scroll.offsetTop;
     function myFunction() {
       if (window.pageYOffset >= sticky) {
@@ -62,7 +62,7 @@ if (navbarmb_top_scroll !== null) {
         // body.classList.add("pi_eft1");
         
         
-        console.log('mb op');
+        // console.log('mb op');
       } else {
         // body.classList.remove("sticky");
         navbarmb_top_scroll.classList.remove("pi_eft1");
