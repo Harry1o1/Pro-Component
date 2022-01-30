@@ -529,7 +529,7 @@ footer {
     justify-content: center;
     position: relative;
     /* right: 1rem; */
-    left: 1.5rem;
+    left: 0.6rem;
     width: 6.4rem;
     margin-top: 2rem;
     text-decoration: none;
@@ -544,8 +544,9 @@ footer {
   }
 
   .pc-navbartop-icons {
-    color: #000000;
-    font-size: 4rem;
+    color: green;
+    background: #74FF15;
+    font-size: 5rem;
     /* padding: 1rem; */
     /* position: relative; */
     /* top: 0.2rem; */
