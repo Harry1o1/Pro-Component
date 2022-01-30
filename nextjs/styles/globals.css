@@ -311,7 +311,13 @@ body {
 }
 
 .mb-navbartop-icons {
+  background: #F915FF;
+  color: #6EFF15;
   font-size: 1.3rem;
+}
+
+.mb-navbartop-icons:hover {
+  color: #1515FF;
 }
 
 .mb_navbarbottom_icons {
@@ -429,20 +435,21 @@ footer {
   #pc_navbar_top > ion-icon {
     background: #74FF15;
     color: #1515FF;
+    font-size: 3rem;
   }
 
   /* #pc_navbartop_tools{
       background: red;
   } */
   /* Staring */
-  #menu-icon {
-    position: relative;
-    left: 1.5rem;
-    padding: 0;
-    margin: 0;
-    font-size: 4rem;
-  }
+  /* #menu-icon{
+      position: relative;
+      left: 1.5rem;
+      padding: 0;
+      margin: 0;
+      font-size: 4rem;
 
+  } */
   #menu-icon:hover {
     color: #000000;
     border-bottom: none;
@@ -484,25 +491,27 @@ footer {
     border-bottom: none;
   }
 
-  #voicesearch-icon {
-    position: relative;
-    font-size: 4rem;
-    color: green;
-    position: relative;
-    left: 4rem;
-  }
+  /* #voicesearch-icon{
+      position: relative;
+      font-size: 4rem;
+      color: green;
 
+      position: relative;
+      left: 4rem;
+
+
+  } */
   #voicesearch-icon:hover {
     border-bottom: none;
     font-style: italic;
     font-size: 3rem;
   }
 
-  #rocket-icon {
-    position: relative;
-    font-size: 4rem;
-  }
+  /* #rocket-icon{
 
+      position: relative;
+      font-size: 4rem;
+  } */
   #profile-icon {
     position: relative;
     /* left: 2rem; */

@@ -36,7 +36,16 @@ body {
 
     @include navbar2-mb;
     .mb-navbartop-icons{
+        
+        background: #F915FF;
+        color: #6EFF15;
         font-size: 1.3rem;
+        
+        
+    }
+    .mb-navbartop-icons:hover{
+        
+        color: #1515FF;
     }
     .mb_navbarbottom_icons{
         font-size: 1.7rem;
