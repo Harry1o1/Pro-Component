@@ -39,10 +39,21 @@
         }
         #pc_navbar_top > ion-icon{
             
-            color: #1515FF;
+            color: #000000;
             
             font-size: 3rem;
             
+            height: 4.6vh;
+            
+            
+        }
+        #pc_navbar_top > ion-icon:hover{
+            
+            color: #2BFF15;
+            
+            border-bottom: 4px solid #000000;
+            
+            font-size: 4.3rem;
             
         }
         /* #pc_navbartop_tools{
@@ -70,7 +81,7 @@
             color: #000;
             
             position: relative;
-            left: 5rem;
+            /* left: 5rem; */
             top: 0.5rem;
         }        
         

@@ -180,7 +180,7 @@ body {
 }
 
 #mb_navbartop_header > ion-icon {
-  color: #15FF56;
+  /* color: #15FF56; */
 }
 
 #mb_navbartop_header > ion-icon:hover {
@@ -318,20 +318,21 @@ body {
   color: #FF0000;
 }
 
-.mb-navbartop-icons {
-  background: #F915FF;
-  color: #6EFF15;
-  font-size: 1.3rem;
-}
+/* .mb-navbartop-icons{
 
-.mb-navbartop-icons:hover {
-  color: #1515FF;
-}
+    background: #F915FF;
+    color: #6EFF15;
+    font-size: 1.3rem;
 
-.mb_navbarbottom_icons {
-  font-size: 1.7rem;
-}
 
+} */
+/* .mb-navbartop-icons:hover{
+
+    color: #1515FF;
+} */
+/* .mb_navbarbottom_icons{
+    font-size: 1.7rem;
+} */
 main {
   min-height: 130vh;
   width: 100%;
@@ -441,8 +442,15 @@ footer {
   }
 
   #pc_navbar_top > ion-icon {
-    color: #1515FF;
+    color: #000000;
     font-size: 3rem;
+    height: 4.6vh;
+  }
+
+  #pc_navbar_top > ion-icon:hover {
+    color: #2BFF15;
+    border-bottom: 4px solid #000000;
+    font-size: 4.3rem;
   }
 
   /* #pc_navbartop_tools{
@@ -465,7 +473,7 @@ footer {
   #pc-navbartop-brand {
     color: #000;
     position: relative;
-    left: 5rem;
+    /* left: 5rem; */
     top: 0.5rem;
   }
 
@@ -574,22 +582,26 @@ footer {
     font-size: 5rem;
   }
 
-  .pc-navbartop-icons {
-    color: green;
-    background: #74FF15;
-    font-size: 5rem;
-    /* padding: 1rem; */
-    /* position: relative; */
-    /* top: 0.2rem; */
-    /* left: 5rem; */
-    /* left: 5%; */
-  }
+  /* .pc-navbartop-icons{
 
-  .pc-navbartop-icons:hover {
-    border-bottom: 3px solid #000000;
-    font-size: 3.6rem;
-  }
+      color: green;
+      background: #74FF15;
 
+      font-size: 5rem;
+      padding: 1rem;
+
+      position: relative;
+      top: 0.2rem;
+      left: 5rem;
+      left: 5%;
+
+  } */
+  /* .pc-navbartop-icons:hover{
+
+      border-bottom: 3px solid #000000;
+
+      font-size: 3.6rem;
+  } */
   main {
     background: #FFFFFF;
     margin-left: 6rem;
