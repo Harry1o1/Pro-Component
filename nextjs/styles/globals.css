@@ -179,6 +179,14 @@ body {
   z-index: 1;
 }
 
+#mb_navbar_top > ion-icon {
+  color: #15FF56;
+}
+
+#mb_navbar_top > ion-icon:hover {
+  color: #FF155F;
+}
+
 #mb_navbartop_header {
   display: grid;
   place-items: center;
