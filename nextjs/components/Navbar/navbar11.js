@@ -135,79 +135,79 @@ function Navbar11() {
             <div id="mb_navbartop_scroll-container">
               <ul id="mb_navbartop_scroll">
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page1</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page1</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page2</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page2</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page3</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page3</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page4</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page4</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page5</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page5</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page6</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page6</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page7</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page7</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page8</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page8</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page9</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page9</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page10</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page10</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page11</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page11</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page12</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page12</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page13</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page13</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page14</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page14</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page15</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page15</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page16</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page16</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page17</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page17</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page18</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page18</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page19</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page19</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page20</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page20</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page21</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page21</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page22</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page22</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page23</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page23</a>
                 </li>
                 <li>
-                  <h1 className="mb_navbartopscroll_pages">page24</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page24</a>
                 </li>
                 <li id="mb_navbartopscroll_pages_last">
-                  <h1 className="mb_navbartopscroll_pages">page25</h1>
+                  <a href="#" className="mb_navbartopscroll_pages">page25</a>
                 </li>
               </ul>
             </div>

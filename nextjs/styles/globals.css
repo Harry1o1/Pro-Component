@@ -258,14 +258,25 @@ body {
   z-index: 2;
 }
 
+/* Sprincle Android mb effect */
 #mb_navbartop_scroll li:hover {
+  color: #000000;
+  /* background: red; */
   border-bottom: 4.4px solid #000000;
 }
 
 .mb_navbartopscroll_pages {
+  /* color: #000000; */
+  color: #6c757d !important;
+  text-decoration: none;
+  list-style: none;
   position: relative;
   top: 0.2rem;
   font-size: 1.3rem;
+}
+
+.mb_navbartopscroll_pages:hover {
+  color: #000000 !important;
 }
 
 #mb_navbartop_scroll li:last-child {
