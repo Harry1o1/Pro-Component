@@ -106,11 +106,16 @@
         }
         #voicesearch-icon{
             position: relative;
-            
+            font-size: 4rem;
+            color: green;
         }
         
         #voicesearch-icon:hover{
             border-bottom: none;
+            
+            font-style: italic;
+            font-size: 3rem;
+            
         }
         #rocket-icon{
         }
@@ -175,7 +180,7 @@
             
             position: relative;
             /* right: 1rem; */
-            left: 3rem;
+            left: 1.5rem;
             
             width: 6.4rem;
             
