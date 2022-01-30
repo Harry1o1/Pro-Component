@@ -402,6 +402,9 @@ footer {
   /* The sidebar menu */
   /* The sidebar Top menu */
   #pc_navbar_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     /* display: grid; */
     /* grid-template-rows: 1fr 1fr; */
     /* grid-template-columns: 10px 10px 100px 10px 10px 10px 10px 10px; */
@@ -421,6 +424,11 @@ footer {
     align-items: center;
     /* justify-content: center; */
     border-bottom: 1px solid #000000;
+  }
+
+  #pc_navbar_top > ion-icon {
+    background: #74FF15;
+    color: #1515FF;
   }
 
   /* #pc_navbartop_tools{
@@ -468,8 +476,8 @@ footer {
   #search-icon {
     height: 1.8vh;
     position: relative;
-    top: -0.1rem;
-    left: 0em;
+    top: -0.2rem;
+    left: 5rem;
   }
 
   #search-icon:hover {
@@ -480,12 +488,19 @@ footer {
     position: relative;
     font-size: 4rem;
     color: green;
+    position: relative;
+    left: 4rem;
   }
 
   #voicesearch-icon:hover {
     border-bottom: none;
     font-style: italic;
     font-size: 3rem;
+  }
+
+  #rocket-icon {
+    position: relative;
+    font-size: 4rem;
   }
 
   #profile-icon {

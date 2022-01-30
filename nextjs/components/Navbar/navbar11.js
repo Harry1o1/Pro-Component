@@ -24,7 +24,7 @@ function Navbar11() {
             {/* Tools */}
             {/*  <div id="pc_navbartop_tools"> */}
             {/* Voicesearch */}
-            <ion-icon name="mic-outline" className="pc-navbartop-icons" id="voicesearch-icon" />
+            <ion-icon name="mic-outline" className="pc-navbartop-icons " id="voicesearch-icon" />
             {/* Rocket */}
             <ion-icon name="rocket-outline" className="pc-navbartop-icons" id="rocket-icon" />
             {/* All apps */}
