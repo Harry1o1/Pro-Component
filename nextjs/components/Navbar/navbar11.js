@@ -16,11 +16,7 @@ function Navbar11() {
             <ion-icon name="menu-outline" className="pc-navbartop-icons" id="menu-icon" />    
             {/* Logo + Global-area or something  */}
             <h1 id="pc-navbartop-brand">1thing</h1>
-            {/* Searchbar from boostrap */}
-            <form id="navbar-top-form">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchbar" />
-              <ion-icon name="search-outline" className="pc-navbartop-icons" id="search-icon" />    
-            </form>
+
             {/* Tools */}
             {/*  <div id="pc_navbartop_tools"> */}
             {/* Voicesearch */}

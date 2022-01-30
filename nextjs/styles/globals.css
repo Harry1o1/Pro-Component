@@ -179,11 +179,11 @@ body {
   z-index: 1;
 }
 
-#mb_navbar_top > ion-icon {
+#mb_navbartop_header > ion-icon {
   color: #15FF56;
 }
 
-#mb_navbar_top > ion-icon:hover {
+#mb_navbartop_header > ion-icon:hover {
   color: #FF155F;
 }
 
@@ -441,7 +441,6 @@ footer {
   }
 
   #pc_navbar_top > ion-icon {
-    background: #74FF15;
     color: #1515FF;
     font-size: 3rem;
   }
