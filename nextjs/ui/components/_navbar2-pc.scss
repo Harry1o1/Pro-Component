@@ -135,7 +135,7 @@
             
         }
         /* The sidebar Left menu */
-        #pc_navbar_left {
+        /* #pc_navbar_left {
             
             overflow-x: hidden;
             background-color: #FFFFFF;
@@ -155,8 +155,8 @@
             
             
             z-index: 1;
-        }
-        #pc_navbar_left ul{
+        } */
+        /* #pc_navbar_left ul{
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -165,16 +165,16 @@
         
         
         padding-right: 1.9rem;
-    }
-        #pc_navbar_left ul li{
+            } */
+        /* #pc_navbar_left ul li{
             
             display: flex;
             align-items: center;
             justify-content: center;
             
             
-            /* position: relative; */
-            /* right: 1rem; */
+            position: relative;
+            right: 1rem;
             
             width: 6.4rem;
             
@@ -186,11 +186,11 @@
             
             
             color: #818181;
-        }
-        #pc_navbar_left ul li:hover {
+        } */
+        /* #pc_navbar_left ul li:hover {
             color: #000000;
             border-right: 5px solid #26283D;
             
             font-size: 5rem;
-        }
+        } */
     }

@@ -497,57 +497,77 @@ footer {
   }
 
   /* The sidebar Left menu */
-  #pc_navbar_left {
-    overflow-x: hidden;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    width: 10%;
-    height: 97%;
-    position: fixed;
-    top: 5.3rem;
-    left: 0;
-    border-right: 2px solid #000000;
-    z-index: 1;
-  }
+  /* #pc_navbar_left {
 
-  #pc_navbar_left ul {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    height: 150vh;
-    padding-right: 1.9rem;
-  }
+      overflow-x: hidden;
+      background-color: #FFFFFF;
+      display: flex;
+      justify-content: center;
 
-  #pc_navbar_left ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* position: relative; */
-    /* right: 1rem; */
-    width: 6.4rem;
-    margin-top: 2rem;
-    text-decoration: none;
-    font-size: 3.4rem;
-    color: #818181;
-  }
 
-  #pc_navbar_left ul li:hover {
-    color: #000000;
-    border-right: 5px solid #26283D;
-    font-size: 5rem;
-  }
+      width: 10%;
+      height: 97%;
 
-  .pc-navbartop-icons {
-    color: #000000;
-    font-size: 2.5rem;
-    padding: 1rem;
-    position: relative;
-    top: 0.2rem;
-    left: 5rem;
-    /* left: 5%; */
-  }
+      position: fixed;
+      top: 5.3rem;
+      left: 0;
 
+
+      border-right: 2px solid #000000;
+
+
+      z-index: 1;
+  } */
+  /* #pc_navbar_left ul{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  height: 150vh;
+
+
+  padding-right: 1.9rem;
+      } */
+  /* #pc_navbar_left ul li{
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+
+      position: relative;
+      right: 1rem;
+
+      width: 6.4rem;
+
+
+      margin-top: 2rem;
+
+      text-decoration: none;
+      font-size: 3.4rem;
+
+
+      color: #818181;
+  } */
+  /* #pc_navbar_left ul li:hover {
+      color: #000000;
+      border-right: 5px solid #26283D;
+
+      font-size: 5rem;
+  } */
+  /* .pc-navbartop-icons{
+
+      color: #000000;
+
+      font-size: 2.5rem;
+      padding: 1rem;
+
+      position: relative;
+      top: 0.2rem;
+      left: 5rem;
+      left: 5%;
+
+  } */
   .pc-navbartop-icons:hover {
     border-bottom: 3px solid #000000;
     font-size: 3.6rem;

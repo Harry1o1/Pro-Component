@@ -184,7 +184,7 @@ footer{
 
     /* The sidebar menu */
     @include navbar2-pc;
-    .pc-navbartop-icons{
+    /* .pc-navbartop-icons{
         
         color: #000000;
         
@@ -194,9 +194,9 @@ footer{
         position: relative;
         top: 0.2rem;
         left: 5rem;
-        /* left: 5%; */
+        left: 5%;
         
-    }
+    } */
     .pc-navbartop-icons:hover{
         
         border-bottom: 3px solid #000000;
