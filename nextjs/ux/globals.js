@@ -27,6 +27,8 @@ let navbarmb_top_header = document.querySelector('#mb_navbartop_header');
 let cancel_btn = document.querySelector('#cancel_web');
 
 let navbarmb_top_scroll = document.querySelector('#mb_navbartop_scroll-container');
+// let navbarmb_top_header = document.querySelector('#mb_navbartop_header');
+
 let navbarmb_bottom_scroll = document.querySelector('#mb_navbar_bottom');
 
 
@@ -64,7 +66,7 @@ if (navbarmb_top_scroll !== null && body.clientHeight < mb) {
     sticky = navbarmb_top_scroll.offsetTop;
     function myFunction() {
       if (window.pageYOffset >= sticky) {
-        navbarmb_top_scroll.classList.add("pi_eft1");
+        navbarmb_top_header.classList.add("pi_eft1");
         navbarmb_bottom_scroll.classList.add("pi_eft2");
         
         // body.classList.add("pi_eft1");
@@ -73,7 +75,7 @@ if (navbarmb_top_scroll !== null && body.clientHeight < mb) {
         // console.log('mb op');
       } else {
         // body.classList.remove("sticky");
-        navbarmb_top_scroll.classList.remove("pi_eft1");
+        navbarmb_top_header.classList.remove("pi_eft1");
         navbarmb_bottom_scroll.classList.remove("pi_eft2");
         
       }

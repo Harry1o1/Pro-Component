@@ -17,20 +17,21 @@
             box-shadow:  20px 20px 45px #b1b1b1,
                          -20px -20px 45px #ffffff;
             
-            min-height: 5vh;
+            /* min-height: 5vh; */
             width: 100%;
             
-            padding: 0;
-            
+            padding: 1.5rem;
             
             position: fixed;
-            top: -0.5rem;
+            /* position: relative; */
+            top: 0;
+            /* left: 10%; */
             
             z-index: 2;
             
             /* for now only */
-            display: flex;
-            align-items: center;
+            /* display: flex; */
+            /* align-items: center; */
             /* justify-content: center; */
             
             
@@ -43,7 +44,7 @@
             
             font-size: 3rem;
             
-            height: 4.6vh;
+            /* height: 4.6vh; */
             
             
         }
@@ -51,9 +52,9 @@
             
             color: #2BFF15;
             
-            border-bottom: 4px solid #000000;
+            /* border-bottom: 4px solid #000000; */
             
-            font-size: 4.3rem;
+            /* font-size: 4.3rem; */
             
         }
         /* #pc_navbartop_tools{
@@ -170,6 +171,22 @@
             /* left: 1rem; */
             
         }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         /* The sidebar Left menu */
         #pc_navbar_left {
             
@@ -182,8 +199,9 @@
             width: 10%;
             height: 97%;
             
-            position: fixed;
-            top: 5.3rem;
+            /* position: relative; */
+            position: fixed;            
+            top: 5vh;
             left: 0;
             
             
@@ -192,6 +210,8 @@
             
             z-index: 1;
         }
+        
+        
         #pc_navbar_left ul{
         display: flex;
         align-items: center;
@@ -199,10 +219,15 @@
         
         height: 150vh;
         
+        margin: 0;
+        padding: 0;
         
-        /* padding-right: 1.9rem; */
-            }
+        
+        }
+        
+        
         #pc_navbar_left ul li{
+            
             
             display: flex;
             align-items: center;
@@ -225,6 +250,8 @@
             color: #818181;
         }
         #pc_navbar_left ul li:hover {
+            
+            
             color: #000000;
             border-right: 5px solid #26283D;
             

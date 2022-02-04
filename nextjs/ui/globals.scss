@@ -70,33 +70,38 @@ footer{
     
     
 }
-/* #mb_navbartop_scroll-container{
-    bottom: green;
+#mb_navbartop_scroll-container{
+            
+        display: grid;
+        grid-template-rows: 35px;
+        /* background: #2DFF76; */    
+        
+        
+        margin: 0;
+        padding: 0;
     
-    position: relative;
-    top: 7rem;
-    
-    position: fixed;
-    top: 0;
-    
-} */
+}
 
 /* Javascript power🤠🤠🤠 puspa kabhi jhukaga nahi!!! */
 
 
 .pi_eft1{
     
-    background: #FFFFFF;
+    /* background: transparent; */
     
     
     width: 100%;
 
     
     position: fixed;
-    top: 0.5rem;
+    top: 0rem;
     
+    /* filter: blur(1px); */
+    /* transition-delay: 0.5s; */
     
-    
+background: #e0e0e0;
+box-shadow:  18px 18px 36px #5a5a5a,
+             -18px -18px 36px #ffffff;
     
 }
 @keyframes pi_eft2 {
@@ -125,8 +130,13 @@ footer{
 
 
 .pi_eft2{
-    background: green;
+    
+    
     display: none;
+    transition-delay: 5s;
+    transition: transform 0.5s,width 0.5s,height 0.5s,background 0.5s;
+    
+    
     /* animation-name: pi_eft2; */
     /* animation-duration: 2s; */
     
@@ -185,8 +195,12 @@ footer{
     }
     body{
         /* display: grid; */
-        /* grid-template-rows: 50vh 50vh; */
-        /* grid-template-columns: 20% 80%; */
+        /* grid-template-rows: 1fr; */
+        /* grid-template-columns: 10% 90%; */
+        
+        
+        background: red;
+        color: yellow;
         
     }
 
@@ -216,12 +230,12 @@ footer{
 
 
     main {
+        /* background: #27FF39; */
         background: #FFFFFF;
         
-        
-        margin-left: 6rem;
-        margin-top: 5vh;
-        padding: 0px 10px;
+        margin-left: 6.5rem;
+        margin-top: 4.8vh;
+        /* padding: 0px 10px; */
         
         /* for now only */
         display: flex;
@@ -230,18 +244,24 @@ footer{
         
         
         
-        min-height: 300vh; 
+        min-height: 160vh; 
     }
 
     footer {
         
-        background: #FFFFFF;
+        background: #21FF34;
         color: #000;
         
-        margin-left: 6rem;
+        padding: 2rem;
+        margin: 0;
         
         
-        height: 10vh;
+        /* height: 10vh; */
+        width: 90%;
+        
+        
+        position: relative;
+        left: 10%;
         
         /* for now only */
         display: flex;

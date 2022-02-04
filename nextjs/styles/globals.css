@@ -171,12 +171,16 @@ body {
 }
 
 #mb_navbar_top {
-  border-radius: 0px;
+  display: grid;
+  grid-template-rows: 7.5vh;
   /* box-shadow:  18px 18px 63px #666666,
                -18px -18px 63px #ffffff; */
   /* height: 11.32vh; */
   position: relative;
   z-index: 1;
+  transition-delay: 0.5s;
+  background: #e0e0e0;
+  box-shadow: 18px 18px 36px #5a5a5a, -18px -18px 36px #ffffff;
 }
 
 #mb_navbartop_header > ion-icon {
@@ -190,7 +194,7 @@ body {
 #mb_navbartop_header {
   display: grid;
   place-items: center;
-  grid-template-columns: 50px 1fr 1fr 1fr 100px 1fr 1fr 1fr 50px;
+  grid-template-columns: 50px 1fr 1fr 1fr 125px 1fr 1fr 1fr 50px;
   color: #000000;
   height: 6vh;
   width: 100%;
@@ -224,7 +228,7 @@ body {
   /* background: #35FF25; */
   background: #000000;
   /* border: 2px solid #6C6C6C; */
-  height: 2.5px;
+  height: 3px;
   width: 2.5px;
   /* position: relative; */
   position: absolute;
@@ -257,7 +261,7 @@ body {
   border-radius: 15px;
   /* position: relative; */
   position: fixed;
-  top: 0.5rem;
+  top: 0.7rem;
   right: 9rem;
   height: 200px;
   width: 200px;
@@ -337,8 +341,10 @@ body {
   /* position: fixed; */
   /* top: 0; */
   /* background: #1CFF00; */
-  height: 7.5vh;
-  display: flex;
+  /* height: 7.5vh; */
+  display: grid;
+  grid-template-rows: 7.2vh;
+  /* grid-template-columns: 7.2vh; */
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -353,7 +359,7 @@ body {
 #mb_navbartop_scroll li:hover {
   color: #000000;
   /* background: red; */
-  border-bottom: 3.4px solid #000000;
+  /* border-bottom: 3.4px solid #000000; */
 }
 
 .mb_navbartopscroll_pages {
@@ -368,6 +374,7 @@ body {
 
 .mb_navbartopscroll_pages:hover {
   color: #000000 !important;
+  background: #4EFFAC;
 }
 
 #mb_navbartop_scroll li:last-child {
@@ -382,9 +389,11 @@ body {
 #mb_navbar_bottom {
   /* background: green; */
   /* border-bottom: 1px solid #2035F3; */
+  display: grid;
+  grigrid-template-rows: 14vh;
   position: fixed;
   bottom: 0;
-  min-height: 5vh;
+  /* min-height: 5vh; */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -392,7 +401,9 @@ body {
 
 #mb_navbar_bottom ul {
   /* background: #F32020; */
-  min-height: 5vh;
+  display: grid;
+  grid-template-rows: 7vh;
+  /* min-height: 5vh; */
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -403,6 +414,8 @@ body {
 }
 
 #mb_navbar_bottom ul li {
+  display: grid;
+  grid-template-rows: 7vh;
   background: #FFFFFF;
   border-top: 1px solid #000000;
   height: 7vh;
@@ -418,6 +431,18 @@ body {
 
 #mb_navbar_bottom ul li:hover {
   color: #FF0000;
+}
+
+.mb_navbarbottom_icons {
+  font-size: 1.5rem;
+}
+
+.mb_navbartopscroll_pages {
+  background: #E7E7E7;
+  padding: 0.2rem 0.8rem;
+  border: 0.7px solid black;
+  border-radius: 20px;
+  font-size: 1rem;
 }
 
 /* .mb-navbartop-icons{
@@ -448,22 +473,24 @@ footer {
   background: green;
 }
 
-/* #mb_navbartop_scroll-container{
-    bottom: green;
+#mb_navbartop_scroll-container {
+  display: grid;
+  grid-template-rows: 35px;
+  /* background: #2DFF76; */
+  margin: 0;
+  padding: 0;
+}
 
-    position: relative;
-    top: 7rem;
-
-    position: fixed;
-    top: 0;
-
-} */
 /* Javascript power🤠🤠🤠 puspa kabhi jhukaga nahi!!! */
 .pi_eft1 {
-  background: #FFFFFF;
+  /* background: transparent; */
   width: 100%;
   position: fixed;
-  top: 0.5rem;
+  top: 0rem;
+  /* filter: blur(1px); */
+  /* transition-delay: 0.5s; */
+  background: #e0e0e0;
+  box-shadow: 18px 18px 36px #5a5a5a, -18px -18px 36px #ffffff;
 }
 
 @keyframes pi_eft2 {
@@ -485,8 +512,9 @@ footer {
   }
 }
 .pi_eft2 {
-  background: green;
   display: none;
+  transition-delay: 5s;
+  transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
   /* animation-name: pi_eft2; */
   /* animation-duration: 2s; */
   /* display: none; */
@@ -512,8 +540,10 @@ footer {
 
   body {
     /* display: grid; */
-    /* grid-template-rows: 50vh 50vh; */
-    /* grid-template-columns: 20% 80%; */
+    /* grid-template-rows: 1fr; */
+    /* grid-template-columns: 10% 90%; */
+    background: red;
+    color: yellow;
   }
 
   /* The sidebar menu */
@@ -530,15 +560,17 @@ footer {
     border-radius: 0px;
     background: #e0e0e0;
     box-shadow: 20px 20px 45px #b1b1b1, -20px -20px 45px #ffffff;
-    min-height: 5vh;
+    /* min-height: 5vh; */
     width: 100%;
-    padding: 0;
+    padding: 1.5rem;
     position: fixed;
-    top: -0.5rem;
+    /* position: relative; */
+    top: 0;
+    /* left: 10%; */
     z-index: 2;
     /* for now only */
-    display: flex;
-    align-items: center;
+    /* display: flex; */
+    /* align-items: center; */
     /* justify-content: center; */
     border-bottom: 1px solid #000000;
   }
@@ -546,13 +578,13 @@ footer {
   #pc_navbar_top > ion-icon {
     color: #000000;
     font-size: 3rem;
-    height: 4.6vh;
+    /* height: 4.6vh; */
   }
 
   #pc_navbar_top > ion-icon:hover {
     color: #2BFF15;
-    border-bottom: 4px solid #000000;
-    font-size: 4.3rem;
+    /* border-bottom: 4px solid #000000; */
+    /* font-size: 4.3rem; */
   }
 
   /* #pc_navbartop_tools{
@@ -649,8 +681,9 @@ footer {
     justify-content: center;
     width: 10%;
     height: 97%;
+    /* position: relative; */
     position: fixed;
-    top: 5.3rem;
+    top: 5vh;
     left: 0;
     border-right: 2px solid #000000;
     z-index: 1;
@@ -661,7 +694,8 @@ footer {
     align-items: center;
     flex-direction: column;
     height: 150vh;
-    /* padding-right: 1.9rem; */
+    margin: 0;
+    padding: 0;
   }
 
   #pc_navbar_left ul li {
@@ -705,22 +739,27 @@ footer {
       font-size: 3.6rem;
   } */
   main {
+    /* background: #27FF39; */
     background: #FFFFFF;
-    margin-left: 6rem;
-    margin-top: 5vh;
-    padding: 0px 10px;
+    margin-left: 6.5rem;
+    margin-top: 4.8vh;
+    /* padding: 0px 10px; */
     /* for now only */
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 300vh;
+    min-height: 160vh;
   }
 
   footer {
-    background: #FFFFFF;
+    background: #21FF34;
     color: #000;
-    margin-left: 6rem;
-    height: 10vh;
+    padding: 2rem;
+    margin: 0;
+    /* height: 10vh; */
+    width: 90%;
+    position: relative;
+    left: 10%;
     /* for now only */
     display: flex;
     align-items: center;
