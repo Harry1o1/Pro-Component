@@ -9,6 +9,8 @@ import Navbar8 from "./Navbar/navbar8";
 import Navbar9 from "./Navbar/navbar9";
 import Navbar10 from "./Navbar/navbar10";
 import Navbar11 from "./Navbar/navbar11";
+import Navbar12 from "./Navbar/navbar12";
+
 
 
 import Footer1 from './Footer/footer1'
@@ -46,12 +48,12 @@ export default function Layout({ children }) {
           strategy="beforeInteractive"
         />
         <Script
-          type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/27fc0f3ddff96b5289274c81cce350112e712854/nextjs/ux/globals.js" 
+          type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/9e3081fdbe9a0649ea79447f702d2bb358c1bfdd/nextjs/ux/globals.js" 
           strategy="beforeInteractive"
         />
 
         
-        <Navbar11 />
+        <Navbar12 />
         {/* Page content */}
         <main>
             {children}
