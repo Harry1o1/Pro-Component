@@ -414,6 +414,8 @@ body {
 }
 
 #mb_navbar_bottom ul li {
+  background: #12FF25;
+  color: #12FF25;
   display: grid;
   grid-template-rows: 7vh;
   background: #FFFFFF;
@@ -705,7 +707,7 @@ footer {
     position: relative;
     /* right: 1rem; */
     left: 0.3rem;
-    width: 6.4rem;
+    width: 5.6rem;
     margin-top: 2rem;
     text-decoration: none;
     font-size: 3.4rem;
@@ -723,6 +725,8 @@ footer {
     display: block;
     min-height: 100vh;
     width: 90%;
+    margin: 0;
+    padding: 0;
     position: relative;
     top: 5vh;
     left: 10%;
