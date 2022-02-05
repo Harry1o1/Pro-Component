@@ -199,7 +199,7 @@ box-shadow:  18px 18px 36px #5a5a5a,
         /* grid-template-columns: 10% 90%; */
         
         
-        background: red;
+        /* background: red; */
         color: yellow;
         
     }
@@ -207,36 +207,13 @@ box-shadow:  18px 18px 36px #5a5a5a,
     /* The sidebar menu */
     @include navbar2-pc;
     
-    /* .pc-navbartop-icons{
-        
-        color: green;
-        background: #74FF15;
-        
-        font-size: 5rem;
-        padding: 1rem;
-        
-        position: relative;
-        top: 0.2rem;
-        left: 5rem;
-        left: 5%;
-        
-    } */
-    /* .pc-navbartop-icons:hover{
-        
-        border-bottom: 3px solid #000000;
-        
-        font-size: 3.6rem;
-    } */
 
 
     main {
         /* background: #27FF39; */
         /* background: #FFFFFF; */
+        background: #E0E3FF;
         
-        
-        /* margin-left: 6.5rem; */
-        /* margin-top: 4.8vh; */
-        /* padding: 0px 10px; */
         
         /* for now only */
         display: flex;
@@ -245,7 +222,14 @@ box-shadow:  18px 18px 36px #5a5a5a,
         
         
         
-        min-height: 160vh; 
+        min-height: 130vh; 
+        width: 90%;
+        
+        
+        
+        position: relative;
+        top: 5vh;
+        left: 10%;
     }
 
     footer {
