@@ -57,9 +57,9 @@ main{
     width: 100%;
     
     /*     for now      */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     
 }
 
@@ -132,20 +132,8 @@ box-shadow:  18px 18px 36px #5a5a5a,
 .pi_eft2{
     
     color: #9200FF;
-    /* display: none; */
-    /* background: #AE12FF; */
+    display: block;
     
-    /* transition-delay: 5s; */
-    /* transition: transform 0.5s,width 0.5s,height 0.5s,background 0.5s; */
-    
-    
-    /* animation-name: pi_eft2; */
-    /* animation-duration: 2s; */
-    
-    /* display: none; */
-    /* top: 50rem; */
-    /* bottom: -0.5rem; */
-    /* top: 0; */
 }
 
 
