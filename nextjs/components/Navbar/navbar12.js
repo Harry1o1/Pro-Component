@@ -40,79 +40,288 @@ function Navbar12() {
               {/* Left navigation */}
               <nav className="sclass" id="pc_navbar_left">
                 <ul>
+                    
                   <li>
-                    <ion-icon name="albums-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="aperture-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="barbell-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="brush-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="caret-down-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="color-wand-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="contrast-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="cloud-download-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="chatbubbles-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="cellular-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="home-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="heart-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="hardware-chip-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="git-compare-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="game-controller-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="git-branch-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="flask-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="flame-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="flag-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="fish-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="earth-outline" />
-                    {/* <ion-icon name="earth"></ion-icon> */}
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="compass-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="book-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
                   <li>
-                    <ion-icon name="attach-outline" />
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
                   </li>
+                  <li>
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/contract">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  
+                  
                 </ul>
               </nav>
               {/* ///////////////////////////////// Pc Navbar End /////////////////////////////////////*/}
@@ -199,184 +408,184 @@ function Navbar12() {
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/about ">
+                            <a href="#" className="mb_navbartopscroll_pages"> about </a>
+                        </Link>
+                        
+                    </li>
+                    <li>
+                     
+                        <Link passHref href="/addpost ">
+                            <a href="#" className="mb_navbartopscroll_pages"> addpost </a>
+                        </Link>
+                        
+                    </li>
+                    <li>
+                     
+                        <Link passHref href="/addvideo ">
+                            <a href="#" className="mb_navbartopscroll_pages"> addvideo </a>
                         </Link>
                         
                     </li>
                     <li>
                      
                         <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                            <a href="#" className="mb_navbartopscroll_pages"> contract </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/cookie">
+                            <a href="#" className="mb_navbartopscroll_pages"> cookie </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/django">
+                            <a href="#" className="mb_navbartopscroll_pages"> django </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/fileupload1">
+                            <a href="#" className="mb_navbartopscroll_pages"> fileupload1 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/goals">
+                            <a href="#" className="mb_navbartopscroll_pages"> goals </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/home">
+                            <a href="#" className="mb_navbartopscroll_pages"> Home </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/login">
+                            <a href="#" className="mb_navbartopscroll_pages"> Login </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/library">
+                            <a href="#" className="mb_navbartopscroll_pages"> Library </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/profile1">
+                            <a href="#" className="mb_navbartopscroll_pages"> Profile1 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/profile2">
+                            <a href="#" className="mb_navbartopscroll_pages"> Profile2 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/redux">
+                            <a href="#" className="mb_navbartopscroll_pages"> Redux </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/register1">
+                            <a href="#" className="mb_navbartopscroll_pages"> Register1 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/register2">
+                            <a href="#" className="mb_navbartopscroll_pages"> Register2 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/reupload1">
+                            <a href="#" className="mb_navbartopscroll_pages"> Reupload1 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/subscription">
+                            <a href="#" className="mb_navbartopscroll_pages"> Subscription </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/upload">
+                            <a href="#" className="mb_navbartopscroll_pages"> Upload </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/upload2">
+                            <a href="#" className="mb_navbartopscroll_pages"> Upload2 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/web3">
+                            <a href="#" className="mb_navbartopscroll_pages"> Web3 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/xyz1">
+                            <a href="#" className="mb_navbartopscroll_pages"> Xyz1 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/xyz2">
+                            <a href="#" className="mb_navbartopscroll_pages"> Xyz2 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/xyz3">
+                            <a href="#" className="mb_navbartopscroll_pages"> Xyz3 </a>
                         </Link>
                         
                     </li>
                     <li>
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
-                        </Link>
-                        
-                    </li>
-                    <li>
-                     
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
-                        </Link>
-                        
-                    </li>
-                    <li>
-                     
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/xyz4">
+                            <a href="#" className="mb_navbartopscroll_pages"> Xyz4 </a>
                         </Link>
                         
                     </li>
                     
                     <li id="mb_navbartopscroll_pages_last">
                      
-                        <Link passHref href="/contract">
-                            <a href="#" className="mb_navbartopscroll_pages"> Contract </a>
+                        <Link passHref href="/xyz5">
+                            <a href="#" className="mb_navbartopscroll_pages"> Xyz5 </a>
                         </Link>
                         
                     </li>
