@@ -52,7 +52,196 @@ function Navbar12() {
                   </li>
                   <li>
                         
-                        <Link passHref href="/contract">
+                        <Link passHref href="/">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/web3">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/about">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/addpost">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/addvideo">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/home">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/profile1">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/profile2">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/resgister1">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/resgister2">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/subscription">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/login">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/library">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/reupload1">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/upload">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/upload2">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/xyz1">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/xyz2">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/xyz3">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/xyz4">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/xyz5">
+                            
+                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
+                            
+                        </Link>
+                        
+                  </li>
+                  <li>
+                        
+                        <Link passHref href="/django">
                             
                             <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
                             
@@ -70,7 +259,7 @@ function Navbar12() {
                   </li>
                   <li>
                         
-                        <Link passHref href="/contract">
+                        <Link passHref href="/goals">
                             
                             <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
                             
@@ -79,196 +268,7 @@ function Navbar12() {
                   </li>
                   <li>
                         
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
-                            
-                            <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
-                            
-                        </Link>
-                        
-                  </li>
-                  <li>
-                        
-                        <Link passHref href="/contract">
+                        <Link passHref href="/cookie">
                             
                             <ion-icon className="pc-navbarleft-pages" name="albums-outline" />
                             
@@ -499,8 +499,8 @@ function Navbar12() {
                     </li>
                     <li>
                      
-                        <Link passHref href="/redux">
-                            <a href="#" className="mb_navbartopscroll_pages"> Redux </a>
+                        <Link passHref href="/">
+                            <a href="#" className="mb_navbartopscroll_pages"> Index </a>
                         </Link>
                         
                     </li>
