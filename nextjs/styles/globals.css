@@ -740,9 +740,9 @@ footer {
   } */
   main {
     /* background: #27FF39; */
-    background: #FFFFFF;
-    margin-left: 6.5rem;
-    margin-top: 4.8vh;
+    /* background: #FFFFFF; */
+    /* margin-left: 6.5rem; */
+    /* margin-top: 4.8vh; */
     /* padding: 0px 10px; */
     /* for now only */
     display: flex;
@@ -752,7 +752,7 @@ footer {
   }
 
   footer {
-    background: #21FF34;
+    background: red;
     color: #000;
     padding: 2rem;
     margin: 0;
