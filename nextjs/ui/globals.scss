@@ -66,7 +66,7 @@ main{
 
 footer{
     
-    background: green;
+    background: #B2FFC7;
     
     
 }
@@ -131,10 +131,12 @@ box-shadow:  18px 18px 36px #5a5a5a,
 
 .pi_eft2{
     
+    color: #9200FF;
+    /* display: none; */
+    /* background: #AE12FF; */
     
-    display: none;
-    transition-delay: 5s;
-    transition: transform 0.5s,width 0.5s,height 0.5s,background 0.5s;
+    /* transition-delay: 5s; */
+    /* transition: transform 0.5s,width 0.5s,height 0.5s,background 0.5s; */
     
     
     /* animation-name: pi_eft2; */
@@ -146,18 +148,6 @@ box-shadow:  18px 18px 36px #5a5a5a,
     /* top: 0; */
 }
 
-
-
-
-/* The element to apply the animation to */
-/* .animation {
-          width: 100px;
-          height: 100px;
-          position: relative;
-          background-color: red;
-          animation-name: sidebar;
-          animation-duration: 4s;
-        } */    
 
 
 

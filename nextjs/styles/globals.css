@@ -387,10 +387,11 @@ body {
 }
 
 #mb_navbar_bottom {
+  display: none;
   /* background: green; */
   /* border-bottom: 1px solid #2035F3; */
-  display: grid;
-  grigrid-template-rows: 14vh;
+  /* display: grid; */
+  /* grigrid-template-rows: 14vh; */
   position: fixed;
   bottom: 0;
   /* min-height: 5vh; */
@@ -401,8 +402,8 @@ body {
 
 #mb_navbar_bottom ul {
   /* background: #F32020; */
-  display: grid;
-  grid-template-rows: 7vh;
+  /* display: grid; */
+  /* grid-template-rows: 7vh; */
   /* min-height: 5vh; */
   width: 100%;
   display: flex;
@@ -472,7 +473,7 @@ main {
 }
 
 footer {
-  background: green;
+  background: #B2FFC7;
 }
 
 #mb_navbartop_scroll-container {
@@ -514,9 +515,11 @@ footer {
   }
 }
 .pi_eft2 {
-  display: none;
-  transition-delay: 5s;
-  transition: transform 0.5s, width 0.5s, height 0.5s, background 0.5s;
+  color: #9200FF;
+  /* display: none; */
+  /* background: #AE12FF; */
+  /* transition-delay: 5s; */
+  /* transition: transform 0.5s,width 0.5s,height 0.5s,background 0.5s; */
   /* animation-name: pi_eft2; */
   /* animation-duration: 2s; */
   /* display: none; */
@@ -525,15 +528,6 @@ footer {
   /* top: 0; */
 }
 
-/* The element to apply the animation to */
-/* .animation {
-          width: 100px;
-          height: 100px;
-          position: relative;
-          background-color: red;
-          animation-name: sidebar;
-          animation-duration: 4s;
-        } */
 /*                                      pc                                     */
 @media (min-width: 900px) {
   #mb_navbar_top, #mb_navbar_bottom {
