@@ -1,156 +1,256 @@
-import Head from 'next/head'
+import Link from 'next/link'
+// import Head from 'next/head'
 
 
 
 
-function Navbar1() {
+
+function Navbar11() {
     return (
         <>
-            <nav className="pro_navbar_main_container">
-                <div className="pro_navbar_pc_sm pro_navbar_pc_lg pro_navbar_pc_xl">
-                    <h1 className="pro_navbar_brand_pc">Thapapay</h1>
-                    <div className="pc_item"><a href="#" className="ancar">Home</a></div>
-                    <div className="pc_item"><a href="#" className="ancar">Shorts</a></div>
-                    <div className="pc_item"><a href="#" className="ancar">Subscriptions</a></div>
-                    <div className="pc_item"><a href="#" className="ancar">Notifications</a></div>
-                    <div className="pc_item"><a href="#" className="ancar">Library</a></div>
-                    <div className="pc_item"></div>
-                </div>
-                <div className="pro_navbar_mb_sm pro_navbar_mb_lg pro_navbar_mb_lg">
-                    <div className="pro_navbar_mb_header">
-                        <h1 className="pro_navbar_brand_mb">Thapapay</h1>
-                        <span className="pro_navbar_mb_btn">
-                            <ion-icon id="icon_menu" name="menu-outline"></ion-icon>
-                            <ion-icon id="icon_close" name="close-outline"></ion-icon>
-                        </span>
-                    </div>
-                    <div className="pro_navbar_mb_main-content">
-                        <ul className="pro_navbar_page-menu_mb">
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="home-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Home</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="logo-tiktok" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Sorts</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="chatbubbles-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Messages</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="notifications-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Notifications</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="library-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Library</span>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul className="pro_navbar_toggle-menu_mb">
-                            <div className="wrapper"></div>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="home-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Home</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="logo-tiktok" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Sorts</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="chatbubbles-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Messages</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="notifications-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Notifications</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="library-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Library</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="albums-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Time</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="ellipsis-horizontal" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Menu</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="crop" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Crop</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb">
-                                    <ion-icon name="move" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Move</span>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul className="pro_navbar_sub-menu_mb">
-                            <li>
-                                <div className="pro_toggle_navbar_mb mb_list1">
-                                    <ion-icon name="home-outline" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Home</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb mb_list2">
-                                    <ion-icon name="ellipsis-horizontal" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Menu</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb mb_list3">
-                                    <span className="color">Colors</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb mb_list4">
-                                    <ion-icon name="crop" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Crop</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div className="pro_toggle_navbar_mb mb_list5">
-                                    <ion-icon name="move" className="mb_icons"></ion-icon>
-                                    <span className="mb_items">Move</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            
+          {/* ///////////////////////////////// Pc /////////////////////////////////////*/}
+          {/* Top navigation */}
+          <nav id="pc_navbar_top">
+            {/* Menu icon  will update soon...*/}
+            <ion-icon name="menu-outline" className="pc-navbartop-icons" id="menu-icon" />    
+            {/* Logo + Global-area or something  */}
+            <h1 id="pc-navbartop-brand">1thing</h1>
+
+            {/* Tools */}
+            {/*  <div id="pc_navbartop_tools"> */}
+            {/* Voicesearch */}
+            <ion-icon name="mic-outline" className="pc-navbartop-icons " id="voicesearch-icon" />
+            {/* Rocket */}
+            <ion-icon name="rocket-outline" className="pc-navbartop-icons" id="rocket-icon" />
+            {/* All apps */}
+            <ion-icon name="apps-outline" className="pc-navbartop-icons" id="allapps-icon" />
+            {/* Notifications */}
+            <ion-icon name="notifications-outline" className="pc-navbartop-icons" id="notifications-icon" />    
+            {/* Dropdown */}
+            <ion-icon name="caret-down-outline" className="pc-navbartop-icons" id="dropdown-icon" />
+            {/* Profile */}
+            <ion-icon name="person-circle-outline" className="pc-navbartop-icons" id="profile-icon" />
+            {/*   </div>   */}
+          </nav>    
+          {/* Left navigation */}
+          <nav className="sclass" id="pc_navbar_left">
+            <ul>
+              <li>
+                <ion-icon name="albums-outline" />
+              </li>
+              <li>
+                <ion-icon name="aperture-outline" />
+              </li>
+              <li>
+                <ion-icon name="barbell-outline" />
+              </li>
+              <li>
+                <ion-icon name="brush-outline" />
+              </li>
+              <li>
+                <ion-icon name="caret-down-outline" />
+              </li>
+              <li>
+                <ion-icon name="color-wand-outline" />
+              </li>
+              <li>
+                <ion-icon name="contrast-outline" />
+              </li>
+              <li>
+                <ion-icon name="cloud-download-outline" />
+              </li>
+              <li>
+                <ion-icon name="chatbubbles-outline" />
+              </li>
+              <li>
+                <ion-icon name="cellular-outline" />
+              </li>
+              <li>
+                <ion-icon name="home-outline" />
+              </li>
+              <li>
+                <ion-icon name="heart-outline" />
+              </li>
+              <li>
+                <ion-icon name="hardware-chip-outline" />
+              </li>
+              <li>
+                <ion-icon name="git-compare-outline" />
+              </li>
+              <li>
+                <ion-icon name="game-controller-outline" />
+              </li>
+              <li>
+                <ion-icon name="git-branch-outline" />
+              </li>
+              <li>
+                <ion-icon name="flask-outline" />
+              </li>
+              <li>
+                <ion-icon name="flame-outline" />
+              </li>
+              <li>
+                <ion-icon name="flag-outline" />
+              </li>
+              <li>
+                <ion-icon name="fish-outline" />
+              </li>
+              <li>
+                <ion-icon name="earth-outline" />
+                {/* <ion-icon name="earth"></ion-icon> */}
+              </li>
+              <li>
+                <ion-icon name="compass-outline" />
+              </li>
+              <li>
+                <ion-icon name="book-outline" />
+              </li>
+              <li>
+                <ion-icon name="attach-outline" />
+              </li>
+            </ul>
+          </nav>
+          {/* ///////////////////////////////// Pc Navbar End /////////////////////////////////////*/}
+          {/* ///////////////////////////////// Mb /////////////////////////////////////*/}
+          <nav id="mb_navbar_top">
+            <div id="mb_navbartop_header">
+              {/* Dropdown */}
+              <ion-icon name="caret-down-outline" className="mb-navbartop-icons" id="dropdown-icon-mb" />
+              {/* Profile */}
+              <ion-icon name="person-circle-outline" className="mb-navbartop-icons" id="profile-icon-mb" />
+              {/* Rocket */}
+              <ion-icon name="rocket-outline" className="mb-navbartop-icons" id="rocket-icon-mb" />
+              {/* Brand 🐥🐥🐥 */}
+              <h1 id="mb_navbartop_brand">
+                1 thing
+              </h1>
+              {/* All apps */}
+              <ion-icon name="apps-outline" className="mb-navbartop-icons" id="allapps-icon-mb" />
+              {/* Notifications */}
+              <ion-icon name="notifications-outline" className="mb-navbartop-icons" id="notifications-icon-mb" />    
+              {/* Menu icon  will update soon...*/}
+              <ion-icon name="menu-outline" className="mb-navbartop-icons" id="menu-icon-mb" />    
+            </div>
+            <div id="mb_navbartop_scroll-container">
+              <ul id="mb_navbartop_scroll">
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page1</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page2</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page3</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page4</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page5</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page6</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page7</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page8</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page9</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page10</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page11</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page12</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page13</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page14</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page15</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page16</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page17</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page18</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page19</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page20</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page21</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page22</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page23</a>
+                </li>
+                <li>
+                  <a href="#" className="mb_navbartopscroll_pages">page24</a>
+                </li>
+                <li id="mb_navbartopscroll_pages_last">
+                  <a href="#" className="mb_navbartopscroll_pages">page25</a>
+                </li>
+              </ul>
+            </div>
+          </nav>    
+          <nav id="mb_navbar_bottom">
+            <ul>
+              <li>
+                {/* Home */}
+                <ion-icon name="home-outline" className="mb_navbarbottom_icons mb_navbarbottom_icons_hovering" />
+                {/* <ion-icon name="home" class="mb_navbarbottom_icons mb_navbarbottom_icons_hovered"></ion-icon> */}
+              </li>
+              <li>
+                {/* Shorts */}
+                <ion-icon name="flash-outline" className="mb_navbarbottom_icons mb_navbarbottom_icons_hovering" />
+                {/* <ion-icon name="flash" class="mb_navbarbottom_icons  mb_navbarbottom_icons_hovered"></ion-icon> */}
+              </li>
+              <li>
+                {/* Add */}
+                <ion-icon name="add-outline" className="mb_navbarbottom_icons mb_navbarbottom_icons_hovering" />
+                {/* <ion-icon name="add" class="mb_navbarbottom_icons mb_navbarbottom_icons_hovered"></ion-icon> */}
+              </li>
+              <li>
+                {/* Subscription */}
+                <ion-icon name="earth-outline" className="mb_navbarbottom_icons mb_navbarbottom_icons_hovering" />
+                {/* <ion-icon name="earth" class="mb_navbarbottom_icons mb_navbarbottom_icons_hovered"></ion-icon> */}
+              </li>
+              <li>
+                {/* Library */}
+                <ion-icon name="library-outline" className="mb_navbarbottom_icons mb_navbarbottom_icons_hovering" />
+                {/* <ion-icon name="library" class="mb_navbarbottom_icons mb_navbarbottom_icons_hovered"></ion-icon> */}
+              </li>
+            </ul>
+          </nav>
+          {/* ///////////////////////////////// Mb Navbar End /////////////////////////////////////*/}
+            
+            
+            
         </>
     );
-}
+};
 
 
-export default Navbar1;
+export default Navbar11;
+
+
+

@@ -1,15 +1,5 @@
-import Navbar1 from "./Navbar/navbar1";
-import Navbar2 from "./Navbar/navbar2";
-import Navbar3 from "./Navbar/navbar3";
-import Navbar4 from "./Navbar/navbar4";
-import Navbar5 from "./Navbar/navbar5";
-import Navbar6 from "./Navbar/navbar6";
-import Navbar7 from "./Navbar/navbar7";
-import Navbar8 from "./Navbar/navbar8";
-import Navbar9 from "./Navbar/navbar9";
-import Navbar10 from "./Navbar/navbar10";
-import Navbar11 from "./Navbar/navbar11";
-import Navbar12 from "./Navbar/navbar12";
+import Navbar11 from "./Navbar/navbar1";
+import Navbar12 from "./Navbar/navbar2";
 
 
 
@@ -53,7 +43,7 @@ export default function Layout({ children }) {
         />
 
         
-        <Navbar12 />
+        <Navbar2 />
         {/* Page content */}
         <main>
             {children}
@@ -79,17 +69,3 @@ export default function Layout({ children }) {
 };
 
 
-    // <link rel="stylesheet" href="https://rawcdn.githack.com/Harry1o1/Pro-Component/954263aba7cb3c534a8e1305284346dfd450bec7/nextjs/styles/boostrap.css" />
-
-
-//  go little bro go little bro 👍👌👌
-    //   <Footer2 />
-        // <Script
-        //   type="module" src="https://rawcdn.githack.com/Harry1o1/Pro-Component/fae2d70b54658c1af6428ddfb80e9aa14f93b7c4/nextjs/ux/globals.js" 
-        //   strategy="beforeInteractive"
-        // />
-
-        //  <Script
-            // type="module" src='https://rawcdn.githack.com/Harry1o1/Pro-Component/8f2f7108b8742089c79a14649a98c9453581f6d8/nextjs/ux/globals.js'
-            // strategy = "beforeInteractive" 
-        // />     
