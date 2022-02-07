@@ -1,5 +1,5 @@
-import Navbar11 from "./Navbar/navbar1";
-import Navbar12 from "./Navbar/navbar2";
+import Navbar1 from "./Navbar/navbar1";
+import Navbar2 from "./Navbar/navbar2";
 
 
 
