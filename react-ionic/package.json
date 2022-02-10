@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^3.4.1",
     "@capacitor/app": "1.0.7",
     "@capacitor/core": "3.3.3",
     "@capacitor/haptics": "1.1.3",
@@ -41,9 +42,8 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "build": "command-to-build (ex: webpack, tsc, babel, etc.)",
-    "start": "react-scripts start",
     "build": "react-scripts build",
+    "start": "react-scripts start",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
     "eject": "react-scripts eject"
   },
