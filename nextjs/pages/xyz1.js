@@ -1,4 +1,3 @@
-import styles from '../styles/todo/Home.module.css'
 
 
 export default function About() {
