@@ -1,14 +1,10 @@
 tasks:
   - name: Django
     command: cd django && sudo apt-get update && sudo apt-get install python3 && pip install -r requirements.txt && python manage.py runserver
-    port: 3001   
+    
   - name: Nextjs
     command: cd nextjs && npm i && npm run dev
-    port: 3002   
-  - name: Ionic
-    command: cd react-ionic && npm i && npm run start
-    openMode: split-right
-    port: 3003   
+    
     
     
     
