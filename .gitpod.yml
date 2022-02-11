@@ -4,7 +4,7 @@ tasks:
   - name: Nextjs
     command: cd nextjs && npm i && npm run dev
   - name: Ionic
-    command: cd react-ionic && npm i && npm run dev
+    command: cd react-ionic && npm i && npm run start
     openMode: split-left
     
     
