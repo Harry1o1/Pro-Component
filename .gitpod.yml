@@ -1,7 +1,7 @@
 tasks:
   - name: Django
     command: cd django && sudo apt-get update && sudo apt-get install python3 && pip install -r requirements.txt
-    init: cd django && sudo apt-get update && sudo apt-get install python3 && pip install -r requirements.txt && python manage.py runserver
+    init: cd django && sudo apt-get update && sudo apt-get install python3 && pip install -r requirements.txt 
 
     
     
