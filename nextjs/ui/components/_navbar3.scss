@@ -15,6 +15,30 @@ body {
 
 
 
+#pc_navbar_top{
+    
+    background: red;
+    
+    height: 5vh;
+    width: 100%;
+    
+    
+}
+#pc_navbar_left{
+    
+    background: #FFFFFF;
+    
+    height: 5vh;
+    width: 100%;
+    
+    position: fixed;
+    right: 90%;
+    
+    
+}
+
+
+
 /*                              Pc                                      */
 @media (min-width: 960px) {
     
@@ -22,6 +46,9 @@ body {
         background: #B6FF00;
     }
     
+
+
+
 
 }
 

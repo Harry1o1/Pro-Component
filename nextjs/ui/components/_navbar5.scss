@@ -1,54 +1,37 @@
+/* #Starting😎😎😎 || Mobile 📲📲📲 firts || Global */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* only for development🙄🙄🙄 */
-    /* border: 1.5px solid #30FFA7; */
-    
-}
+
+} 
 
 body {
     min-height: 100vh;
     width: 100%;
+    background: #00FF41;
 
 }
 
 
 
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: blue;
-    font-weight: 700;
-    font-size: 3rem;
-} */
-
-
-
-img {
-    width: 95%;
-    height: 40vh;
-    position: relative;
-    left: 10%;
+/*                              Pc                                      */
+@media (min-width: 960px) {
     
-}
-
-
-
-video {
-    width: 95%;
-    height: 50vh;
-    margin-inline: auto;
+    body{
+        background: #B6FF00;
+    }
     
 
 }
+
+
+
+
+
 
 /* 🎉🎉🎉We will be back🎉🎉🎉 */
-.header {
+/* .header {
     border-bottom-left-radius: 35px;
     border-bottom-right-radius: 35px;
     background: #D7DBFF;
@@ -71,41 +54,44 @@ video {
             font-size: 3rem;
         }
     }
-}
+} */
 
-nav {
+/* nav {
     min-height: 15.7vh;
     width: 100%;
     background: red;
 
-}
+} */
 
 
-#hero * {
+/* #hero * {
     position: relative;
     height: 100vh;
     width: 100%;
     border: 1px solid #000000;
-    /* Typography */
+    Typography
     text-align: center;
     color: #FFFFFF;
     font-weight: 700;
     font-size: 4rem;
     z-index: 2;
 
-}
+} */
 
 
-footer {
+/* footer {
     height: 68vh;
     background: #0015FF;
     width: 100%;
-}
+} */
 /* Testing */
 
-.zero{
+/* .zero{
     height: 40vh;
     width: 90%;
     background: #02FFBA;
     margin-inline: auto;
-}
+} */
+
+
+                                                                                                                                                                                                                                                                                                                                               
