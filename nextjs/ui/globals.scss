@@ -1,10 +1,9 @@
 /* Imports🤗🤗🤗 */
-@use "./components"as *;
-@use "./mb"as *;
-@use "./pc"as *;
+/* @use "./components"as *; */
+/* @use "./mb"as *; */
+/* @use "./pc"as *; */
 /* @use "./src" as *; */
-
-@import "./agenda";
+/* @import "./agenda"; */
 
 
 
@@ -34,7 +33,7 @@ body {
 }
 
 
-    @include navbar2-mb;
+    /* @include navbar2-mb; */
     /* .mb-navbartop-icons{
         
         background: #F915FF;
@@ -183,7 +182,7 @@ box-shadow:  18px 18px 36px #5a5a5a,
     }
 
     /* The sidebar menu */
-    @include navbar2-pc;
+    /* @include navbar2-pc; */
     
 
 
@@ -239,7 +238,7 @@ box-shadow:  18px 18px 36px #5a5a5a,
     
     
     /* Using it in Pc 🍼🐥🍼🐥  🤗🤗🤗 */
-    @include displays-pc;
+    /* @include displays-pc; */
 
 }
 /*                               End pc                                        */
@@ -303,7 +302,7 @@ box-shadow:  18px 18px 36px #5a5a5a,
 
 /* Using it in mobile 📱📱📱📲📲📲 🤗🤗🤗 */
 /* @include navbar1; */
-@include displays-mb;
+/* @include displays-mb; */
 
 
 

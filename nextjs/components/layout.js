@@ -2,11 +2,6 @@ import Navbar1 from "./Navbar/navbar1";
 import Navbar2 from "./Navbar/navbar2";
 
 
-
-import Footer1 from './Footer/footer1'
-import Footer2 from './Footer/footer2'
-
-
 import Link from 'next/link'
 import Script from 'next/script'
 import Head from 'next/head'

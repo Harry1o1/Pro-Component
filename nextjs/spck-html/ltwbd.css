@@ -175,7 +175,7 @@ main {
 /*                          Footer🔝                                */
 footer{
     
-    min-height: 50vh;
+    min-height: 10vh;
     width: 100%;
     
     
@@ -209,7 +209,7 @@ footer{
     height: 4rem;
     width: 100%;
     
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     
 }
 
@@ -223,30 +223,33 @@ footer{
     font-size: 1.7rem;
     
 }
-
+/* 170px ok */
 #pro_footer_main-contant{
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 1rem;
-    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(10.5rem, 5fr));
+    /* grid-gap: 0.5rem; */
+    /* place-items: center; */
     
     
-    min-height: 50vh;
+    min-height: 10vh;
     width: 100%;
     
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 5rem;
     
 }
 
 .pfmc{
     
+    
     display: flex;
     align-items: center;
     justify-content: center;
     
-    height: 20vh;
-    width: 90%;
+    min-height: 10vh;
+    /* max-height: 25vh; */
+    min-width: 10rem;
     
     
 }
@@ -256,15 +259,42 @@ footer{
     
     /* background: #f3f4f5; */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     
-    height: 5vh;
+    min-height: 5vh;
     width: 100%;
 }
 
 
-
+#copyright #line{
+    
+    background: #000000;
+    
+    height: 1px;
+    width: 80%;
+    
+    margin-inline: auto;
+    margin-bottom: 0.5rem;
+    
+    
+}
+#copyright strong{
+    
+    text-align: center;
+    color: #000000;    
+    
+    margin-bottom: 0.5rem;
+}
+#copyright h1{
+    
+    text-align: center;
+    color: #D4D4D4;
+    
+    margin-bottom: 0.5rem;
+    
+}
 
 
 
