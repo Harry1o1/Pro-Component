@@ -206,7 +206,7 @@ footer{
     overflow-x: auto;
     overflow-y: hidden;
     
-    height: 4rem;
+    height: 3rem;
     width: 100%;
     
     padding: 0.5rem 0.5rem;
@@ -220,19 +220,19 @@ footer{
     justify-content: center;
     text-align: center;
     
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     
 }
 /* 170px ok */
 #pro_footer_main-contant{
     
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 5fr));
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.7rem;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 5fr));
+    grid-column-gap: 0.3rem;
+    grid-row-gap: 1rem;
     
     
-    min-height: 10vh;
+    min-height: 5rem;
     width: 100%;
     
     padding: 0.2rem 1rem;
@@ -242,15 +242,13 @@ footer{
 
 .pfmc{
     
-    
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     
-    min-height: 20vh;
+    min-height: 5rem;
     /* max-height: 25vh; */
-    min-width: 8rem;
+    min-width: 10rem;
     
     
 }
@@ -280,10 +278,11 @@ footer{
 .pfmli{
     
     /* background: red; */
+    background: #FFFFFF;
     text-decoration: none;
     list-style: none;
     
-    height: 3vh;
+    min-height: 1.3rem;
     width: 100%;
     
     
