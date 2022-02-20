@@ -132,8 +132,8 @@ body {
 
     padding: 0 0.5rem;
 
-    position: fixed;
-    top: 0;
+    /* position: fixed; */
+    /* top: 0; */
     
     z-index: 5;
 }
@@ -156,8 +156,8 @@ body {
 
 main {
     
-    position: relative;
-    top: 7vh;
+    /* position: relative; */
+    /* top: 7vh; */
     
     
     min-height: 100vh;
@@ -183,82 +183,31 @@ footer{
     
 } 
 
-#footer-svg{
-    
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.1px);
-    -webkit-backdrop-filter: blur(9.1px);
-    border: 1px solid rgba(255, 255, 255, 1);  
-    
-}
+/*                          Main footer                            */
+#pro_footer_main-contant {
 
-
-
-#pro-footer-top{
-    
-    background: #9900EF;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.1px);
-    -webkit-backdrop-filter: blur(9.1px);
-    /* border: 1px solid rgba(255, 255, 255, 1); */  
-    display: grid;
-    grid-template-columns: repeat(33,1fr);
-    grid-gap: 1.5rem;
-    place-items: center;
-    
-    overflow-x: auto;
-    overflow-y: hidden;
-    
-    height: 3rem;
-    width: 100%;
-    
-    padding: 0.5rem 0.5rem;
-    
-    /* position: relative; */
-    /* bottom: 0.5rem; */
-    /* position: relative; */
-    /* bottom: 1rem; */
-    margin-bottom: 1rem;
-    
-    z-index: 3;
-    
-}
-
-.pftic{
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    
-    font-size: 1.2rem;
-    
-}
-/* 170px ok */
-#pro_footer_main-contant{
-    
     /* Created with https://www.css-gradient.com */
+    border-bottom: 0.8px solid #FFFFFF;
     background: #9900EF;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10rem, 4fr));
     grid-column-gap: 0.3rem;
     grid-row-gap: 1rem;
-    
-    
+
+
     min-height: 5rem;
     width: 100%;
-    
+
     padding: 1rem;
     /* margin-bottom: 1rem; */
-    
-    
-    position: relative;
-    bottom: 1rem;
-    
-    
+
+
+    /* position: relative; */
+    /* bottom: 1rem; */
+
+
     z-index: 3;
 }
-
 .pfmc{
     
     /* From https://css.glass */
@@ -281,7 +230,6 @@ footer{
     padding-bottom: 0.8rem;
     
 }
-
 .pfmc strong{
     
     display: flex;
@@ -296,14 +244,11 @@ footer{
     /* padding: 0.5rem 0; */
     
 }
-
 .pfm{
     
     color: #000000;
     
 }
-
-
 .pfmli{
     
     /* background: red; */
@@ -319,6 +264,50 @@ footer{
 
 
 
+/*                           Icons                                    */
+#pro-footer-top {
+
+    /* border-top: 0.8px  #FFFFFF; */
+    border-bottom: 0.8px solid #FFFFFF;
+    background: #9900EF;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.1px);
+    -webkit-backdrop-filter: blur(9.1px);
+    /* border: 1px solid rgba(255, 255, 255, 1); */
+    display: grid;
+    grid-template-columns: repeat(150, 1fr);
+    grid-gap: 1.8rem;
+    place-items: center;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    height: 3rem;
+    width: 100%;
+
+    padding: 0.5rem 0.5rem;
+
+    /* position: relative; */
+    /* bottom: 0.5rem; */
+    /* position: relative; */
+    /* bottom: 1rem; */
+
+    /* margin-bottom: 1rem; */
+
+    z-index: 7;
+
+}
+.pftic {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 1.2rem;
+
+}
+/* 170px ok */
 
 
 
@@ -395,24 +384,10 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#oo{
+/*                                   Svg                                     */
+/* #oo{
     
-    
-/* From https://css.glass */
+From https://css.glass
 background: rgba(255, 255, 255, 0.67);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -430,22 +405,7 @@ border: 1px solid rgba(255, 255, 255, 1);
     left: 3rem;
 
 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */
 
 .tm{
     
@@ -477,11 +437,6 @@ border: 1px solid rgba(255, 255, 255, 1);
 } */
 
 
-
-
-
-
-
 svg{
     
     fill: none !important;
@@ -498,5 +453,34 @@ svg{
     
     
     z-index: 1;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#hero{
+    
+    /* background: red; */
     
 }

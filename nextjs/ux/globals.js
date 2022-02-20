@@ -1,9 +1,5 @@
 // import { Robin } from './src/toogle/robin.js';
 // import { Notes_page } from './todo/notes.js';//Update later
-
-
-
-
 //                                All variables
 const body = document.querySelector('body');
 const btn = document.querySelector('.pro_navbar_mb_btn');
@@ -21,9 +17,10 @@ let navbar = document.querySelector('.sidebar-sm');
 let nine_dots = document.querySelector('#nine_dots');
 // let nine_dots_cancel = document.querySelector('#nine_dots_cancel');
 
+// let navbarmb_top = document.querySelector('#mb_navbar_top');
+let navbar_top = document.querySelector('#pro-navbartop-container');
 
-let navbarmb_top = document.querySelector('#mb_navbar_top');
-let navbarmb_top_header = document.querySelector('#mb_navbartop_header');
+let navbar_top_header = document.querySelector('#mb_navbartop_header');
 let cancel_btn = document.querySelector('#cancel_web');
 
 let navbarmb_top_scroll = document.querySelector('#mb_navbartop_scroll-container');
@@ -47,19 +44,19 @@ let mb = 1100;
 
 
 // Sticky💎💎💎
-// if (navbar !== null) {
-//     sticky = navbar.offsetTop;
-//     function myFunction() {
-//       if (window.pageYOffset >= sticky) {
-//         navbar.classList.add("sticky");
-//       } else {
-//         navbar.classList.remove("sticky");
-//       }
-//     }
-//     window.onscroll = function() {myFunction()};
+if (navbar_top !== null) {
+    sticky = navbar_top.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar_top.classList.add("sticky");
+      } else {
+        navbar_top.classList.remove("sticky");
+      }
+    }
+    window.onscroll = function() {myFunction()};
     
 
-// }
+}
 
 // Sticky       Navbar2  Top scroll 📜📜📜📜        Mb💎💎💎
 if (navbarmb_top_scroll !== null && body.clientHeight < mb) {
