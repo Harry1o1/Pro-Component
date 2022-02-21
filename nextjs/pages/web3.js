@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import React, { useEffect, useState, createContext, useContext } from "react";
 import { ethers } from "ethers"// Download 👇👇👇 ethers,Web3
-import { contractABI, contractAddress } from "../agenda_contract_abi/constants";// Transaction.json file 🗃️🗃️🗃️
+import { contractABI, contractAddress } from "../agenda_contract_abi/constants.js";// Transaction.json file 🗃️🗃️🗃️
 import styles from '../styles/Home.module.css'
 
 
